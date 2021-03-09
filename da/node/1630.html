@@ -1,0 +1,396 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<!-- Mirrored from kunstakademiet.dk/da/node/1630 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:37:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../laboratorier/laboratoriet-medier/laboratoriet-lyd.html" />
+<link rel="shortlink" href="1630.html" />
+	<title>Laboratoriet for Lyd | Billedkunstskolerne - Det Kongelige Danske Kunstakademi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=../search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.14.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1630 node-type-basic-page i18n-da" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Søg</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/da/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-ULbHd2ZR6HZKQzAHe9LCmT_vTbdbQC8wPaav7BVSU1o" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1654 crumb-count-1">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../../da.html" title="Forside" rel="home"
+                   id="logo">Billedkunstskolerne - Det Kongelige Danske Kunstakademi</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first active"><a href="../laboratorier/laboratoriet-medier/laboratoriet-lyd.html" class="language-link active" xml:lang="da" title="Laboratoriet for Lyd">DK</a></li>
+<li class="en last"><a href="../../en/laboratories/laboratory-media/laboratory-sound.html" class="language-link" xml:lang="en" title="Laboratory for Sound">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"><h2 class="element-invisible">Du er her</h2><div class="breadcrumb"><a href="../laboratorier/laboratoriet-medier.html">Laboratoriet for Medier</a></div></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../da.html" title="">Forside</a></li>
+<li class="expanded"><a href="../billedkunstskolerne.html">Billedkunstskolerne</a><ul class="menu"><li class="first collapsed"><a href="../billedkunstskolerne/billedkunstskolernes-historie.html">Billedkunstskolernes historie</a></li>
+<li class="leaf"><a href="../organisation/samarbejder.html">Samarbejder</a></li>
+<li class="leaf"><a href="../billedkunstskolerne/aftagerpanel.html">Aftagerpanel</a></li>
+<li class="last leaf"><a href="../billedkunstskolerne/rad-og-naevn.html">Råd og nævn</a></li>
+</ul></li>
+<li class="expanded"><a href="../studier.html">Studier</a><ul class="menu"><li class="first leaf"><a href="../studier/uddannelsen.html">Uddannelsen</a></li>
+<li class="leaf"><a href="../studier/forskning-og-kunstnerisk-udvikling.html">Forskning og kunstnerisk udvikling</a></li>
+<li class="collapsed"><a href="../skoler-og-institutter/laboratorier.html">Laboratorier</a></li>
+<li class="collapsed"><a href="../studier/optagelse.html">Optagelse</a></li>
+<li class="collapsed"><a href="../studier/internationalt-og-udveksling.html">Internationalt og udveksling</a></li>
+<li class="last leaf"><a href="../studier/laboratoriet-kunstens-forskning.html">Laboratoriet for Kunstens Forskning</a></li>
+</ul></li>
+<li class="expanded"><a href="../aktiviteter-og-nyheder.html">Aktiviteter og nyheder</a><ul class="menu"><li class="first leaf"><a href="../aktiviteter-og-nyheder/aktuelt.html">Aktuelt</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/udstillingsstedet-q.html">Udstillingsstedet Q</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/afgang.html">Afgang</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/rundgang.html">Rundgang</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/forskningsprojekter.html">Forskningsprojekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/projekter.html">Projekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">Billedkunstskolernes Forlag</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/nyhedsbreve.html">Nyhedsbreve</a></li>
+<li class="last collapsed"><a href="../aktiviteter-og-nyheder/charlottenborg-art.html">Charlottenborg Art</a></li>
+</ul></li>
+<li class="expanded"><a href="../organisation-og-kontakt.html">Organisation og kontakt</a><ul class="menu"><li class="first leaf"><a href="../organisation.html">Organisation</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/fakturering.html">Fakturering</a></li>
+<li class="leaf"><a href="../organisation/rektorat.html">Rektorat</a></li>
+<li class="leaf"><a href="../organisation/administration-og-drift.html">Administration og drift</a></li>
+<li class="leaf"><a href="../organisation/fakultet.html">Fakultet</a></li>
+<li class="leaf"><a href="../organisation/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../organisation/rapporter.html">Rapporter</a></li>
+<li class="leaf"><a href="../organisation/sponsorer.html">Sponsorer</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/databeskyttelsesradgiver.html">Databeskyttelsesrådgiver</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/kulturministeriets-whistleblowerordning.html">Kulturministeriets whistleblowerordning</a></li>
+<li class="collapsed"><a href="../kontakt/ledige-stillinger.html">Ledige stillinger</a></li>
+<li class="last leaf"><a href="../organisation-og-kontakt/strategi-2019-22.html">Strategi</a></li>
+</ul></li>
+<li class="leaf"><a href="../presserum.html">Presserum</a></li>
+<li class="expanded"><a href="../rundvisning-og-udlejning.html">Rundvisning og udlejning</a><ul class="menu"><li class="first leaf"><a href="../kontakt/udlejning-af-lokaler.html">Udlejning af lokaler</a></li>
+<li class="last leaf"><a href="../kontakt/rundvisning.html">Rundvisning</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1654 ">
+                <div class="content-container">
+                                                    	
+	
+	
+		<article id="node-1630"
+         class="node node-basic-page l-article clearfix" about="/da/laboratorier/laboratoriet-medier/laboratoriet-lyd" typeof="sioc:Item foaf:Document">
+    <section>
+                    <div class="page-pager-item prev">
+                <a class="freepager-previous prev-next-pager" href="../laboratorier/laboratoriet-medier/laboratoriet-video.html" rel="previous">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                <span class="pager-title">GÅ TIL</span>
+                    Laboratoriet for Video                </span>
+                </a>
+            </div>
+                                <h1 class="followed-by-slider">Laboratoriet for Lyd</h1>
+        
+
+  <div class="entity entity-paragraphs-item paragraphs-item-images entity-item-1 fullwidth row-odd" about="" typeof="">
+    <div class="gallery-slides fullwidth image-count-4">
+        <div class="gallery-slides-inner">
+            <div class="field-images fullwidth"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) calc(100vw - 160px), 1400px" srcset="https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_1x/public/slideshow/jenny_2_0.jpg?itok=qazdIe16&amp;timestamp=1600435191 768w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_2x/public/slideshow/jenny_2_0.jpg?itok=QMXWxqdq&amp;timestamp=1600435191 1536w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_1x/public/slideshow/jenny_2_0.jpg?itok=CtK81eKi&amp;timestamp=1600435191 355w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_2x/public/slideshow/jenny_2_0.jpg?itok=FEp0s1D4&amp;timestamp=1600435191 710w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_1x/public/slideshow/jenny_2_0.jpg?itok=Mafw8BAS&amp;timestamp=1600435191 1024w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_2x/public/slideshow/jenny_2_0.jpg?itok=k2A0dJTP&amp;timestamp=1600435191 2048w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_1x/public/slideshow/jenny_2_0.jpg?itok=bEpq8XPE&amp;timestamp=1600435191 1400w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_2x/public/slideshow/jenny_2_0.jpg?itok=9tigPgZp&amp;timestamp=1600435191 2800w" alt="Plante tæt på skovbund med elektrode påsat ét af bladene. " /></div></div></div><div class="field-images fullwidth"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) calc(100vw - 160px), 1400px" srcset="https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_1x/public/slideshow/jenny_4.jpg?itok=BpLDsdHH&amp;timestamp=1600435413 768w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_2x/public/slideshow/jenny_4.jpg?itok=FCht1Wy4&amp;timestamp=1600435413 1536w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_1x/public/slideshow/jenny_4.jpg?itok=sz9xpba5&amp;timestamp=1600435413 355w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_2x/public/slideshow/jenny_4.jpg?itok=wF_CIHNk&amp;timestamp=1600435413 710w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_1x/public/slideshow/jenny_4.jpg?itok=SEIKkeE2&amp;timestamp=1600435413 1024w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_2x/public/slideshow/jenny_4.jpg?itok=7QSWZgoZ&amp;timestamp=1600435413 2048w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_1x/public/slideshow/jenny_4.jpg?itok=UIqcRL0g&amp;timestamp=1600435413 1400w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_2x/public/slideshow/jenny_4.jpg?itok=XCrDb3_w&amp;timestamp=1600435413 2800w" alt="Tre studerende sidder ved et bord og arbejder med ledninger" /></div></div></div><div class="field-images fullwidth"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) calc(100vw - 160px), 1400px" srcset="https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_1x/public/slideshow/jenny_3_0.png?itok=759TQ_XT&amp;timestamp=1600435554 768w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_2x/public/slideshow/jenny_3_0.png?itok=ZMClEnfe&amp;timestamp=1600435554 1536w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_1x/public/slideshow/jenny_3_0.png?itok=79M9uZTh&amp;timestamp=1600435554 355w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_2x/public/slideshow/jenny_3_0.png?itok=Vw7dETA_&amp;timestamp=1600435554 710w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_1x/public/slideshow/jenny_3_0.png?itok=43dnKTWo&amp;timestamp=1600435554 1024w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_2x/public/slideshow/jenny_3_0.png?itok=CCb70car&amp;timestamp=1600435554 2048w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_1x/public/slideshow/jenny_3_0.png?itok=oGJoFJta&amp;timestamp=1600435554 1400w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_2x/public/slideshow/jenny_3_0.png?itok=j_TBMqjo&amp;timestamp=1600435554 2800w" alt="Små, hvide spåner samler sig i cirkelformationer på sort, oval plade" /></div></div></div><div class="field-images fullwidth"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) calc(100vw - 160px), 1400px" srcset="https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_1x/public/slideshow/img05_lyd.jpg?itok=NhKkjGaa&amp;timestamp=1600435577 768w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_large_2x/public/slideshow/img05_lyd.jpg?itok=uPWAhfzP&amp;timestamp=1600435577 1536w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_1x/public/slideshow/img05_lyd.jpg?itok=3GKQa1uX&amp;timestamp=1600435577 355w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_mobile_2x/public/slideshow/img05_lyd.jpg?itok=ql06n8jE&amp;timestamp=1600435577 710w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_1x/public/slideshow/img05_lyd.jpg?itok=fRr5xPRN&amp;timestamp=1600435577 1024w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xlarge_2x/public/slideshow/img05_lyd.jpg?itok=MXap-Z3j&amp;timestamp=1600435577 2048w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img05_lyd.jpg?itok=047vj7Y4&amp;timestamp=1600435577 1400w, https://kunstakademiet.dk/sites/default/files/styles/fullwidth_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img05_lyd.jpg?itok=Qm4W_yMw&amp;timestamp=1600435577 2800w" alt="Computere og elektronisk udstyr på et bord. Højtalere bag bordet " /></div></div></div>        </div>
+    </div>
+    </div>
+  
+<div class="entity entity-paragraphs-item paragraphs-item-facts-box entity-item-2 facts-2 row-even" about="" typeof="">
+    <div class="fact-box-inner">
+    <div class="fact-box-inner-max">
+        <div class="fact-item"><h4>
+  Laboratoriet for Lyd</h4><div class="fact-description">
+  <p>​Kongens Nytorv 1<br />
+Opgang E, 2 sal</p>
+</div></div><div class="fact-item"><h4>
+  Kontaktinformation</h4><div class="fact-description">
+  <p>Jenny Gräf Sheppard<br /><a id='RjPtwepzM' rel='nofollow'></a><script>var RjPtwepzM = '#jenny.graf@kunstakademiet.dk';
+var RjPtwepzM = RjPtwepzM.split('#');
+document.getElementById('RjPtwepzM').innerHTML = RjPtwepzM[1]+RjPtwepzM[0];
+document.getElementById('RjPtwepzM').href = 'mailto:'+RjPtwepzM[1]+RjPtwepzM[0];
+</script>
+ 
+    <br />
++45 3374 4648</p>
+</div></div>    </div>
+    </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-3" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <p><strong>Laboratoriet for Lyd</strong> er et forskningsbaseret mødested og en ressource for dem, der er interesserede i at beskæftige sig med lyd fra forskellige indfaldsvinkler. Laboratoriet er et læringsrum, der understøtter mange forskellige læringsformer – leg, undersøgelser, forskning og innovation – og slår bro mellem en lang række felter såsom teknologi, sansning og kunst. De studerende har afgørende indflydelse på den løbende udvikling af Laboratoriet for Lyd og på den retning, laboratoriet tager. Hvert år afholdes et åbent høringsmøde, hvor de studerende kan være med til at fastlægge Laboratoriet for Lyds retning og aktiviteter sammen med laboratoriets leder, Jenny Gräf Sheppard.<br />
+ <br />
+Laboratoriet for Lyd vil stræbe efter at give de studerende indblik i og adgang til den aktuelle diskurs inden for lydstudier. Laboratoriets løbende aktiviteter vil være kendetegnet ved workshops, adgang til forskningsfaciliteter og en international erfarings- og vidensudveksling. Workshops og kurser giver de studerende mulighed for at opnå direkte læring inden for en lang række temaer. Som eksempler på sådanne workshops og kurser kan nævnes: En introduktion til lyd og lydbegreber; læsegruppe om lyd og køn, workshop ifm. forskningsprojektet ”Sounding Bodies”; lyd og subjektivitet; Lydens økonomi, improvisation og live-performance med lyd; samt diverse workshops om brugen af forskelligt udstyr.<br />
+ <br /><strong>Laboratoriets faciliteter byder blandt andet på:</strong><br />
+ProTools Studio med Ableton Live<br />
+Lydtæt bås<br />
+Pro Tools Workstation med Ableton Live og MaxMsp<br />
+Værkstedsrum (til brug for live-improvisationer, optagelser, forskning og som lytterum)<br />
+Oscilloskop, biofeedbackudstyr og andet lydudstyr<br />
+Mikrofonudstyr<br />
+Mobilt optageudstyr<br />
+Bibliotek<br />
+Et rum til mindre lydperformances eller lydpræsentationer.<br /><strong> <br />
+Igangværende forskning på Laboratoriet for Lyd</strong><br /><strong>SOUNDING BODIES</strong> er et kunstnerisk forskningsprojekt, der er iværksat af Jenny Gräf og finansieret af Det Kongelige Danske Kunstakademi og Kulturministeriet. Forskningsprojektet vil løbe fra april til december 2018 på og udenfor Kunstakademiet. Projektforløbet kan følges på <a href="https://soundingbodies.kunstakademiet.dk/">https://soundingbodies.kunstakademiet.dk</a><br />
+ <br /><strong>Forskningsprojektet ”Sounding Bodies” </strong>tager udgangspunkt i kroppens resonans og i hvordan kroppen opfanger og afgiver lyd. Efter gennem århundreder at have givet forrang til synet og det visuelle er vi nu lydmæssige analfabeter, der er dårligt udrustet i forhold til at udnytte vores iboende muligheder for at bruge lyd til at færdes i og interagere med verden. For at kunne forske dybt i lyd ud fra en kunstnerisk faglighed må vi først udvikle kompetencer, der er specifikke for lyden – og her må vi begynde med kroppens evne til at <em>lyde. </em>”The Sounding Body” er et begreb, der peger på lydens kropsliggørelse, og på, hvordan lyden som fænomen produceres og opfattes inden for kroppen.<br />
+ <br /><strong>SOBO Study Group</strong> er navnet på den kerne af deltagere, som under forløbet vil udføre individuel eller gruppebaseret kunstnerisk forskning, der vil både bidrage til og nyde godt af SOUNDING BODIES-projektet i 2018.</p>
+<p>Laboratoriet for Lyd, Det Kongelige Danske Kunstakademi, København<br />
+Jenny Gräf Sheppard<br />
+Tlf.: +45 71678561<br />
+Facebook: <a href="https://www.facebook.com/laboratoryforsound/">https://www.facebook.com/laboratoryforsound/</a><br />
+Kontortid:  Tirsdage 10.00–17.00 efter aftale<br />
+Møder kan aftales på: <a id='WdRQADclb' rel='nofollow'></a><script>var WdRQADclb = 'stakademiet.dk##jenny.graf@kun';
+var WdRQADclb = WdRQADclb.split('#');
+document.getElementById('WdRQADclb').innerHTML = WdRQADclb[2]+WdRQADclb[0]+WdRQADclb[1];
+document.getElementById('WdRQADclb').href = 'mailto:'+WdRQADclb[2]+WdRQADclb[0]+WdRQADclb[1];
+</script>
+ 
+    </p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-4 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/jenny_img_web_kvadrat.jpg?itok=ZP6eOP12&amp;timestamp=1600435645 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/jenny_img_web_kvadrat.jpg?itok=om53k5x9&amp;timestamp=1600435645 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/jenny_img_web_kvadrat.jpg?itok=xM4wLcOB&amp;timestamp=1600435645 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/jenny_img_web_kvadrat.jpg?itok=Uu327KEk&amp;timestamp=1600435645 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/jenny_img_web_kvadrat.jpg?itok=Ksb7nAPj&amp;timestamp=1600435645 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/jenny_img_web_kvadrat.jpg?itok=TGl-ERwh&amp;timestamp=1600435645 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/jenny_img_web_kvadrat.jpg?itok=pXYg1ACk&amp;timestamp=1600435645 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/jenny_img_web_kvadrat.jpg?itok=QLCg5ORm&amp;timestamp=1600435645 600w" alt="Lektor påLaboratoriet for Lyd, Jenny Gräf Sheppard" />  </div>
+        <div class="column-middle">
+            <h3>
+  Jenny Gräf Sheppard</h3>
+            <span class="job-title-free">
+  Lektor, Laboratoriet for Lyd</span>
+            
+  <div class="field-description">
+    <p>Jenny Gräf Sheppard (f. 1970) modtog sin MFA fra the School of the Art Institute of Chicago. Som tværfaglig kunstner omfatter Sheppards værker projekter, der udforsker lyd i forhold til erindring og agens, herunder samarbejdsprojekter med mennesker med Alzheimers, udpræget deltagerorienterede lydværker, og musikalske lydforestillinger. Hendes forskning omfatter lydens indvirkning på kroppen, kognition og den fysiske verden. Sheppard har fremført sine værker i hele Europa, Canada og USA samt fungeret som kurator ved lyd- og musikfestivaler.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='wdfWHXVnp' rel='nofollow'></a><script>var wdfWHXVnp = '#jenny.graf@kunstak#ademiet.dk';
+var wdfWHXVnp = wdfWHXVnp.split('#');
+document.getElementById('wdfWHXVnp').innerHTML = wdfWHXVnp[1]+wdfWHXVnp[2]+wdfWHXVnp[0];
+document.getElementById('wdfWHXVnp').href = 'mailto:'+wdfWHXVnp[1]+wdfWHXVnp[2]+wdfWHXVnp[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4648</p>                                </div>
+</div>
+    </section>
+</article>
+                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Billedkunstskolerne <br />
+Det Kongelige Danske Kunstakademi</strong><br />
+Kongens Nytorv 1, 1050 København K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">Se på google maps</a><br /><a id='fZjcmKXon' rel='nofollow'></a><script>var fZjcmKXon = 'info@kunst#dk##akademiet.';
+var fZjcmKXon = fZjcmKXon.split('#');
+document.getElementById('fZjcmKXon').innerHTML = fZjcmKXon[0]+fZjcmKXon[3]+fZjcmKXon[1]+fZjcmKXon[2];
+document.getElementById('fZjcmKXon').href = 'mailto:'+fZjcmKXon[0]+fZjcmKXon[3]+fZjcmKXon[1]+fZjcmKXon[2];
+</script>
+ 
+    <a target="_blank" href="https://www.was.digst.dk/kunstakademiet-dk">Tilgængelighedserklæring</a></p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Tilmeld nyhedsbrev" placeholder="Tilmeld nyhedsbrev"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../../sites/default/files/advagg_js/js__Z4-v_NpbsHM90rMoyj-KBqp5sYDtolbNNTDCGcc8uNI__IKgK4uD1nYOeHkb4gh_2OAWuynD0OO_dsM1AcDbrRhs__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.45.delaye"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"da\/","ajaxPageState":{"theme":"bks","theme_token":"aah320LG_VX4BmVMDSB79NTGulZuV-it6SXdxsXr8Rg"},"urlIsAjaxTrusted":{"\/da\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.46.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/da.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/da/node/1630 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:37:03 GMT -->
+</html>

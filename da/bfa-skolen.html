@@ -1,0 +1,446 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<!-- Mirrored from kunstakademiet.dk/da/bfa-skolen by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:13:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="bfa-skolen.html" />
+<link rel="shortlink" href="node/1100.html" />
+	<title>BFA-skolen | Billedkunstskolerne - Det Kongelige Danske Kunstakademi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.14.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1100 node-type-basic-page i18n-da" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Søg</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/da/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-Uymty7r2hXHSyZDclZo-Z-wYbwNEKrthEAaAB1VN7A8" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1100 crumb-count-0">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../da.html" title="Forside" rel="home"
+                   id="logo">Billedkunstskolerne - Det Kongelige Danske Kunstakademi</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first active"><a href="bfa-skolen.html" class="language-link active" xml:lang="da" title="BFA-skolen">DK</a></li>
+<li class="en last"><a href="../en/schools-and-institutes/bfa-school.html" class="language-link" xml:lang="en" title="The BFA School">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../da.html" title="">Forside</a></li>
+<li class="expanded"><a href="billedkunstskolerne.html">Billedkunstskolerne</a><ul class="menu"><li class="first collapsed"><a href="billedkunstskolerne/billedkunstskolernes-historie.html">Billedkunstskolernes historie</a></li>
+<li class="leaf"><a href="organisation/samarbejder.html">Samarbejder</a></li>
+<li class="leaf"><a href="billedkunstskolerne/aftagerpanel.html">Aftagerpanel</a></li>
+<li class="last leaf"><a href="billedkunstskolerne/rad-og-naevn.html">Råd og nævn</a></li>
+</ul></li>
+<li class="expanded"><a href="studier.html">Studier</a><ul class="menu"><li class="first leaf"><a href="studier/uddannelsen.html">Uddannelsen</a></li>
+<li class="leaf"><a href="studier/forskning-og-kunstnerisk-udvikling.html">Forskning og kunstnerisk udvikling</a></li>
+<li class="collapsed"><a href="skoler-og-institutter/laboratorier.html">Laboratorier</a></li>
+<li class="collapsed"><a href="studier/optagelse.html">Optagelse</a></li>
+<li class="collapsed"><a href="studier/internationalt-og-udveksling.html">Internationalt og udveksling</a></li>
+<li class="last leaf"><a href="studier/laboratoriet-kunstens-forskning.html">Laboratoriet for Kunstens Forskning</a></li>
+</ul></li>
+<li class="expanded"><a href="aktiviteter-og-nyheder.html">Aktiviteter og nyheder</a><ul class="menu"><li class="first leaf"><a href="aktiviteter-og-nyheder/aktuelt.html">Aktuelt</a></li>
+<li class="leaf"><a href="aktiviteter-og-nyheder/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="aktiviteter-og-nyheder/udstillingsstedet-q.html">Udstillingsstedet Q</a></li>
+<li class="leaf"><a href="aktiviteter-og-nyheder/afgang.html">Afgang</a></li>
+<li class="leaf"><a href="aktiviteter-og-nyheder/rundgang.html">Rundgang</a></li>
+<li class="collapsed"><a href="aktiviteter-og-nyheder/forskningsprojekter.html">Forskningsprojekter</a></li>
+<li class="collapsed"><a href="aktiviteter-og-nyheder/projekter.html">Projekter</a></li>
+<li class="collapsed"><a href="aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">Billedkunstskolernes Forlag</a></li>
+<li class="leaf"><a href="aktiviteter-og-nyheder/nyhedsbreve.html">Nyhedsbreve</a></li>
+<li class="last collapsed"><a href="aktiviteter-og-nyheder/charlottenborg-art.html">Charlottenborg Art</a></li>
+</ul></li>
+<li class="expanded"><a href="organisation-og-kontakt.html">Organisation og kontakt</a><ul class="menu"><li class="first leaf"><a href="organisation.html">Organisation</a></li>
+<li class="leaf"><a href="organisation-og-kontakt/fakturering.html">Fakturering</a></li>
+<li class="leaf"><a href="organisation/rektorat.html">Rektorat</a></li>
+<li class="leaf"><a href="organisation/administration-og-drift.html">Administration og drift</a></li>
+<li class="leaf"><a href="organisation/fakultet.html">Fakultet</a></li>
+<li class="leaf"><a href="organisation/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="organisation/rapporter.html">Rapporter</a></li>
+<li class="leaf"><a href="organisation/sponsorer.html">Sponsorer</a></li>
+<li class="leaf"><a href="organisation-og-kontakt/databeskyttelsesradgiver.html">Databeskyttelsesrådgiver</a></li>
+<li class="leaf"><a href="organisation-og-kontakt/kulturministeriets-whistleblowerordning.html">Kulturministeriets whistleblowerordning</a></li>
+<li class="collapsed"><a href="kontakt/ledige-stillinger.html">Ledige stillinger</a></li>
+<li class="last leaf"><a href="organisation-og-kontakt/strategi-2019-22.html">Strategi</a></li>
+</ul></li>
+<li class="leaf"><a href="presserum.html">Presserum</a></li>
+<li class="expanded"><a href="rundvisning-og-udlejning.html">Rundvisning og udlejning</a><ul class="menu"><li class="first leaf"><a href="kontakt/udlejning-af-lokaler.html">Udlejning af lokaler</a></li>
+<li class="last leaf"><a href="kontakt/rundvisning.html">Rundvisning</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1100 ">
+                <div class="content-container">
+                                                    	
+	
+	
+		<article id="node-1100"
+         class="node node-basic-page l-article clearfix" about="/da/bfa-skolen" typeof="sioc:Item foaf:Document">
+    <section>
+                                <h1 class="followed-by-slider">BFA-skolen</h1>
+        
+
+  <div class="entity entity-paragraphs-item paragraphs-item-images entity-item-1 mixed row-odd" about="" typeof="">
+    <div class="gallery-slides mixed image-count-10">
+        <div class="gallery-slides-inner">
+            <div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/grund.indgang.jpg?itok=Qj1-8p-R&amp;timestamp=1600518167 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/grund.indgang.jpg?itok=DNlmpkow&amp;timestamp=1600518167 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/grund.indgang.jpg?itok=r7heRY9F&amp;timestamp=1600518167 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/grund.indgang.jpg?itok=l4VMORls&amp;timestamp=1600518167 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/grund.indgang.jpg?itok=xmfZytbV&amp;timestamp=1600518167 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/grund.indgang.jpg?itok=VA9DvXOF&amp;timestamp=1600518167 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/grund.indgang.jpg?itok=OsnHS0I4&amp;timestamp=1600518167 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/grund.indgang.jpg?itok=eD6ggS3i&amp;timestamp=1600518167 580w" alt="Port til BFA-skolen" /></div></div></div><div class="field-images portrait"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) 45.3125vw, (max-width: 1560px) 31.42857143vw, 440px" srcset="https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xxlarge_1x/public/slideshow/grund._baenken.jpg?itok=wPO-PsU9&amp;timestamp=1600518189 430w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xxlarge_2x/public/slideshow/grund._baenken.jpg?itok=aMZKtbwv&amp;timestamp=1600518189 860w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xlarge_1x/public/slideshow/grund._baenken.jpg?itok=hfkFBAv7&amp;timestamp=1600518189 339w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xlarge_2x/public/slideshow/grund._baenken.jpg?itok=Pa2hETPX&amp;timestamp=1600518189 678w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_large_1x/public/slideshow/grund._baenken.jpg?itok=1nv-GK2P&amp;timestamp=1600518189 293w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_large_2x/public/slideshow/grund._baenken.jpg?itok=b4DHnIvY&amp;timestamp=1600518189 586w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_mobile_1x/public/slideshow/grund._baenken.jpg?itok=rwZ6R-RV&amp;timestamp=1600518189 109w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_mobile_2x/public/slideshow/grund._baenken.jpg?itok=fPkFkMTg&amp;timestamp=1600518189 218w" alt="Opholdsrum på BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/grund.baenken2.jpg?itok=bR82pZTo&amp;timestamp=1600518213 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/grund.baenken2.jpg?itok=Qw3erd51&amp;timestamp=1600518213 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/grund.baenken2.jpg?itok=UUPdcat1&amp;timestamp=1600518213 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/grund.baenken2.jpg?itok=Sfy1ATbI&amp;timestamp=1600518213 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/grund.baenken2.jpg?itok=fdexKfaP&amp;timestamp=1600518213 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/grund.baenken2.jpg?itok=e4eLPZDg&amp;timestamp=1600518213 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/grund.baenken2.jpg?itok=VYfoejRt&amp;timestamp=1600518213 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/grund.baenken2.jpg?itok=78Px7B8a&amp;timestamp=1600518213 580w" alt="Opholdsrum på BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img09_grundskole.jpg?itok=AEd3p4FG&amp;timestamp=1600518267 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img09_grundskole.jpg?itok=GXW45ZoF&amp;timestamp=1600518267 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img09_grundskole.jpg?itok=EPcI8Kpr&amp;timestamp=1600518267 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img09_grundskole.jpg?itok=bgVF-fXZ&amp;timestamp=1600518267 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img09_grundskole.jpg?itok=kph2Fpll&amp;timestamp=1600518267 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img09_grundskole.jpg?itok=Y1WpyhD1&amp;timestamp=1600518267 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img09_grundskole.jpg?itok=y3ey560R&amp;timestamp=1600518267 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img09_grundskole.jpg?itok=dZyMyZ0m&amp;timestamp=1600518267 580w" alt="Stolerækker i auditorium på BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/grund.eksterieor.jpg?itok=o9Dn9JjY&amp;timestamp=1600518303 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/grund.eksterieor.jpg?itok=HNnWgZbF&amp;timestamp=1600518303 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/grund.eksterieor.jpg?itok=6CkgVAiu&amp;timestamp=1600518303 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/grund.eksterieor.jpg?itok=uLGs3kps&amp;timestamp=1600518303 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/grund.eksterieor.jpg?itok=V5fDpudc&amp;timestamp=1600518303 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/grund.eksterieor.jpg?itok=kqvbwTPs&amp;timestamp=1600518303 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/grund.eksterieor.jpg?itok=PAsKf3Xq&amp;timestamp=1600518303 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/grund.eksterieor.jpg?itok=qvE2blkJ&amp;timestamp=1600518303 580w" alt="Elevator i gård til BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/grund.trappe.jpg?itok=r-wIqDC6&amp;timestamp=1600518321 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/grund.trappe.jpg?itok=0DORLfSS&amp;timestamp=1600518321 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/grund.trappe.jpg?itok=WvgB77yg&amp;timestamp=1600518321 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/grund.trappe.jpg?itok=LoQ3k0mI&amp;timestamp=1600518321 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/grund.trappe.jpg?itok=XhaBhDuo&amp;timestamp=1600518321 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/grund.trappe.jpg?itok=sGeblTxR&amp;timestamp=1600518321 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/grund.trappe.jpg?itok=jTf6wZEr&amp;timestamp=1600518321 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/grund.trappe.jpg?itok=ANBaO6zP&amp;timestamp=1600518321 580w" alt="Trappetrin og gelænder på BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img10_grundskole.jpg?itok=_00SgyCW&amp;timestamp=1600634201 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img10_grundskole.jpg?itok=XvzAzMjU&amp;timestamp=1600634201 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img10_grundskole.jpg?itok=2HrJ2PL0&amp;timestamp=1600634201 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img10_grundskole.jpg?itok=Nn-QHrvC&amp;timestamp=1600634201 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img10_grundskole.jpg?itok=vK1fFQpF&amp;timestamp=1600634201 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img10_grundskole.jpg?itok=yRMdKMu1&amp;timestamp=1600634201 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img10_grundskole.jpg?itok=LO_IaSfw&amp;timestamp=1600634201 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img10_grundskole.jpg?itok=tAb_KGi-&amp;timestamp=1600634201 580w" alt="Stolerækker i auditorium på BFA-skolen" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/henriette_heise.jpg?itok=htFzbMnJ&amp;timestamp=1600518744 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/henriette_heise.jpg?itok=yuh0t1wo&amp;timestamp=1600518744 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/henriette_heise.jpg?itok=vlz6Gzsz&amp;timestamp=1600518744 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/henriette_heise.jpg?itok=_WtYndXB&amp;timestamp=1600518744 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/henriette_heise.jpg?itok=PLdsXrat&amp;timestamp=1600518744 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/henriette_heise.jpg?itok=uDKRxb7W&amp;timestamp=1600518744 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/henriette_heise.jpg?itok=Bu6uxUGi&amp;timestamp=1600518744 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/henriette_heise.jpg?itok=wWHJVjsy&amp;timestamp=1600518744 580w" alt="Professor og studieleder på BFA-uddannelsen Henriette Heise" /></div></div></div><div class="field-images portrait"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) 45.3125vw, (max-width: 1560px) 31.42857143vw, 440px" srcset="https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xxlarge_1x/public/slideshow/luca_0.jpg?itok=7ZNaHqo-&amp;timestamp=1600518769 430w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xxlarge_2x/public/slideshow/luca_0.jpg?itok=qqLOU2MP&amp;timestamp=1600518769 860w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xlarge_1x/public/slideshow/luca_0.jpg?itok=XZFano8T&amp;timestamp=1600518769 339w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_xlarge_2x/public/slideshow/luca_0.jpg?itok=xdA1GxnU&amp;timestamp=1600518769 678w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_large_1x/public/slideshow/luca_0.jpg?itok=4yWwjg2M&amp;timestamp=1600518769 293w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_large_2x/public/slideshow/luca_0.jpg?itok=BblkTswR&amp;timestamp=1600518769 586w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_mobile_1x/public/slideshow/luca_0.jpg?itok=V6o-rUOt&amp;timestamp=1600518769 109w, https://kunstakademiet.dk/sites/default/files/styles/portrait_breakpoints_theme_bks_mobile_2x/public/slideshow/luca_0.jpg?itok=E4ah7p3W&amp;timestamp=1600518769 218w" alt="Lektor Luca Frei" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/hannahheilmann.jpg?itok=zX8xmovZ&amp;timestamp=1600518717 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/hannahheilmann.jpg?itok=5YCaT3qV&amp;timestamp=1600518717 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/hannahheilmann.jpg?itok=6-gahOgE&amp;timestamp=1600518717 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/hannahheilmann.jpg?itok=z6jgwmzV&amp;timestamp=1600518717 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/hannahheilmann.jpg?itok=L7uvQMo2&amp;timestamp=1600518717 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/hannahheilmann.jpg?itok=rySHReEM&amp;timestamp=1600518717 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/hannahheilmann.jpg?itok=bwOkerW_&amp;timestamp=1600518717 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/hannahheilmann.jpg?itok=v3R3Jyhg&amp;timestamp=1600518717 580w" alt="Lektor Hannah Heilmann" /></div></div></div>        </div>
+    </div>
+    </div>
+  <div class="entity entity-paragraphs-item paragraphs-item-manchet entity-item-2" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-manchet">
+    <p>BFA-skolen udgør den 3-årige BFA-uddannelse (Bachelor of Fine Arts).<br />
+Efter afsluttet BFA kan studierne fortsættes på MFA (Master of Fine Arts).</p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-3" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <p>BFA-skolen er en tværfaglig skole hvis primære funktion er at støtte den studerende i at etablere en kunstpraksis med en værkproduktion, der foregår i et krydsfelt mellem egne undersøgelser, kunsthistorisk og kulturel viden og materialekendskab.</p>
+<p>På BFA-skolen lægges der derfor vægt på eksperimentering, studieteknik, research, og udfordring af processer, arbejdsmetoder, og materialebrug. Den studerende introduceres til et bredt udvalg af praksisformer, kunstopfattelser og medier.</p>
+<h3>Undervisningen </h3>
+<p>Undervisningen fokuserer på at etablere et sprog, der kan støtte den studerende i at navigere mellem kunstnerisk arbejde, teori, kunsthistorie, kultur og samfund. At reflektere over eget og andres arbejde er ligeledes en væsentlig del af studiet.</p>
+<p>BFA-skolen har mellem 80 og 90 studerende fordelt på tre årgange. De fire faste undervisere på BFA-skolen er alle udøvende billedkunstnere.</p>
+<p>Praktisk foregår undervisningen dels som praksisgrupper og dels som individuelle ateliersamtaler med udgangspunkt i den studerendes egen produktion. Desuden tilbydes der en række kurser, praktiske såvel som teoretiske. Det obligatoriske, teoretiske forløb omfatter undervisning i kunsthistorie og kunstteori.</p>
+<p>Der arrangeres desuden kurser i samarbejde med Billedkunstskolernes <a href="search/laboratorier.html">laboratorier</a>, der introducerer til billedkunstneriske discipliner som maleri, skulptur, keramik, video, mediekunst, lyd og foto.</p>
+<p><a href="https://semester.kunstakademiet.dk/" target="_blank"><strong>Aktuel semesterplan kan tilgås via dette link</strong></a></p>
+<p><strong>Tidligere studieplaner</strong><br /><a href="../sites/default/files/studieplan_bfa_f19.pdf" target="_blank">Studieplan BFA, Forår 2019</a><br /><a href="../sites/default/files/studieplan_bfa_e18.pdf" target="_blank">Studieplan BFA, Efterår 2018</a><br /><a href="../sites/default/files/studieplan_bfa_f18.pdf" target="_blank">Studieplan BFA, Forår 2018</a></p>
+<p><strong>Studieordning</strong><br /><a href="http://www.kunstakademiet.dk/sites/default/files/bfa_studieordning_2018.pdf" target="_blank">Studieordning 2018</a><br />
+---</p>
+<p>BFA-skolen<br />
+Peder Skramsgade 2B, 3. sal<br />
+1054 København K</p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-4 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/henriette_heise.jpg?itok=7hUjctxJ&amp;timestamp=1600518804 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/henriette_heise.jpg?itok=tNTEZOX3&amp;timestamp=1600518804 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/henriette_heise.jpg?itok=ig8I9iv4&amp;timestamp=1600518804 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/henriette_heise.jpg?itok=GNfmlBqU&amp;timestamp=1600518804 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/henriette_heise.jpg?itok=FP6AMbLg&amp;timestamp=1600518804 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/henriette_heise.jpg?itok=-UY-q9cY&amp;timestamp=1600518804 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/henriette_heise.jpg?itok=eoE_1SjS&amp;timestamp=1600518804 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/henriette_heise.jpg?itok=LI2rHEsI&amp;timestamp=1600518804 600w" alt="Professor og studieleder på BFA-uddannelsen Henriette Heise" />  </div>
+        <div class="column-middle">
+            <h3>
+  Henriette Heise </h3>
+            <span class="job-title-free">
+  Professor og studieleder </span>
+            
+  <div class="field-description">
+    <p>Henriette Heise er uddannet fra Kunstakademiets Billedkunstskoler og Slade School of Fine Art London. Heises billedkunstneriske praksis udfolder sig på tværs af medier, formater og materialer. Hun anvender således forskellige grafiske teknikker, herunder tegning og linoleumssnit, fotokopi, tekstil, maleri, plakater, fotografi, installation, skulptur, film/video, bøger, internet og performance.</p>
+<p>I Heises praksis kombineres formelle, materielle undersøgelser med et begær efter at udfordre det æstetiske sprog. Heises værker kredser ofte om egentlig meget simple handlinger og om dagligdags genstande. På et mere abstrakt plan interesserer hun sig for, hvordan rutiner og teknologier og de helt almindelige objekter, vi omgiver os med i vores hverdag, er med til at forme særlige adfærdsmønstre, erfaringsdannelser og følelser.<br />
+Heise arbejder både individuelt og kollektivt og var medstifter af projektrummet Info Centre i London, Det Fri Universitet i København og den kunstnerstyrede TV-station tv-tv.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='skavdDBRP' rel='nofollow'></a><script>var skavdDBRP = '#henriette.heise@kun#stakademiet.dk';
+var skavdDBRP = skavdDBRP.split('#');
+document.getElementById('skavdDBRP').innerHTML = skavdDBRP[1]+skavdDBRP[2]+skavdDBRP[0];
+document.getElementById('skavdDBRP').href = 'mailto:'+skavdDBRP[1]+skavdDBRP[2]+skavdDBRP[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4623</p>            <h4>Link</h4>            <p>
+  <a href="http://henrietteheise.net/" target="_blank">henrietteheise.net</a></p>        </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-5 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/hannahheilmann_kvadrat.jpg?itok=kVi4bVd9&amp;timestamp=1600616302 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/hannahheilmann_kvadrat.jpg?itok=LF3F_TBe&amp;timestamp=1600616302 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/hannahheilmann_kvadrat.jpg?itok=1B88N7xc&amp;timestamp=1600616302 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/hannahheilmann_kvadrat.jpg?itok=hLPsUTqI&amp;timestamp=1600616302 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/hannahheilmann_kvadrat.jpg?itok=lI5EAIAJ&amp;timestamp=1600616302 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/hannahheilmann_kvadrat.jpg?itok=0dfZiKJv&amp;timestamp=1600616302 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/hannahheilmann_kvadrat.jpg?itok=CJA7cTKp&amp;timestamp=1600616302 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/hannahheilmann_kvadrat.jpg?itok=mck7cvnc&amp;timestamp=1600616302 600w" alt="Lektor Hannah Heilmann" />  </div>
+        <div class="column-middle">
+            <h3>
+  Hannah Heilmann</h3>
+            <span class="job-title-free">
+  Lektor</span>
+            
+  <div class="field-description">
+    <p>Lektor Hannah Heilmann arbejder i et felt mellem klassiske og performative discipliner hvor kunstbegrebet og kunstnerrollen er til forhandling. Værkerne udfolder sig ofte som <em>mise-en-scenes</em>, iscenesættelser, hvor hierarkiet mellem rekvisitter, kostumer, social udveksling og færdige værker smuldrer. Heilmanns praksis forsøger at diskutere Subjektiviteten; en diskussion som på én gang er en metode og et indhold.</p>
+<p>Heilmann er en del af den københavnske produktionsunit <em>TOVES, </em>driver radio-værket General Booty of Work, og var med i gruppen <em>Ingen Frygt </em>(2001-10), der kanaliserede en vestlig underbevidstheds længsler, død og kapitalisme ind i installationer, selvportrætter, fester og musikvideoer.</p>
+<p>Heilmann har tidligere undervist på Billedkunstskolernes Grundskole, Det Fynske Kunstakademi og Ærø Kunsthøjskole.<br />
+Heilmann har en lang række performances, solo- og gruppeudstillinger fra internationale museer og udstillingssteder bag sig. Hun er uddannet cand. mag. i kunsthistorie fra Københavns Universitet.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='sKobHqFAM' rel='nofollow'></a><script>var sKobHqFAM = 'kunstakademiet.d##k#hannah.heilmann@';
+var sKobHqFAM = sKobHqFAM.split('#');
+document.getElementById('sKobHqFAM').innerHTML = sKobHqFAM[3]+sKobHqFAM[0]+sKobHqFAM[2]+sKobHqFAM[1];
+document.getElementById('sKobHqFAM').href = 'mailto:'+sKobHqFAM[3]+sKobHqFAM[0]+sKobHqFAM[2]+sKobHqFAM[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4625</p>            <h4>Link</h4>            <p>
+  <a href="http://hannahheilmann.dk/">HannahHeilmann.dk</a></p>        </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-6 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/luca.jpg?itok=I-W1rc39&amp;timestamp=1600518885 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/luca.jpg?itok=DUJOwHKB&amp;timestamp=1600518885 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/luca.jpg?itok=LCkC_chC&amp;timestamp=1600518885 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/luca.jpg?itok=6Ak-VtJv&amp;timestamp=1600518885 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/luca.jpg?itok=qyKpJUl8&amp;timestamp=1600518885 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/luca.jpg?itok=s2ozv5JI&amp;timestamp=1600518885 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/luca.jpg?itok=5_HrQ8hV&amp;timestamp=1600518885 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/luca.jpg?itok=WwQgZVaP&amp;timestamp=1600518885 600w" alt="Lektor Luca Frei" />  </div>
+        <div class="column-middle">
+            <h3>
+  Luca Frei</h3>
+            <span class="job-title-free">
+  Lektor</span>
+            
+  <div class="field-description">
+    <p>Lektor Luca Frei er uddannet billedkunstner på School of Industrial Art, Lugano, der bygger på Bauhaus-skolens principper, Drawing &amp; Painting skole og proto-akademi ved Edinburgh College of Art samt Fri Konst ved Malmö Art Academy.</p>
+<p>Frei arbejder i et bredt felt af medier fra tegning, collage og maleri til installation, performance, video og fotografi og skaber ofte sin kunst til helt specifikke kontekster. Gennemgående temaer er tid, relationen mellem krop og arkitektur samt forholdet mellem det private og det offentlige rum. I Freis udstillingsdesigns er publikumsdeltagelse og dialog gennemgående principper, ligesom grænsen mellem kunsten som autonom æstetisk praksis og fælles åben proces ofte er i spil.</p>
+<p>Frei har tidligere afholdt workshops og været gæsteunderviser, ekstern eksaminator samt censor på Kunstakademiets Billedkunstskoler. Hans undervisningsprincipper bygger på en balance mellem individets og kollektivets udvikling og gensidige dialog.<br />
+Frei har en lang række solo- og gruppeudstillinger bag sig fra internationale museer og udstillingssteder i både Europa, USA og Sydamerika.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='RBMqnkGbD' rel='nofollow'></a><script>var RBMqnkGbD = 'luca.frei@kunstakademiet.dk#';
+var RBMqnkGbD = RBMqnkGbD.split('#');
+document.getElementById('RBMqnkGbD').innerHTML = RBMqnkGbD[0]+RBMqnkGbD[1];
+document.getElementById('RBMqnkGbD').href = 'mailto:'+RBMqnkGbD[0]+RBMqnkGbD[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4626</p>            <h4>Link</h4>            <p>
+  <a href="http://lucafrei.info/">lucafrei.info</a></p>        </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-7 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_ed_3_7.jpg?itok=kGmDEcjH&amp;timestamp=1602254978 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_ed_3_7.jpg?itok=jhg4tcz0&amp;timestamp=1602254978 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_ed_3_7.jpg?itok=JDELVvJL&amp;timestamp=1602254978 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_ed_3_7.jpg?itok=2TInqXlH&amp;timestamp=1602254978 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_ed_3_7.jpg?itok=6GPvTUob&amp;timestamp=1602254978 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_ed_3_7.jpg?itok=hJezbS2E&amp;timestamp=1602254978 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_ed_3_7.jpg?itok=PgACA5yk&amp;timestamp=1602254978 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_ed_3_7.jpg?itok=vksMZ8Uh&amp;timestamp=1602254978 600w" alt="Personalebillede mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Jakob Kolding</h3>
+            <span class="job-title-free">
+  Undervisningsassistent</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='borZswCYa' rel='nofollow'></a><script>var borZswCYa = 'olding@#.dk#jakob.k#kunstak#ademiet#';
+var borZswCYa = borZswCYa.split('#');
+document.getElementById('borZswCYa').innerHTML = borZswCYa[2]+borZswCYa[0]+borZswCYa[3]+borZswCYa[4]+borZswCYa[1]+borZswCYa[5];
+document.getElementById('borZswCYa').href = 'mailto:'+borZswCYa[2]+borZswCYa[0]+borZswCYa[3]+borZswCYa[4]+borZswCYa[1]+borZswCYa[5];
+</script>
+ 
+                                                            </div>
+</div>
+    </section>
+</article>
+                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Billedkunstskolerne <br />
+Det Kongelige Danske Kunstakademi</strong><br />
+Kongens Nytorv 1, 1050 København K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">Se på google maps</a><br /><a id='YGIWrViRP' rel='nofollow'></a><script>var YGIWrViRP = 'info@kun#iet.dk##stakadem';
+var YGIWrViRP = YGIWrViRP.split('#');
+document.getElementById('YGIWrViRP').innerHTML = YGIWrViRP[0]+YGIWrViRP[3]+YGIWrViRP[1]+YGIWrViRP[2];
+document.getElementById('YGIWrViRP').href = 'mailto:'+YGIWrViRP[0]+YGIWrViRP[3]+YGIWrViRP[1]+YGIWrViRP[2];
+</script>
+ 
+    <a target="_blank" href="https://www.was.digst.dk/kunstakademiet-dk">Tilgængelighedserklæring</a></p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Tilmeld nyhedsbrev" placeholder="Tilmeld nyhedsbrev"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../sites/default/files/advagg_js/js__Z4-v_NpbsHM90rMoyj-KBqp5sYDtolbNNTDCGcc8uNI__IKgK4uD1nYOeHkb4gh_2OAWuynD0OO_dsM1AcDbrRhs__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.45.delaye"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"da\/","ajaxPageState":{"theme":"bks","theme_token":"rKv62OjqS8cP5b-xV0nDX7r-sBXwEOnLmSi9k1ChMwA"},"urlIsAjaxTrusted":{"\/da\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.46.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/da.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/da/bfa-skolen by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:13:24 GMT -->
+</html>

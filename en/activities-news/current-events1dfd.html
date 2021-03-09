@@ -1,0 +1,488 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- Mirrored from kunstakademiet.dk/en/activities-news/current-events?type=64&page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:33:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+	<title>Current events | Schools of Visual Arts - The Royal Danish Academy of Art</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=../../da/search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA___mV22HWHOeZIDmMmIdfVrL24tRvtCB1LwlMGQtwhE2M.4d.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="en" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-activities-news page-activities-news-current-events i18n-en" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Search</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/en/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-_KFrNBs_pksso-pnIK6G8R5UicM9g_sZ3JzJfNyjmxo" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1055 crumb-count-1">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../../en.html" title="Home" rel="home"
+                   id="logo">Schools of Visual Arts - The Royal Danish Academy of Art</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first"><a href="../../da/aktiviteter-og-nyheder/aktuelt.html" class="language-link" xml:lang="da">DK</a></li>
+<li class="en last active"><a href="current-events.html" class="language-link active" xml:lang="en">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="../activities-news.html">Activities &amp; News</a></div></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../en.html" title="">Frontpage</a></li>
+<li class="expanded"><a href="../schools-visual-arts.html">Schools of Visual Arts</a><ul class="menu"><li class="first collapsed"><a href="../schools-visual-arts/history-schools-visual-arts.html">The History of Schools of Visual Arts</a></li>
+<li class="leaf"><a href="../schools-visual-arts/academic-and-artistic-research.html">Artistic and academic research</a></li>
+<li class="leaf"><a href="../schools-visual-arts/education.html">The Education</a></li>
+<li class="collapsed"><a href="../schools-visual-arts/admission.html">Admission</a></li>
+<li class="collapsed"><a href="../schools-visual-arts/international-and-exchange.html">Exchange</a></li>
+<li class="leaf"><a href="../schools-visual-arts/general-information-applicants.html">Student Counselling</a></li>
+<li class="leaf"><a href="../organization/collaborations.html">Collaborations</a></li>
+<li class="leaf"><a href="../schools-visual-arts/advisory-board.html">The Advisory Board</a></li>
+<li class="last leaf"><a href="../schools-visual-arts/councils-and-boards.html">Councils and Boards</a></li>
+</ul></li>
+<li class="expanded"><a href="../schools-and-institutes.html">Schools and Institutes</a><ul class="menu"><li class="first leaf"><a href="../schools-and-institutes/bfa-school.html">The BFA School</a></li>
+<li class="leaf"><a href="../schools-and-institutes/school-sculpture-charlottenborg.html">The School of Sculpture Charlottenborg</a></li>
+<li class="leaf"><a href="../schools-and-institutes/school-painting-and-pictorial-practices.html">The School of Painting and Pictorial Practices</a></li>
+<li class="leaf"><a href="../schools-and-institutes/school-media-arts.html">The School of Media Arts</a></li>
+<li class="leaf"><a href="../schools-and-institutes/school-conceptual-and-contextual-practices.html">The School of Conceptual and Contextual Practices</a></li>
+<li class="last leaf"><a href="../schools-and-institutes/laboratory-art-research.html">The Laboratory for Art Research</a></li>
+</ul></li>
+<li class="expanded"><a href="../laboratories.html">Laboratories</a><ul class="menu"><li class="first collapsed"><a href="../laboratories/laboratory-sculpture.html">Laboratory for Sculpture</a></li>
+<li class="collapsed"><a href="../laboratories/laboratory-print-and-painting.html">Laboratory for Print and Painting</a></li>
+<li class="last collapsed"><a href="../laboratories/laboratory-media.html">Laboratory for Media</a></li>
+</ul></li>
+<li class="expanded"><a href="../activities-news.html">Activities &amp; News</a><ul class="menu"><li class="first leaf"><a href="current-events.html" title="" class="active">Current</a></li>
+<li class="leaf"><a href="kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="exhibition-space-q.html">The Exhibition Space Q</a></li>
+<li class="leaf"><a href="afgang-mfa-degree-show.html">Afgang (MFA Degree Show)</a></li>
+<li class="leaf"><a href="rundgang-open-house.html">Rundgang (Open House)</a></li>
+<li class="collapsed"><a href="research-projects.html">Research projects</a></li>
+<li class="leaf"><a href="projects.html" title="">Projects</a></li>
+<li class="collapsed"><a href="publications.html">Publications</a></li>
+<li class="last leaf"><a href="newsletter.html">Newsletter</a></li>
+</ul></li>
+<li class="expanded"><a href="../organization-and-contact.html">The Organization and Contact</a><ul class="menu"><li class="first leaf"><a href="../organization/organizational-chart.html">Organizational Chart</a></li>
+<li class="leaf"><a href="../organization/rector.html">Rector</a></li>
+<li class="leaf"><a href="../organization/administration-and-operating-staff.html">Administration and operating staff</a></li>
+<li class="leaf"><a href="../organization/faculty.html">Faculty</a></li>
+<li class="leaf"><a href="../organization/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../organization/individual-and-community.html">Strategie</a></li>
+<li class="leaf"><a href="../organization/reports.html">Reports</a></li>
+<li class="leaf"><a href="../schools-visual-arts/sponsors.html">Sponsors</a></li>
+<li class="last leaf"><a href="../organization/data-protection-officer.html">Data Protection Officer</a></li>
+</ul></li>
+<li class="leaf"><a href="../press-room.html">Press room</a></li>
+<li class="expanded"><a href="../contact.html">Contact</a><ul class="menu"><li class="first leaf"><a href="../contact/billing.html">Billing</a></li>
+<li class="leaf"><a href="../contact/rent-location.html">Rent a location</a></li>
+<li class="leaf"><a href="../contact/guided-tours.html">Guided Tours</a></li>
+<li class="last collapsed"><a href="../contact/job-vacancies.html">Job vacancies</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/Schools-of-Visual-Arts-The-Royal-Danish-Academy-of-Fine-Arts-1567893650118817" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1055 ">
+                <div class="content-container">
+                        <h1>Current events</h1>                            	
+	
+	
+		<div class="view-overview view view-current-events view-id-current_events view-display-id-i18n_page_1 view-dom-id-c12b5995e9e8920e084b161c9be95eca">
+        
+      <div class="view-filters">
+      <form class="ctools-auto-submit-full-form" action="https://kunstakademiet.dk/en/activities-news/current-events" method="get" id="views-exposed-form-current-events-i18n-page-1" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-type-wrapper" class="views-exposed-widget views-widget-filter-field_type_tid">
+                  <label for="edit-type">
+            Sort by category          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-type">
+ <div class="bef-select-as-links"><div class="form-item">
+ <div id="edit-type-all" class="form-item form-type-bef-link form-item-edit-type-all">
+ <a href="current-eventsea5b.html?type=All">All</a>
+</div>
+<div id="edit-type-64" class="form-item form-type-bef-link form-item-edit-type-64">
+ <a href="current-events2623.html?type=64" class="active">Event</a>
+</div>
+<div id="edit-type-66" class="form-item form-type-bef-link form-item-edit-type-66">
+ <a href="current-eventsd633.html?type=66">Lecture</a>
+</div>
+<div id="edit-type-63" class="form-item form-type-bef-link form-item-edit-type-63">
+ <a href="current-eventsb708.html?type=63">News</a>
+</div>
+<div id="edit-type-65" class="form-item form-type-bef-link form-item-edit-type-65">
+ <a href="current-events2de1.html?type=65">Exhibition</a>
+</div>
+
+</div>
+<select style="display: none;" id="edit-type" name="type" class="form-select"><option value="All">All</option><option value="64" selected="selected">Event</option><option value="66">Lecture</option><option value="63">News</option><option value="65">Exhibition</option></select><input type="hidden" class="bef-new-value" name="type" value="64" /></div>
+</div>
+        </div>
+              </div>
+          <div id="edit-date-wrapper" class="views-exposed-widget views-widget-filter-date">
+                        <div class="views-widget">
+          <div id="edit-date" class="form-radios"><div class="bef-select-as-links"><div class="form-item">
+ <div id="edit-date-all" class="form-item form-type-bef-link form-item-edit-date-all">
+ <a href="current-eventse98b.html?type=64&amp;date=All" class="active">All</a>
+</div>
+<div id="edit-date-1" class="form-item form-type-bef-link form-item-edit-date-1">
+ <a href="current-events343a.html?type=64&amp;date=1">Earlier</a>
+</div>
+
+</div>
+<select style="display: none;" id="edit-date" name="date" class="form-select"><option value="All" selected="selected">All</option><option value="1">Earlier</option></select><input type="hidden" class="bef-new-value" name="date" value="All" /></div></div>        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input class="ctools-use-ajax ctools-auto-submit-click js-hide element-hidden form-submit" type="submit" id="edit-submit-current-events" name="" value="Apply" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  <div class="view-content-container">
+    <div class="view-content-inner-container">
+                      <div class="view-content">
+                    
+                  <article class="overview-item square">
+        <div class="field-images-wrapper"><a href="current-events/measurement-quantification.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="100vw" srcset="https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=2paNMAo-&amp;timestamp=1483709610 150w, https://kunstakademiet.dk/sites/default/files/styles/square_module_picture_empty_srcset_1x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=PgyEzEIc&amp;timestamp=1483709610 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=jVH5MyJz&amp;timestamp=1483709610 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=Gk4geuvz&amp;timestamp=1483709610 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=1FeoMu6X&amp;timestamp=1483709610 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=tQhIGiVl&amp;timestamp=1483709610 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/current/screen_shot_2017-01-06_at_12.54.43.png?itok=C73p7VYE&amp;timestamp=1483709610 600w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/measurement-quantification.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">01.09.2017&nbsp;to&nbsp;01.10.2017&nbsp;
+  10:00-16:00</span></div><h4>
+  Measurement  &amp; Quantification</h4><div class="summary"><p>A two-Day Seminar at The Royal Danish Academy of Fine Arts, Schools of Visual Arts, Copenhagen <br />
+ <br />
+With Miya Yoshida, Emmanuel Didier &amp; Katya Sander<br />
+ <br /></p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-l">
+        <div class="field-images-wrapper"><a href="current-events/workshop-writing-phd-proposals-practice-based-phds.html" class="link-wrapper"><div class="field-images no-image"></div></a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/workshop-writing-phd-proposals-practice-based-phds.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">12.22.2016&nbsp;
+  12:00-15:30</span></div><h4>
+  Workshop: Writing PhD Proposals for practice based PhDs</h4><div class="summary"><p>Thursday dec 22 from 12 – 15.30<br />
+Peder Skramsgade 2, in the courtyard – take elevator to 3G </p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-xl">
+        <div class="field-images-wrapper"><a href="current-events/opening-kingdoms-elgaland-vargaland.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) 40vw, 640px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_2x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=aQnK7qro&amp;timestamp=1478510164 640w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xxlarge_2x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=ZaNKYjVs&amp;timestamp=1478510164 1280w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_1x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=mTxyehEB&amp;timestamp=1478510164 390w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_2x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=3D6nPMpk&amp;timestamp=1478510164 780w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_1x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=cVl2xoSY&amp;timestamp=1478510164 320w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_1x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=Liayrgqv&amp;timestamp=1478510164 355w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_2x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=vWfmL5kq&amp;timestamp=1478510164 710w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_1x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=TOl4ujK4&amp;timestamp=1478510164 420w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_2x/public/current/elgaland-vargaland_flag-1024x646.jpg?itok=ZKEjspRD&amp;timestamp=1478510164 840w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/opening-kingdoms-elgaland-vargaland.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">11.09.2016&nbsp;
+  17:00-20:00</span></div><h4>
+  Opening: The Kingdoms of Elgaland-Vargaland</h4><div class="summary"><p>At Kunsthal Charlottenborg<br />
+Entrance: Free</p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-l">
+        <div class="field-images-wrapper"><a href="current-events/opening-talk-simone-aaberg-kaern-batalje.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="(max-width: 767px) calc(50vw - 15px), (max-width: 1560px) 26.25vw, 420px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_2x/public/current/batalje1-ws-karussel.jpg?itok=lMbEdE3d&amp;timestamp=1475503279 640w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xxlarge_2x/public/current/batalje1-ws-karussel.jpg?itok=cD4L64ch&amp;timestamp=1475503279 1280w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_1x/public/current/batalje1-ws-karussel.jpg?itok=DGyAuoNC&amp;timestamp=1475503279 390w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_2x/public/current/batalje1-ws-karussel.jpg?itok=8mj9f-eb&amp;timestamp=1475503279 780w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_1x/public/current/batalje1-ws-karussel.jpg?itok=OWDV2KJZ&amp;timestamp=1475503279 320w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_1x/public/current/batalje1-ws-karussel.jpg?itok=Zyz74ygC&amp;timestamp=1475503279 355w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_2x/public/current/batalje1-ws-karussel.jpg?itok=9oMVaRcP&amp;timestamp=1475503279 710w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_1x/public/current/batalje1-ws-karussel.jpg?itok=6AO9zIwq&amp;timestamp=1475503279 420w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_2x/public/current/batalje1-ws-karussel.jpg?itok=EAC-W_6z&amp;timestamp=1475503279 840w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/opening-talk-simone-aaberg-kaern-batalje.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">10.05.2016&nbsp;
+  17:00-20:00</span></div><h4>
+  Opening &amp; talk: Simone Aaberg Kærn - &quot;Batalje&quot;</h4><div class="summary"><p>At the opening of Simone Aaberg Kærn's exhibition "Batalje" (Skirmish) at Kunsthal Charlottenborg on October 5 not only a seven meter long, tri-part painting of the Danish war effort in Libya is re</p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-xl">
+        <div class="field-images-wrapper"><a href="current-events/presentation-robert-aiki-aubrey-lowe.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="(max-width: 767px) calc(100vw - 20px), (max-width: 1560px) 40vw, 640px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_2x/public/current/image002.png?itok=38-EI0AU&amp;timestamp=1474698642 640w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xxlarge_2x/public/current/image002.png?itok=b9r7hXhc&amp;timestamp=1474698642 1280w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_1x/public/current/image002.png?itok=RoZmpL7v&amp;timestamp=1474698642 390w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_2x/public/current/image002.png?itok=0s-Ycncx&amp;timestamp=1474698642 780w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_1x/public/current/image002.png?itok=NFURlxdQ&amp;timestamp=1474698642 320w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_1x/public/current/image002.png?itok=1dxUi8gf&amp;timestamp=1474698642 355w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_2x/public/current/image002.png?itok=XM23_RwP&amp;timestamp=1474698642 710w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_1x/public/current/image002.png?itok=tjgZQBSn&amp;timestamp=1474698642 420w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_2x/public/current/image002.png?itok=4uG8HBjp&amp;timestamp=1474698642 840w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/presentation-robert-aiki-aubrey-lowe.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">09.28.2016&nbsp;
+  19:00</span></div><h4>
+  Presentation: Robert Aiki Aubrey Lowe</h4><div class="summary"><p>Charlottenborg Art Talks:<br />
+Presentation of audio-visuel installation by Robert Aiki Aubrey Lowe</p>
+</div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item square">
+        <div class="field-images-wrapper"><a href="current-events/notes-emptying-city.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="100vw" srcset="https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=QMa3Zarh&amp;timestamp=1450185531 150w, https://kunstakademiet.dk/sites/default/files/styles/square_module_picture_empty_srcset_1x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=KdhpEtzR&amp;timestamp=1450185531 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=IFQmoZTJ&amp;timestamp=1450185531 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=nFnVkBen&amp;timestamp=1450185531 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=mLZ7UsRQ&amp;timestamp=1450185531 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=Yfw5PG2I&amp;timestamp=1450185531 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/current/12374836_10153927093563054_5203710899607814612_o.jpg?itok=I0gwmAAd&amp;timestamp=1450185531 600w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/notes-emptying-city.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">12.16.2015&nbsp;
+  At 5pm</span></div><h4>
+  Notes on the Emptying of a City</h4><div class="summary"><p>Event, performance and discussion with Ashley Hunt December 16. at 5pm in 'Mediekunst Auditorium' (go to The Italian stairs). Ashley Hunt is guest lecturer at Schools of Visual Arts</p>
+</div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-xl">
+        <div class="field-images-wrapper"><a href="current-events/book-launch.html" class="link-wrapper"><div class="field-images no-image"></div></a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/book-launch.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">12.08.2015&nbsp;
+  At 6pm</span></div><h4>
+  Book launch </h4><div class="summary"><p>The School of Graphic Arts is hosting a book launch on December 8., 6 pm. at Festsalen where Stefan Banz will present his book: </p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item square">
+        <div class="field-images-wrapper"><a href="current-events/opening-signs-wonders-and-william-forsythe-company-others.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="100vw" srcset="https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/current/2015-10-25_00072.jpeg?itok=c3cQ8kW_&amp;timestamp=1446481394 150w, https://kunstakademiet.dk/sites/default/files/styles/square_module_picture_empty_srcset_1x/public/current/2015-10-25_00072.jpeg?itok=U7hKTPI7&amp;timestamp=1446481394 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/current/2015-10-25_00072.jpeg?itok=NWMEe0WR&amp;timestamp=1446481394 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/current/2015-10-25_00072.jpeg?itok=Cg74Ezcq&amp;timestamp=1446481394 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/current/2015-10-25_00072.jpeg?itok=K3XLtvf-&amp;timestamp=1446481394 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/current/2015-10-25_00072.jpeg?itok=pKvYgTgx&amp;timestamp=1446481394 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/current/2015-10-25_00072.jpeg?itok=bROCcIan&amp;timestamp=1446481394 600w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/opening-signs-wonders-and-william-forsythe-company-others.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">11.20.2015&nbsp;
+  7-10 pm</span></div><h4>
+  Opening: &quot;Signs &amp; Wonders&quot; and &quot;William Forsythe – In the Company of Others&quot;</h4><div class="summary"><p>Grand opening of Michael Stevensons solo exhibition <em>Signs &amp; Wonders</em> and <em>William Forsythe –</em> <em>In the Company of Others</em> at Kunsthal Charlottenborg</p>
+</div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+        
+                  <article class="overview-item landscape-l">
+        <div class="field-images-wrapper"><a href="current-events/william-forsythe-and-daniel-birnbaum-conversation.html" class="link-wrapper">
+  <div class="field-images">
+    <img  sizes="(max-width: 767px) calc(50vw - 15px), (max-width: 1560px) 26.25vw, 420px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_2x/public/current/forsythe_suspense2.jpg?itok=lolYi50m&amp;timestamp=1447318694 640w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xxlarge_2x/public/current/forsythe_suspense2.jpg?itok=W5NIp8ud&amp;timestamp=1447318694 1280w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_1x/public/current/forsythe_suspense2.jpg?itok=E224P2mn&amp;timestamp=1447318694 390w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_xlarge_2x/public/current/forsythe_suspense2.jpg?itok=M_dXy0yP&amp;timestamp=1447318694 780w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_large_1x/public/current/forsythe_suspense2.jpg?itok=JTzmGUEN&amp;timestamp=1447318694 320w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_1x/public/current/forsythe_suspense2.jpg?itok=-w1VpKju&amp;timestamp=1447318694 355w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_mobile_2x/public/current/forsythe_suspense2.jpg?itok=XDjddpvL&amp;timestamp=1447318694 710w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_1x/public/current/forsythe_suspense2.jpg?itok=t9TBfuhS&amp;timestamp=1447318694 420w, https://kunstakademiet.dk/sites/default/files/styles/landscape_l_breakpoints_theme_bks_special_extra_2x/public/current/forsythe_suspense2.jpg?itok=MinL-Vuv&amp;timestamp=1447318694 840w" />  </div>
+</a></div>
+  <span class="field-type">
+    Event  </span>
+<a href="current-events/william-forsythe-and-daniel-birnbaum-conversation.html" class="link-wrapper"><div class="field-date clearfix"><span class="date-display-single">11.20.2015&nbsp;
+  At 5-7pm</span></div><h4>
+  William Forsythe and Daniel Birnbaum in conversation</h4><div class="summary"><p>On the occasion of the exhibition <em>William Forsythe – In the Company of Others</em>, Kunsthal Charlottenborg and The Danish National School of Performing Arts have invited director of Moderna Mu</p></div>        <span class="read-more">See event</span>
+        </a>
+    </article>
+              </div>
+                  <div class="view-pager-container">
+                      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="current-events2623.html?type=64">first</a></li>
+<li class="pager-previous"><a href="current-events2623.html?type=64">previous</a></li>
+<li class="pager-item"><a title="Go to page 1" href="current-events2623.html?type=64">1</a></li>
+<li class="pager-current">2</li>
+<li class="pager-item"><a title="Go to page 3" href="current-eventsd602.html?type=64&amp;page=2">3</a></li>
+<li class="pager-next"><a href="current-eventsd602.html?type=64&amp;page=2">next</a></li>
+<li class="pager-last last"><a href="current-eventsd602.html?type=64&amp;page=2">last</a></li>
+</ul></div>                  </div>
+    </div>
+</div>
+
+    
+  
+  
+  
+</div>                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/Schools-of-Visual-Arts-The-Royal-Danish-Academy-of-Fine-Arts-1567893650118817" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Schools of Visual Arts <br />
+The Royal Danish Academy of Art</strong><br />
+Kongens Nytorv 1, 1050 Copenhagen K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">See on google maps</a><br /><a id='McqRGkEZT' rel='nofollow'></a><script>var McqRGkEZT = 'o@k#tak#inf#mie#k#t.d##uns#ade';
+var McqRGkEZT = McqRGkEZT.split('#');
+document.getElementById('McqRGkEZT').innerHTML = McqRGkEZT[2]+McqRGkEZT[0]+McqRGkEZT[7]+McqRGkEZT[1]+McqRGkEZT[8]+McqRGkEZT[3]+McqRGkEZT[5]+McqRGkEZT[4]+McqRGkEZT[6];
+document.getElementById('McqRGkEZT').href = 'mailto:'+McqRGkEZT[2]+McqRGkEZT[0]+McqRGkEZT[7]+McqRGkEZT[1]+McqRGkEZT[8]+McqRGkEZT[3]+McqRGkEZT[5]+McqRGkEZT[4]+McqRGkEZT[6];
+</script>
+ 
+    </p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Subscribe to our newsletter" placeholder="Subscribe to our newsletter"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../../sites/default/files/advagg_js/js__JQt0iBxYjZV2Wmx54wTy2XWbkqJF_xy0aPjckkLmlwc__WkqFhSGcY1FdDN3WG6NLjzHRQXUgCYmHo4RHG2nYQ9I___mV22HWHOeZIDmMmIdfVrL24tRvtCB1LwlMGQtwhE2M.16d.delay"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"bks","theme_token":"uqIydIMyH7HAnLH-xDJdfLOPw96ECf5ma9QMRuBBt8o"},"better_exposed_filters":{"datepicker":false,"slider":false,"settings":[],"autosubmit":false,"views":{"current_events":{"displays":{"i18n_page_1":{"filters":{"type":{"required":false},"date":{"required":false}}}}}}},"urlIsAjaxTrusted":{"\/en\/activities-news\/current-events":true,"\/en\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY___mV22HWHOeZIDmMmIdfVrL24tRvtCB1LwlMGQtwhE2M.84.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/en.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/en/activities-news/current-events?type=64&page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:33:16 GMT -->
+</html>

@@ -1,0 +1,1056 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<!-- Mirrored from kunstakademiet.dk/da/organisation/administration-og-drift by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:07:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="administration-og-drift.html" />
+<link rel="shortlink" href="../node/1132.html" />
+	<title>Administration og drift | Billedkunstskolerne - Det Kongelige Danske Kunstakademi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=../search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.14.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1132 node-type-basic-page i18n-da" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Søg</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/da/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-PH45cDb2tOZZP1ndvk8TUMPbY8B3niOLLCN5oGF9XXg" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1103 crumb-count-1">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../../da.html" title="Forside" rel="home"
+                   id="logo">Billedkunstskolerne - Det Kongelige Danske Kunstakademi</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first active"><a href="administration-og-drift.html" class="language-link active" xml:lang="da" title="Administration og drift">DK</a></li>
+<li class="en last"><a href="../../en/organization/administration-and-operating-staff.html" class="language-link" xml:lang="en" title="Administration and operating staff">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"><h2 class="element-invisible">Du er her</h2><div class="breadcrumb"><a href="../organisation.html">Organisation</a></div></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../da.html" title="">Forside</a></li>
+<li class="expanded"><a href="../billedkunstskolerne.html">Billedkunstskolerne</a><ul class="menu"><li class="first collapsed"><a href="../billedkunstskolerne/billedkunstskolernes-historie.html">Billedkunstskolernes historie</a></li>
+<li class="leaf"><a href="samarbejder.html">Samarbejder</a></li>
+<li class="leaf"><a href="../billedkunstskolerne/aftagerpanel.html">Aftagerpanel</a></li>
+<li class="last leaf"><a href="../billedkunstskolerne/rad-og-naevn.html">Råd og nævn</a></li>
+</ul></li>
+<li class="expanded"><a href="../studier.html">Studier</a><ul class="menu"><li class="first leaf"><a href="../studier/uddannelsen.html">Uddannelsen</a></li>
+<li class="leaf"><a href="../studier/forskning-og-kunstnerisk-udvikling.html">Forskning og kunstnerisk udvikling</a></li>
+<li class="collapsed"><a href="../skoler-og-institutter/laboratorier.html">Laboratorier</a></li>
+<li class="collapsed"><a href="../studier/optagelse.html">Optagelse</a></li>
+<li class="collapsed"><a href="../studier/internationalt-og-udveksling.html">Internationalt og udveksling</a></li>
+<li class="last leaf"><a href="../studier/laboratoriet-kunstens-forskning.html">Laboratoriet for Kunstens Forskning</a></li>
+</ul></li>
+<li class="expanded"><a href="../aktiviteter-og-nyheder.html">Aktiviteter og nyheder</a><ul class="menu"><li class="first leaf"><a href="../aktiviteter-og-nyheder/aktuelt.html">Aktuelt</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/udstillingsstedet-q.html">Udstillingsstedet Q</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/afgang.html">Afgang</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/rundgang.html">Rundgang</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/forskningsprojekter.html">Forskningsprojekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/projekter.html">Projekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">Billedkunstskolernes Forlag</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/nyhedsbreve.html">Nyhedsbreve</a></li>
+<li class="last collapsed"><a href="../aktiviteter-og-nyheder/charlottenborg-art.html">Charlottenborg Art</a></li>
+</ul></li>
+<li class="expanded"><a href="../organisation-og-kontakt.html">Organisation og kontakt</a><ul class="menu"><li class="first leaf"><a href="../organisation.html">Organisation</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/fakturering.html">Fakturering</a></li>
+<li class="leaf"><a href="rektorat.html">Rektorat</a></li>
+<li class="leaf"><a href="administration-og-drift.html" class="active">Administration og drift</a></li>
+<li class="leaf"><a href="fakultet.html">Fakultet</a></li>
+<li class="leaf"><a href="kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="rapporter.html">Rapporter</a></li>
+<li class="leaf"><a href="sponsorer.html">Sponsorer</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/databeskyttelsesradgiver.html">Databeskyttelsesrådgiver</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/kulturministeriets-whistleblowerordning.html">Kulturministeriets whistleblowerordning</a></li>
+<li class="collapsed"><a href="../kontakt/ledige-stillinger.html">Ledige stillinger</a></li>
+<li class="last leaf"><a href="../organisation-og-kontakt/strategi-2019-22.html">Strategi</a></li>
+</ul></li>
+<li class="leaf"><a href="../presserum.html">Presserum</a></li>
+<li class="expanded"><a href="../rundvisning-og-udlejning.html">Rundvisning og udlejning</a><ul class="menu"><li class="first leaf"><a href="../kontakt/udlejning-af-lokaler.html">Udlejning af lokaler</a></li>
+<li class="last leaf"><a href="../kontakt/rundvisning.html">Rundvisning</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1103 ">
+                <div class="content-container">
+                                                    	
+	
+	
+		<article id="node-1132"
+         class="node node-basic-page l-article clearfix" about="/da/organisation/administration-og-drift" typeof="sioc:Item foaf:Document">
+    <section>
+                    <div class="page-pager-item prev">
+                <a class="freepager-previous prev-next-pager" href="rektorat.html" rel="previous">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                <span class="pager-title">GÅ TIL</span>
+                    Rektorat                </span>
+                </a>
+            </div>
+                            <div class="page-pager-item next">
+                <a class="freepager-next prev-next-pager" href="fakultet.html" rel="next">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                    <span class="pager-title">GÅ TIL</span>
+                    Fakultet                </span>
+                </a>
+            </div>
+                        <h1>Administration og drift</h1>
+        
+
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-1 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_42.jpg?itok=02fPqQIA&amp;timestamp=1600680435 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_42.jpg?itok=Go3KL6XR&amp;timestamp=1600680435 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_42.jpg?itok=9HrV3gKj&amp;timestamp=1600680435 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_42.jpg?itok=296B2Voj&amp;timestamp=1600680435 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_42.jpg?itok=3S0Y7KO8&amp;timestamp=1600680435 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_42.jpg?itok=TN97SMoG&amp;timestamp=1600680435 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_42.jpg?itok=qPMds0qS&amp;timestamp=1600680435 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_42.jpg?itok=Cn_XOWxa&amp;timestamp=1600680435 600w" alt="Billede af administrationschef Jes Gjørup mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Jes Gjørup</h3>
+            <span class="job-title-free">
+  Konstitueret rektor, Administrationschef</span>
+            
+  <div class="field-description">
+    <p>Administrationschefen har med reference til Rektor det overordnede ansvar for institutionens administration og udgør sammen med Rektor, Prorektor og Kunsthalsdirektøren institutionens øverste ledelse.<br />
+Administrationschefen har desuden det overordnede personaleansvar for alle teknisk-administrative medarbejdere i sekretariat, studieadministration og driftenhed. Blandt administrationschefens hovedopgaver kan nævnes: økonomistyring, resultatkontrakt og årsrapportering, løn- og personale administration, juridiske sager og bygningsdrift.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='dHfnNECvz' rel='nofollow'></a><script>var dHfnNECvz = '#jes.gjoeru#demiet.dk#p@kunstaka';
+var dHfnNECvz = dHfnNECvz.split('#');
+document.getElementById('dHfnNECvz').innerHTML = dHfnNECvz[1]+dHfnNECvz[3]+dHfnNECvz[2]+dHfnNECvz[0];
+document.getElementById('dHfnNECvz').href = 'mailto:'+dHfnNECvz[1]+dHfnNECvz[3]+dHfnNECvz[2]+dHfnNECvz[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4608</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-2 alone-heading" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <h2 class="alone-heading">Sekretariat</h2>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-3 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_26.jpg?itok=Dg2QjRJn&amp;timestamp=1600680791 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_26.jpg?itok=giP9Raei&amp;timestamp=1600680791 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_26.jpg?itok=XUfGMZ7s&amp;timestamp=1600680791 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_26.jpg?itok=nSF575RA&amp;timestamp=1600680791 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_26.jpg?itok=4Xi9wWPY&amp;timestamp=1600680791 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_26.jpg?itok=I2KbU31k&amp;timestamp=1600680791 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_26.jpg?itok=5GEtttnB&amp;timestamp=1600680791 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_26.jpg?itok=ZgUAsftp&amp;timestamp=1600680791 600w" alt="Billede af ansvarlig for HR-området, jura samt organisationsudvikling Birgitte Herfelt mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Birgitte Herfelt</h3>
+            <span class="job-title-free">
+  HR og organisationsudvikling</span>
+            
+  <div class="field-description">
+    <p>Ansvarlig for HR-området, jura samt organisationsudvikling. Sekretær for Samarbejdsudvalget.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='ViFsKuglM' rel='nofollow'></a><script>var ViFsKuglM = '#birgitte.herfelt@k#unstakademiet.dk';
+var ViFsKuglM = ViFsKuglM.split('#');
+document.getElementById('ViFsKuglM').innerHTML = ViFsKuglM[1]+ViFsKuglM[2]+ViFsKuglM[0];
+document.getElementById('ViFsKuglM').href = 'mailto:'+ViFsKuglM[1]+ViFsKuglM[2]+ViFsKuglM[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4606</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-4 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/anne_kvadrat.jpg?itok=BVeDBTC4&amp;timestamp=1600614989 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/anne_kvadrat.jpg?itok=dZrLDGVo&amp;timestamp=1600614989 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/anne_kvadrat.jpg?itok=Sa7LraYX&amp;timestamp=1600614989 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/anne_kvadrat.jpg?itok=agPvP8w6&amp;timestamp=1600614989 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/anne_kvadrat.jpg?itok=o1ANcGCT&amp;timestamp=1600614989 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/anne_kvadrat.jpg?itok=sEDQe-Nt&amp;timestamp=1600614989 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/anne_kvadrat.jpg?itok=d__IgzB4&amp;timestamp=1600614989 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/anne_kvadrat.jpg?itok=dMGCi-mf&amp;timestamp=1600614989 600w" alt="Ledelsessekretær Anne Sckotz" />  </div>
+        <div class="column-middle">
+            <h3>
+  Anne Sckotz</h3>
+            <span class="job-title-free">
+  Ledelsessekretær</span>
+            
+  <div class="field-description">
+    <p>Servicerer rektor og administrationschef gennem mødeforplejning samt ledelsesstøtte til administrative opgaver, herunder kalenderstyring. Er endvidere journalansvarlig, forestår Inventarkontrol, legathåndtering samt bistår ved rekruttering af nye medarbejdere. Sekretær for Aftagerpanelet og ansvarlig for Statens Uddannelsesstøtte.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='lQPLRmJMF' rel='nofollow'></a><script>var lQPLRmJMF = '#unstakademiet#Anne.Sckotz@k#.dk';
+var lQPLRmJMF = lQPLRmJMF.split('#');
+document.getElementById('lQPLRmJMF').innerHTML = lQPLRmJMF[2]+lQPLRmJMF[1]+lQPLRmJMF[3]+lQPLRmJMF[0];
+document.getElementById('lQPLRmJMF').href = 'mailto:'+lQPLRmJMF[2]+lQPLRmJMF[1]+lQPLRmJMF[3]+lQPLRmJMF[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4611</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-5 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_79.jpg?itok=N_EXfvaP&amp;timestamp=1600680820 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_79.jpg?itok=ZE7dvGys&amp;timestamp=1600680820 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_79.jpg?itok=s3HpbRa2&amp;timestamp=1600680820 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_79.jpg?itok=Q_vy_-m1&amp;timestamp=1600680820 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_79.jpg?itok=nwYrHorw&amp;timestamp=1600680820 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_79.jpg?itok=xpKIbcjO&amp;timestamp=1600680820 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_79.jpg?itok=Zg8RsloA&amp;timestamp=1600680820 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_79.jpg?itok=LZfiCW10&amp;timestamp=1600680820 600w" alt="Billede af Økonomichef Henrik Tingsgård Lassen mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Henrik Tingsgård Lassen</h3>
+            <span class="job-title-free">
+  Økonomichef</span>
+            
+  <div class="field-description">
+    <p>Økonomichefen har med reference til administrationschefen ansvaret for den del af økonomistyringen der vedrører udarbejdelse af finanslovsbidrag, budget- og budgetopfølgning, samt ledelsesinformation og analyser på økonomiområdet.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='jTqlhWzmF' rel='nofollow'></a><script>var jTqlhWzmF = 'demiet.dk##henrik.lassen@kunstaka';
+var jTqlhWzmF = jTqlhWzmF.split('#');
+document.getElementById('jTqlhWzmF').innerHTML = jTqlhWzmF[2]+jTqlhWzmF[0]+jTqlhWzmF[1];
+document.getElementById('jTqlhWzmF').href = 'mailto:'+jTqlhWzmF[2]+jTqlhWzmF[0]+jTqlhWzmF[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4605</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-6 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_85.jpg?itok=VCadn3io&amp;timestamp=1600680842 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_85.jpg?itok=G7mQMgfs&amp;timestamp=1600680842 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_85.jpg?itok=yQcU8Jo6&amp;timestamp=1600680842 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_85.jpg?itok=qrbp1G4A&amp;timestamp=1600680842 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_85.jpg?itok=ktnp_qk0&amp;timestamp=1600680842 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_85.jpg?itok=YKI3p6rC&amp;timestamp=1600680842 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_85.jpg?itok=OGv-PiJp&amp;timestamp=1600680842 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_85.jpg?itok=-wwTHK1X&amp;timestamp=1600680842 600w" alt="Billede af Løn- og regnskabsmedarbejder Annette Venlov mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Annette Venlov</h3>
+            <span class="job-title-free">
+  Løn- og regnskabsmedarbejder </span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='GtKhcvZBO' rel='nofollow'></a><script>var GtKhcvZBO = 'annette.venlov@kunstakademiet.d##k';
+var GtKhcvZBO = GtKhcvZBO.split('#');
+document.getElementById('GtKhcvZBO').innerHTML = GtKhcvZBO[0]+GtKhcvZBO[2]+GtKhcvZBO[1];
+document.getElementById('GtKhcvZBO').href = 'mailto:'+GtKhcvZBO[0]+GtKhcvZBO[2]+GtKhcvZBO[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4609 </p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-7 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/lea_kvadrat_red_hjs_0.jpg?itok=zSa7BfUN&amp;timestamp=1600615133 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/lea_kvadrat_red_hjs_0.jpg?itok=b4ZW7rM6&amp;timestamp=1600615133 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/lea_kvadrat_red_hjs_0.jpg?itok=4z8gk5BJ&amp;timestamp=1600615133 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/lea_kvadrat_red_hjs_0.jpg?itok=jE6dxNRd&amp;timestamp=1600615133 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/lea_kvadrat_red_hjs_0.jpg?itok=vz_AulU6&amp;timestamp=1600615133 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/lea_kvadrat_red_hjs_0.jpg?itok=g-u_UkXb&amp;timestamp=1600615133 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/lea_kvadrat_red_hjs_0.jpg?itok=1_RmpVyd&amp;timestamp=1600615133 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/lea_kvadrat_red_hjs_0.jpg?itok=sYehtVMx&amp;timestamp=1600615133 600w" alt="Kommunikations-og projektansvarlig Lea Kyndrup" />  </div>
+        <div class="column-middle">
+            <h3>
+  Lea Kyndrup</h3>
+            <span class="job-title-free">
+  Kommunikations- og projektansvarlig</span>
+            
+  <div class="field-description">
+    <p>Ansvarlig for Billedkunstskolernes interne og eksterne kommunikation samt for koordinering af arrangementer som Rundgang, Afgang og redaktion af årbog.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='tPiMNYCgl' rel='nofollow'></a><script>var tPiMNYCgl = 'drup@ku#emiet.d##lea.kyn#nstakad#k';
+var tPiMNYCgl = tPiMNYCgl.split('#');
+document.getElementById('tPiMNYCgl').innerHTML = tPiMNYCgl[3]+tPiMNYCgl[0]+tPiMNYCgl[4]+tPiMNYCgl[1]+tPiMNYCgl[5]+tPiMNYCgl[2];
+document.getElementById('tPiMNYCgl').href = 'mailto:'+tPiMNYCgl[3]+tPiMNYCgl[0]+tPiMNYCgl[4]+tPiMNYCgl[1]+tPiMNYCgl[5]+tPiMNYCgl[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4616</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-8 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/emil-leth-meilvang-presse.jpg?itok=s9s4dJ_I&amp;timestamp=1600614677 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/emil-leth-meilvang-presse.jpg?itok=TCxaFvat&amp;timestamp=1600614677 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/emil-leth-meilvang-presse.jpg?itok=PyOevDxH&amp;timestamp=1600614677 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/emil-leth-meilvang-presse.jpg?itok=hRZQj4Mi&amp;timestamp=1600614677 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/emil-leth-meilvang-presse.jpg?itok=YbM77Iuq&amp;timestamp=1600614677 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/emil-leth-meilvang-presse.jpg?itok=Xz6egRl-&amp;timestamp=1600614677 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/emil-leth-meilvang-presse.jpg?itok=n8cEYFjz&amp;timestamp=1600614677 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/emil-leth-meilvang-presse.jpg?itok=qd_Z82vl&amp;timestamp=1600614677 600w" alt="Uddannelses-og forskningsfaglig koordinator Emil Leth Meilvang" />  </div>
+        <div class="column-middle">
+            <h3>
+  Emil Leth Meilvang</h3>
+            <span class="job-title-free">
+  Kunstfaglig udviklingsmedarbejder</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='xkNQDpRTL' rel='nofollow'></a><script>var xkNQDpRTL = 'emil.meilvang@ku##nstakademiet.dk';
+var xkNQDpRTL = xkNQDpRTL.split('#');
+document.getElementById('xkNQDpRTL').innerHTML = xkNQDpRTL[0]+xkNQDpRTL[2]+xkNQDpRTL[1];
+document.getElementById('xkNQDpRTL').href = 'mailto:'+xkNQDpRTL[0]+xkNQDpRTL[2]+xkNQDpRTL[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4620</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-9 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/ny.sofie_kvadrat.jpg?itok=Tnj8LV8w&amp;timestamp=1600615176 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/ny.sofie_kvadrat.jpg?itok=utRYGB0s&amp;timestamp=1600615176 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/ny.sofie_kvadrat.jpg?itok=aXeNhTc-&amp;timestamp=1600615176 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/ny.sofie_kvadrat.jpg?itok=N99frEUs&amp;timestamp=1600615176 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/ny.sofie_kvadrat.jpg?itok=4ceQh6ja&amp;timestamp=1600615176 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/ny.sofie_kvadrat.jpg?itok=MGm5DDIK&amp;timestamp=1600615176 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/ny.sofie_kvadrat.jpg?itok=feUynrBh&amp;timestamp=1600615176 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/ny.sofie_kvadrat.jpg?itok=MljRrkXt&amp;timestamp=1600615176 600w" alt="Studieadministrativ medarbejder Sofie Lidbjerg" />  </div>
+        <div class="column-middle">
+            <h3>
+  Sofie Lidbjerg</h3>
+            <span class="job-title-free">
+  Studieadministrativ medarbejder</span>
+            
+  <div class="field-description">
+    <p>Ansvarlig for udveksling, orlov, sekretær for Studienævnet, akkreditering.<br />
+ </p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='PgipsuXhA' rel='nofollow'></a><script>var PgipsuXhA = '.dk##sofie.lidbjerg@kunstakademiet';
+var PgipsuXhA = PgipsuXhA.split('#');
+document.getElementById('PgipsuXhA').innerHTML = PgipsuXhA[2]+PgipsuXhA[0]+PgipsuXhA[1];
+document.getElementById('PgipsuXhA').href = 'mailto:'+PgipsuXhA[2]+PgipsuXhA[0]+PgipsuXhA[1];
+</script>
+ 
+    , <a id='DdSzKTyuY' rel='nofollow'></a><script>var DdSzKTyuY = 'kademiet.dk##studieadm@kunsta';
+var DdSzKTyuY = DdSzKTyuY.split('#');
+document.getElementById('DdSzKTyuY').innerHTML = DdSzKTyuY[2]+DdSzKTyuY[0]+DdSzKTyuY[1];
+document.getElementById('DdSzKTyuY').href = 'mailto:'+DdSzKTyuY[2]+DdSzKTyuY[0]+DdSzKTyuY[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4610</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-10 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_ed_3_9.jpg?itok=CdiMM2iO&amp;timestamp=1602256230 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_ed_3_9.jpg?itok=vnIDqmc-&amp;timestamp=1602256230 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_ed_3_9.jpg?itok=ZqzcHbGe&amp;timestamp=1602256230 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_ed_3_9.jpg?itok=x2xTPzxk&amp;timestamp=1602256230 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_ed_3_9.jpg?itok=9aAUV80y&amp;timestamp=1602256230 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_ed_3_9.jpg?itok=ECn02LvI&amp;timestamp=1602256230 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_ed_3_9.jpg?itok=S5xSn3t4&amp;timestamp=1602256230 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_ed_3_9.jpg?itok=5k_-OB9U&amp;timestamp=1602256230 600w" alt="Personalebillede mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Annemette Friis</h3>
+            <span class="job-title-free">
+  Kunstfaglig medarbejder, studieadministrationen </span>
+            
+  <div class="field-description">
+    <p>Ansvarlig for BFA og MFA optagelse</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='FGULsEzpu' rel='nofollow'></a><script>var FGULsEzpu = 'stakademiet.dk#annemette.friis@kun#';
+var FGULsEzpu = FGULsEzpu.split('#');
+document.getElementById('FGULsEzpu').innerHTML = FGULsEzpu[1]+FGULsEzpu[0]+FGULsEzpu[2];
+document.getElementById('FGULsEzpu').href = 'mailto:'+FGULsEzpu[1]+FGULsEzpu[0]+FGULsEzpu[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  + 45 3374 4684</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-11 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/susan_kvadrat_red_hjs.jpg?itok=4hsH15Bc&amp;timestamp=1600615251 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/susan_kvadrat_red_hjs.jpg?itok=AMaNQRQ7&amp;timestamp=1600615251 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/susan_kvadrat_red_hjs.jpg?itok=fQlhWw01&amp;timestamp=1600615251 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/susan_kvadrat_red_hjs.jpg?itok=dJTLzuml&amp;timestamp=1600615251 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/susan_kvadrat_red_hjs.jpg?itok=IM-LZp-c&amp;timestamp=1600615251 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/susan_kvadrat_red_hjs.jpg?itok=2A4M6GFv&amp;timestamp=1600615251 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/susan_kvadrat_red_hjs.jpg?itok=a9QxldyR&amp;timestamp=1600615251 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/susan_kvadrat_red_hjs.jpg?itok=LzMI7ifF&amp;timestamp=1600615251 600w" alt="Studiesekretær Susan Kristensen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Susan Kristensen</h3>
+            <span class="job-title-free">
+  Studiesekretær</span>
+            
+  <div class="field-description">
+    <p>Studiesekretær for Bacheloruddannelsen og Institut for Kunst, Skrift og Forskning med ansvar for de administrative opgaver i forbindelse med undervisningens tilrettelæggelse og afvikling.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='MgQcSnauj' rel='nofollow'></a><script>var MgQcSnauj = 'mie#t.d#n@k#tak##ade#k#nse#ste#uns#an.#kri#sus';
+var MgQcSnauj = MgQcSnauj.split('#');
+document.getElementById('MgQcSnauj').innerHTML = MgQcSnauj[12]+MgQcSnauj[10]+MgQcSnauj[11]+MgQcSnauj[8]+MgQcSnauj[7]+MgQcSnauj[2]+MgQcSnauj[9]+MgQcSnauj[3]+MgQcSnauj[5]+MgQcSnauj[0]+MgQcSnauj[1]+MgQcSnauj[6]+MgQcSnauj[4];
+document.getElementById('MgQcSnauj').href = 'mailto:'+MgQcSnauj[12]+MgQcSnauj[10]+MgQcSnauj[11]+MgQcSnauj[8]+MgQcSnauj[7]+MgQcSnauj[2]+MgQcSnauj[9]+MgQcSnauj[3]+MgQcSnauj[5]+MgQcSnauj[0]+MgQcSnauj[1]+MgQcSnauj[6]+MgQcSnauj[4];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4619</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-12 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2.jpg?itok=cie7ZyvJ&amp;timestamp=1600680989 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2.jpg?itok=lkejSRvx&amp;timestamp=1600680989 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2.jpg?itok=hWjyz-p5&amp;timestamp=1600680989 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2.jpg?itok=A5o-8Vb-&amp;timestamp=1600680989 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2.jpg?itok=10tbXZkr&amp;timestamp=1600680989 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2.jpg?itok=rk5hCNIS&amp;timestamp=1600680989 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2.jpg?itok=VywRnUoV&amp;timestamp=1600680989 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2.jpg?itok=YKk2Zdwa&amp;timestamp=1600680989 600w" alt="Billede af studiesekretær Lena Rodgers mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Lena Rodgers</h3>
+            <span class="job-title-free">
+  Studiesekretær</span>
+            
+  <div class="field-description">
+    <p>Studiesekretær for MFA-uddannelsen med ansvar for de administrative opgaver i forbindelse med undervisningens tilrettelæggelse og afvikling. Sekretær for Skolerådet.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='UbDiQNSum' rel='nofollow'></a><script>var UbDiQNSum = 'dk##unstakademiet.#lena.rodgers@k';
+var UbDiQNSum = UbDiQNSum.split('#');
+document.getElementById('UbDiQNSum').innerHTML = UbDiQNSum[3]+UbDiQNSum[2]+UbDiQNSum[0]+UbDiQNSum[1];
+document.getElementById('UbDiQNSum').href = 'mailto:'+UbDiQNSum[3]+UbDiQNSum[2]+UbDiQNSum[0]+UbDiQNSum[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4690</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-13 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_99.jpg?itok=uQxcM8DW&amp;timestamp=1600681073 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_99.jpg?itok=GNavoYnh&amp;timestamp=1600681073 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_99.jpg?itok=mq5x3xuH&amp;timestamp=1600681073 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_99.jpg?itok=KVt3e1Ut&amp;timestamp=1600681073 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_99.jpg?itok=Ddw0zkBI&amp;timestamp=1600681073 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_99.jpg?itok=H7bfU-vn&amp;timestamp=1600681073 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_99.jpg?itok=TL8nH167&amp;timestamp=1600681073 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_99.jpg?itok=YgoIGBsD&amp;timestamp=1600681073 600w" alt="Billede af studentermedhjælper for studieadministrationen Carla Packness mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Carla Packness</h3>
+            <span class="job-title-free">
+  Studentermedhjælper, Studieadministrationen</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='JFDSlBkpA' rel='nofollow'></a><script>var JFDSlBkpA = 'carla.packness@kunstakademiet.dk#';
+var JFDSlBkpA = JFDSlBkpA.split('#');
+document.getElementById('JFDSlBkpA').innerHTML = JFDSlBkpA[0]+JFDSlBkpA[1];
+document.getElementById('JFDSlBkpA').href = 'mailto:'+JFDSlBkpA[0]+JFDSlBkpA[1];
+</script>
+ 
+                  <h4>Telefon</h4>            <p>
+  +45 3374 4618 </p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-14 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_101.jpg?itok=gXiOBzgL&amp;timestamp=1600681113 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_101.jpg?itok=FPihoEI1&amp;timestamp=1600681113 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_101.jpg?itok=SEMj3hRz&amp;timestamp=1600681113 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_101.jpg?itok=fztJVai4&amp;timestamp=1600681113 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_101.jpg?itok=c6iC4UOj&amp;timestamp=1600681113 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_101.jpg?itok=AUJck9We&amp;timestamp=1600681113 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_101.jpg?itok=KIdjRv08&amp;timestamp=1600681113 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_101.jpg?itok=wOEhev49&amp;timestamp=1600681113 600w" alt="Billede af forskningskoordinator Christina Maria Jespersen mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Christina Marie Jespersen</h3>
+            <span class="job-title-free">
+  Forlagsredaktør</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='HwoOJzSZU' rel='nofollow'></a><script>var HwoOJzSZU = 'persen@kunstakademi##christina.marie.jes#et.dk';
+var HwoOJzSZU = HwoOJzSZU.split('#');
+document.getElementById('HwoOJzSZU').innerHTML = HwoOJzSZU[2]+HwoOJzSZU[0]+HwoOJzSZU[3]+HwoOJzSZU[1];
+document.getElementById('HwoOJzSZU').href = 'mailto:'+HwoOJzSZU[2]+HwoOJzSZU[0]+HwoOJzSZU[3]+HwoOJzSZU[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4675</p>            <h4>Link</h4>            <p>
+  <a href="../aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">kunstakademiet.dk</a></p>        </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-15 alone-heading" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <h2 class="alone-heading">IT</h2>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-16 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/kim.jpg?itok=Gq6omLdd&amp;timestamp=1600615353 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/kim.jpg?itok=m2jrGqSN&amp;timestamp=1600615353 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/kim.jpg?itok=7q44KbNa&amp;timestamp=1600615353 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/kim.jpg?itok=pfqvBJVn&amp;timestamp=1600615353 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/kim.jpg?itok=p9B9eegb&amp;timestamp=1600615353 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/kim.jpg?itok=RpCynFTA&amp;timestamp=1600615353 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/kim.jpg?itok=XYzrvGly&amp;timestamp=1600615353 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/kim.jpg?itok=5sr53KxB&amp;timestamp=1600615353 600w" alt="it-chef Kim Ernest" />  </div>
+        <div class="column-middle">
+            <h3>
+  Kim Ernest</h3>
+            <span class="job-title-free">
+  It-chef</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='RrbaeSpNB' rel='nofollow'></a><script>var RrbaeSpNB = 'kim.ernes#k##ademiet.d#t@kunstak';
+var RrbaeSpNB = RrbaeSpNB.split('#');
+document.getElementById('RrbaeSpNB').innerHTML = RrbaeSpNB[0]+RrbaeSpNB[4]+RrbaeSpNB[3]+RrbaeSpNB[1]+RrbaeSpNB[2];
+document.getElementById('RrbaeSpNB').href = 'mailto:'+RrbaeSpNB[0]+RrbaeSpNB[4]+RrbaeSpNB[3]+RrbaeSpNB[1]+RrbaeSpNB[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4666</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-17 alone-heading" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <h2 class="alone-heading">Drift</h2>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-18 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/allan_lystilpasset.jpg?itok=7TLzwqaL&amp;timestamp=1600615396 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/allan_lystilpasset.jpg?itok=g_QDrinV&amp;timestamp=1600615396 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/allan_lystilpasset.jpg?itok=3Q3VMozL&amp;timestamp=1600615396 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/allan_lystilpasset.jpg?itok=iqLA-s9g&amp;timestamp=1600615396 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/allan_lystilpasset.jpg?itok=exFQygTZ&amp;timestamp=1600615396 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/allan_lystilpasset.jpg?itok=M609wVcO&amp;timestamp=1600615396 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/allan_lystilpasset.jpg?itok=klBR_pFR&amp;timestamp=1600615396 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/allan_lystilpasset.jpg?itok=TdY-fC6t&amp;timestamp=1600615396 600w" alt="Driftsleder Allan Rene Meincke" />  </div>
+        <div class="column-middle">
+            <h3>
+  Allan Rene Meincke</h3>
+            <span class="job-title-free">
+  Driftsleder</span>
+            
+  <div class="field-description">
+    <p>Driftens primære opgaver kan opdeles i to kerneområder; adgangskontrol og bygningsdrift. Adgangskontrol dækker alarmer, nøglekort, låse og nøgler. Bygningsdrift dækker løbende opgaver med tekniske installationer, gårdmandsopgaver samt mindre indvendige vedligeholdelsesopgaver.<br />
+Driften løser endvidere en lang række andre opgaver i forbindelse med optagelsen, Rundgang, ændringer af atelierpladser, interne flytninger og sommeroprydning.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='GOTqVDavg' rel='nofollow'></a><script>var GOTqVDavg = 'allan.meincke@kunstakad##emiet.dk';
+var GOTqVDavg = GOTqVDavg.split('#');
+document.getElementById('GOTqVDavg').innerHTML = GOTqVDavg[0]+GOTqVDavg[2]+GOTqVDavg[1];
+document.getElementById('GOTqVDavg').href = 'mailto:'+GOTqVDavg[0]+GOTqVDavg[2]+GOTqVDavg[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4657</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-19 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/brianravnholdtjepsen.jpg?itok=o6QxglcH&amp;timestamp=1600615461 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/brianravnholdtjepsen.jpg?itok=fQi3yT6s&amp;timestamp=1600615461 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/brianravnholdtjepsen.jpg?itok=raE-pV5j&amp;timestamp=1600615461 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/brianravnholdtjepsen.jpg?itok=jTsvnH-w&amp;timestamp=1600615461 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/brianravnholdtjepsen.jpg?itok=wOyQ0MJ1&amp;timestamp=1600615461 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/brianravnholdtjepsen.jpg?itok=e_1O25VI&amp;timestamp=1600615461 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/brianravnholdtjepsen.jpg?itok=ReZ-SYu5&amp;timestamp=1600615461 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/brianravnholdtjepsen.jpg?itok=8OoFlaiS&amp;timestamp=1600615461 600w" alt="Udstillingsteknisk koordinator og art-handler Brian Ravnholt Jepsen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Brian Ravnholt Jepsen</h3>
+            <span class="job-title-free">
+  Udstillingsteknisk koordinator og art-handler</span>
+            
+  <div class="field-description">
+    <p> </p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='TLsuFzqfc' rel='nofollow'></a><script>var TLsuFzqfc = 'akademiet.dk#brian.ravnholt.jepsen@kunst#';
+var TLsuFzqfc = TLsuFzqfc.split('#');
+document.getElementById('TLsuFzqfc').innerHTML = TLsuFzqfc[1]+TLsuFzqfc[0]+TLsuFzqfc[2];
+document.getElementById('TLsuFzqfc').href = 'mailto:'+TLsuFzqfc[1]+TLsuFzqfc[0]+TLsuFzqfc[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4652</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-20 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/carsten_lystilpasset.jpg?itok=EHKQYOh2&amp;timestamp=1600615518 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/carsten_lystilpasset.jpg?itok=o9376piQ&amp;timestamp=1600615518 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/carsten_lystilpasset.jpg?itok=5ZpUPN-K&amp;timestamp=1600615518 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/carsten_lystilpasset.jpg?itok=phlZ3Zh8&amp;timestamp=1600615518 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/carsten_lystilpasset.jpg?itok=2KxfLb3G&amp;timestamp=1600615518 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/carsten_lystilpasset.jpg?itok=lXj6AzyS&amp;timestamp=1600615518 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/carsten_lystilpasset.jpg?itok=lpevbDA3&amp;timestamp=1600615518 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/carsten_lystilpasset.jpg?itok=VTxgpmlj&amp;timestamp=1600615518 600w" alt="Driftstekniker Karsten Juul Hovmand" />  </div>
+        <div class="column-middle">
+            <h3>
+  Karsten Juul Hovmand</h3>
+            <span class="job-title-free">
+  Driftstekniker</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='BpJNjzgSh' rel='nofollow'></a><script>var BpJNjzgSh = 'takad#emiet#@kuns#.dk#karst#en.ho#vmand#';
+var BpJNjzgSh = BpJNjzgSh.split('#');
+document.getElementById('BpJNjzgSh').innerHTML = BpJNjzgSh[4]+BpJNjzgSh[5]+BpJNjzgSh[6]+BpJNjzgSh[2]+BpJNjzgSh[0]+BpJNjzgSh[1]+BpJNjzgSh[3]+BpJNjzgSh[7];
+document.getElementById('BpJNjzgSh').href = 'mailto:'+BpJNjzgSh[4]+BpJNjzgSh[5]+BpJNjzgSh[6]+BpJNjzgSh[2]+BpJNjzgSh[0]+BpJNjzgSh[1]+BpJNjzgSh[3]+BpJNjzgSh[7];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4654</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-21 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/mudxail_lystilpasset.jpg?itok=xbVXZ2_-&amp;timestamp=1600615575 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/mudxail_lystilpasset.jpg?itok=-4MKKzOM&amp;timestamp=1600615575 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/mudxail_lystilpasset.jpg?itok=X7scZC63&amp;timestamp=1600615575 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/mudxail_lystilpasset.jpg?itok=fMd5dRmR&amp;timestamp=1600615575 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/mudxail_lystilpasset.jpg?itok=v67Rk_UZ&amp;timestamp=1600615575 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/mudxail_lystilpasset.jpg?itok=VXW6LcuG&amp;timestamp=1600615575 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/mudxail_lystilpasset.jpg?itok=-kzdkcQm&amp;timestamp=1600615575 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/mudxail_lystilpasset.jpg?itok=HUM-4Tbb&amp;timestamp=1600615575 600w" alt="Driftsleder Mudzail Zejnel" />  </div>
+        <div class="column-middle">
+            <h3>
+  Mudzail Zejnel</h3>
+            <span class="job-title-free">
+  Driftstekniker</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='pNgauRtld' rel='nofollow'></a><script>var pNgauRtld = 'il.ze#jnel@#miet.#akade#kunst##dk#mudza';
+var pNgauRtld = pNgauRtld.split('#');
+document.getElementById('pNgauRtld').innerHTML = pNgauRtld[7]+pNgauRtld[0]+pNgauRtld[1]+pNgauRtld[4]+pNgauRtld[3]+pNgauRtld[2]+pNgauRtld[6]+pNgauRtld[5];
+document.getElementById('pNgauRtld').href = 'mailto:'+pNgauRtld[7]+pNgauRtld[0]+pNgauRtld[1]+pNgauRtld[4]+pNgauRtld[3]+pNgauRtld[2]+pNgauRtld[6]+pNgauRtld[5];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4646</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-22 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/philip_lystilpasset.jpg?itok=fIz5_lEm&amp;timestamp=1600615611 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/philip_lystilpasset.jpg?itok=0jSpHu8T&amp;timestamp=1600615611 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/philip_lystilpasset.jpg?itok=3ajio28z&amp;timestamp=1600615611 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/philip_lystilpasset.jpg?itok=rvdCn43u&amp;timestamp=1600615611 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/philip_lystilpasset.jpg?itok=rP8NaRZy&amp;timestamp=1600615611 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/philip_lystilpasset.jpg?itok=vbkMcmME&amp;timestamp=1600615611 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/philip_lystilpasset.jpg?itok=nekwmmn0&amp;timestamp=1600615611 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/philip_lystilpasset.jpg?itok=gtkgA75V&amp;timestamp=1600615611 600w" alt="Driftstekniker Philip Sørensen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Phillip Sørensen</h3>
+            <span class="job-title-free">
+  Driftstekniker</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='bxTkDVJCW' rel='nofollow'></a><script>var bxTkDVJCW = 'akademiet.dk#phillip.soerensen@kunst#';
+var bxTkDVJCW = bxTkDVJCW.split('#');
+document.getElementById('bxTkDVJCW').innerHTML = bxTkDVJCW[1]+bxTkDVJCW[0]+bxTkDVJCW[2];
+document.getElementById('bxTkDVJCW').href = 'mailto:'+bxTkDVJCW[1]+bxTkDVJCW[0]+bxTkDVJCW[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4658</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-23 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/sevdet_lystilpasset.jpg?itok=tUto_IHT&amp;timestamp=1600615645 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/sevdet_lystilpasset.jpg?itok=nci7zi_j&amp;timestamp=1600615645 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/sevdet_lystilpasset.jpg?itok=Sj6cXpOc&amp;timestamp=1600615645 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/sevdet_lystilpasset.jpg?itok=feDVjKvn&amp;timestamp=1600615645 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/sevdet_lystilpasset.jpg?itok=vfUOuyr4&amp;timestamp=1600615645 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/sevdet_lystilpasset.jpg?itok=TYoia7Dd&amp;timestamp=1600615645 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/sevdet_lystilpasset.jpg?itok=8D-trZs3&amp;timestamp=1600615645 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/sevdet_lystilpasset.jpg?itok=YheRR7bH&amp;timestamp=1600615645 600w" alt="Driftsleder Sevdet Jumerovski" />  </div>
+        <div class="column-middle">
+            <h3>
+  Sevdet Jumerovski</h3>
+            <span class="job-title-free">
+  Driftstekniker</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='nylgUwzhi' rel='nofollow'></a><script>var nylgUwzhi = 'kademiet.dk##sevdet.jumer#ovski@kunsta';
+var nylgUwzhi = nylgUwzhi.split('#');
+document.getElementById('nylgUwzhi').innerHTML = nylgUwzhi[2]+nylgUwzhi[3]+nylgUwzhi[0]+nylgUwzhi[1];
+document.getElementById('nylgUwzhi').href = 'mailto:'+nylgUwzhi[2]+nylgUwzhi[3]+nylgUwzhi[0]+nylgUwzhi[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4622</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-24 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_107.jpg?itok=p4TeV_tP&amp;timestamp=1600681191 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_107.jpg?itok=Fi-pXwvn&amp;timestamp=1600681191 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_107.jpg?itok=Ewx1iRe0&amp;timestamp=1600681191 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_107.jpg?itok=cqCEWhkv&amp;timestamp=1600681191 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_107.jpg?itok=0DcaIKpm&amp;timestamp=1600681191 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_107.jpg?itok=QKaXt31b&amp;timestamp=1600681191 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_107.jpg?itok=KhTSd1yu&amp;timestamp=1600681191 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_107.jpg?itok=BkfQxe-D&amp;timestamp=1600681191 600w" alt="Billede af driftstekniker-assistent Mikkel Halvorsen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Mikkel Halvorsen</h3>
+            <span class="job-title-free">
+  Driftstekniker-assistent</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='aimYCTsfx' rel='nofollow'></a><script>var aimYCTsfx = 'mikkel.halvorsen@kunstakademiet.dk#';
+var aimYCTsfx = aimYCTsfx.split('#');
+document.getElementById('aimYCTsfx').innerHTML = aimYCTsfx[0]+aimYCTsfx[1];
+document.getElementById('aimYCTsfx').href = 'mailto:'+aimYCTsfx[0]+aimYCTsfx[1];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-25 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/922.jpg?itok=NZBPNDWx&amp;timestamp=1600615724 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/922.jpg?itok=Gz6xXxZK&amp;timestamp=1600615724 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/922.jpg?itok=3sTdaY1D&amp;timestamp=1600615724 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/922.jpg?itok=R-L12ZZr&amp;timestamp=1600615724 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/922.jpg?itok=rsJr6Gp9&amp;timestamp=1600615724 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/922.jpg?itok=Ck1Xzhi0&amp;timestamp=1600615724 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/922.jpg?itok=m8YHG1Ra&amp;timestamp=1600615724 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/922.jpg?itok=s9uAonng&amp;timestamp=1600615724 600w" alt="Aftenvagt Peter Gyrdahl" />  </div>
+        <div class="column-middle">
+            <h3>
+  Peter Gyrdahl</h3>
+            <span class="job-title-free">
+  Aftenvagt</span>
+            
+  <div class="field-description">
+    <p> </p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='UQRGhCaXA' rel='nofollow'></a><script>var UQRGhCaXA = 'et.dk#peter.gyrdahl@kunstakademi#';
+var UQRGhCaXA = UQRGhCaXA.split('#');
+document.getElementById('UQRGhCaXA').innerHTML = UQRGhCaXA[1]+UQRGhCaXA[0]+UQRGhCaXA[2];
+document.getElementById('UQRGhCaXA').href = 'mailto:'+UQRGhCaXA[1]+UQRGhCaXA[0]+UQRGhCaXA[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4653</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-26 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_ed_3.jpg?itok=_HOOg0F1&amp;timestamp=1600681260 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_ed_3.jpg?itok=075J5s-_&amp;timestamp=1600681260 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_ed_3.jpg?itok=CQOguaeB&amp;timestamp=1600681260 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_ed_3.jpg?itok=FhBctATI&amp;timestamp=1600681260 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_ed_3.jpg?itok=rjPhxYOK&amp;timestamp=1600681260 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_ed_3.jpg?itok=f3zR69gw&amp;timestamp=1600681260 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_ed_3.jpg?itok=Ai22-g8W&amp;timestamp=1600681260 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_ed_3.jpg?itok=WV4juD2C&amp;timestamp=1600681260 600w" alt="Billede af ejendomsserviceteknikerelev Jens Borup Erichsen mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Jens Borup Erichsen</h3>
+            <span class="job-title-free">
+  Ejendomsserviceteknikerelev</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='THdZzUlAq' rel='nofollow'></a><script>var THdZzUlAq = 'jens.borup.erichsen@#kunstakademiet.dk#';
+var THdZzUlAq = THdZzUlAq.split('#');
+document.getElementById('THdZzUlAq').innerHTML = THdZzUlAq[0]+THdZzUlAq[1]+THdZzUlAq[2];
+document.getElementById('THdZzUlAq').href = 'mailto:'+THdZzUlAq[0]+THdZzUlAq[1]+THdZzUlAq[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4651</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-27 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/jan_kvadrat_0.jpg?itok=r1cK74qn&amp;timestamp=1600615796 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/jan_kvadrat_0.jpg?itok=Mugdea4I&amp;timestamp=1600615796 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/jan_kvadrat_0.jpg?itok=1OgGAhlg&amp;timestamp=1600615796 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/jan_kvadrat_0.jpg?itok=dta_oEhE&amp;timestamp=1600615796 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/jan_kvadrat_0.jpg?itok=T7ic4HXh&amp;timestamp=1600615796 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/jan_kvadrat_0.jpg?itok=NGA4LOFv&amp;timestamp=1600615796 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/jan_kvadrat_0.jpg?itok=R2esKY2H&amp;timestamp=1600615796 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/jan_kvadrat_0.jpg?itok=PYUEInd8&amp;timestamp=1600615796 600w" alt="Weekendvagt og afløser Jan Bubandt Rasmussen " />  </div>
+        <div class="column-middle">
+            <h3>
+  Jan Bubandt Rasmussen</h3>
+            <span class="job-title-free">
+  Weekendvagt og afløser</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='IRmrGKMHk' rel='nofollow'></a><script>var IRmrGKMHk = 'jan.rasm#ussen@ku##miet.dk#nstakade';
+var IRmrGKMHk = IRmrGKMHk.split('#');
+document.getElementById('IRmrGKMHk').innerHTML = IRmrGKMHk[0]+IRmrGKMHk[1]+IRmrGKMHk[4]+IRmrGKMHk[3]+IRmrGKMHk[2];
+document.getElementById('IRmrGKMHk').href = 'mailto:'+IRmrGKMHk[0]+IRmrGKMHk[1]+IRmrGKMHk[4]+IRmrGKMHk[3]+IRmrGKMHk[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4655</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-28 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/erik_img_web_kvadrat.jpg?itok=zpsjxmHx&amp;timestamp=1600615828 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/erik_img_web_kvadrat.jpg?itok=Oqtims6T&amp;timestamp=1600615828 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/erik_img_web_kvadrat.jpg?itok=KNqU-oyP&amp;timestamp=1600615828 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/erik_img_web_kvadrat.jpg?itok=a4bjMYm9&amp;timestamp=1600615828 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/erik_img_web_kvadrat.jpg?itok=sjK4zd4y&amp;timestamp=1600615828 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/erik_img_web_kvadrat.jpg?itok=8vgtC4vG&amp;timestamp=1600615828 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/erik_img_web_kvadrat.jpg?itok=2rZfA0Qs&amp;timestamp=1600615828 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/erik_img_web_kvadrat.jpg?itok=Yw9PjHlV&amp;timestamp=1600615828 600w" alt="Weekendvagt og afløser Erik Ravn Hermansen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Erik Ravn Hermansen</h3>
+            <span class="job-title-free">
+  Weekendvagt og afløser</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='wmoItLvzx' rel='nofollow'></a><script>var wmoItLvzx = 'et.dk##erik.ravn.hermansen@kunstakademi';
+var wmoItLvzx = wmoItLvzx.split('#');
+document.getElementById('wmoItLvzx').innerHTML = wmoItLvzx[2]+wmoItLvzx[0]+wmoItLvzx[1];
+document.getElementById('wmoItLvzx').href = 'mailto:'+wmoItLvzx[2]+wmoItLvzx[0]+wmoItLvzx[1];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-29 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_ed_3_7.jpg?itok=kGmDEcjH&amp;timestamp=1602254978 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_ed_3_7.jpg?itok=jhg4tcz0&amp;timestamp=1602254978 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_ed_3_7.jpg?itok=JDELVvJL&amp;timestamp=1602254978 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_ed_3_7.jpg?itok=2TInqXlH&amp;timestamp=1602254978 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_ed_3_7.jpg?itok=6GPvTUob&amp;timestamp=1602254978 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_ed_3_7.jpg?itok=hJezbS2E&amp;timestamp=1602254978 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_ed_3_7.jpg?itok=PgACA5yk&amp;timestamp=1602254978 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_ed_3_7.jpg?itok=vksMZ8Uh&amp;timestamp=1602254978 600w" alt="Personalebillede mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Kadir Asanovski</h3>
+            <span class="job-title-free">
+  Driftstekniker, Leder af rengøringsenheden</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='RgFDwGuBm' rel='nofollow'></a><script>var RgFDwGuBm = 'ki@kunstakade#miet.dk##kadir.asanovs';
+var RgFDwGuBm = RgFDwGuBm.split('#');
+document.getElementById('RgFDwGuBm').innerHTML = RgFDwGuBm[3]+RgFDwGuBm[0]+RgFDwGuBm[1]+RgFDwGuBm[2];
+document.getElementById('RgFDwGuBm').href = 'mailto:'+RgFDwGuBm[3]+RgFDwGuBm[0]+RgFDwGuBm[1]+RgFDwGuBm[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4655</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-30 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/mihaela_ionescu_kvadrat.jpg?itok=1tL_N0PD&amp;timestamp=1600615954 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/mihaela_ionescu_kvadrat.jpg?itok=bMGC_XVA&amp;timestamp=1600615954 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/mihaela_ionescu_kvadrat.jpg?itok=OFzs6KTv&amp;timestamp=1600615954 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/mihaela_ionescu_kvadrat.jpg?itok=BGAjYZA6&amp;timestamp=1600615954 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/mihaela_ionescu_kvadrat.jpg?itok=E9bsZBlo&amp;timestamp=1600615954 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/mihaela_ionescu_kvadrat.jpg?itok=VVG3pmu5&amp;timestamp=1600615954 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/mihaela_ionescu_kvadrat.jpg?itok=dpmdv1ED&amp;timestamp=1600615954 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/mihaela_ionescu_kvadrat.jpg?itok=KEKk1BlV&amp;timestamp=1600615954 600w" alt="Rengøringsassistent Mihaela Ionescu" />  </div>
+        <div class="column-middle">
+            <h3>
+  Mihaela Ionescu</h3>
+            <span class="job-title-free">
+  Rengøringsassistent</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='FVuGqvWPp' rel='nofollow'></a><script>var FVuGqvWPp = 'takademiet#.dk#mihaela.lo#nescu@kuns#';
+var FVuGqvWPp = FVuGqvWPp.split('#');
+document.getElementById('FVuGqvWPp').innerHTML = FVuGqvWPp[2]+FVuGqvWPp[3]+FVuGqvWPp[0]+FVuGqvWPp[1]+FVuGqvWPp[4];
+document.getElementById('FVuGqvWPp').href = 'mailto:'+FVuGqvWPp[2]+FVuGqvWPp[3]+FVuGqvWPp[0]+FVuGqvWPp[1]+FVuGqvWPp[4];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4668 </p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-31 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_8.jpg?itok=Th55sSw1&amp;timestamp=1600681364 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_8.jpg?itok=fb2YZapx&amp;timestamp=1600681364 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_8.jpg?itok=7aDvBquR&amp;timestamp=1600681364 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_8.jpg?itok=KQO9pL6y&amp;timestamp=1600681364 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_8.jpg?itok=RgGI4PEJ&amp;timestamp=1600681364 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_8.jpg?itok=bpey9Mri&amp;timestamp=1600681364 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_8.jpg?itok=GWzzzoZP&amp;timestamp=1600681364 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_8.jpg?itok=7kSXjtnB&amp;timestamp=1600681364 600w" alt="Billede af rengøringsassistent Fiona Kiwanuka mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Fiona Kiwanuka</h3>
+            <span class="job-title-free">
+  Rengøringsassistent</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='dMjnAOJkx' rel='nofollow'></a><script>var dMjnAOJkx = 'akademiet.dk#fiona.kiwanuka@kunst#';
+var dMjnAOJkx = dMjnAOJkx.split('#');
+document.getElementById('dMjnAOJkx').innerHTML = dMjnAOJkx[1]+dMjnAOJkx[0]+dMjnAOJkx[2];
+document.getElementById('dMjnAOJkx').href = 'mailto:'+dMjnAOJkx[1]+dMjnAOJkx[0]+dMjnAOJkx[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4667 </p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-32 even 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_10.jpg?itok=WNVnKpvL&amp;timestamp=1600681460 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_10.jpg?itok=gRcjrJ5X&amp;timestamp=1600681460 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_10.jpg?itok=R6LI7PEh&amp;timestamp=1600681460 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_10.jpg?itok=TOzw3Byn&amp;timestamp=1600681460 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_10.jpg?itok=EQVhHLay&amp;timestamp=1600681460 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_10.jpg?itok=LnCzsU2D&amp;timestamp=1600681460 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_10.jpg?itok=xMs1S4B7&amp;timestamp=1600681460 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_10.jpg?itok=N7-HLft-&amp;timestamp=1600681460 600w" alt="Billede af rengøringsassistent Zerina H. Petersen mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Zerina H. Petersen</h3>
+            <span class="job-title-free">
+  Rengøringsassistent - Weekend og afløser</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='lTVbyeEJq' rel='nofollow'></a><script>var lTVbyeEJq = 'demiet.dk##zerina.peter#sen@kunstaka';
+var lTVbyeEJq = lTVbyeEJq.split('#');
+document.getElementById('lTVbyeEJq').innerHTML = lTVbyeEJq[2]+lTVbyeEJq[3]+lTVbyeEJq[0]+lTVbyeEJq[1];
+document.getElementById('lTVbyeEJq').href = 'mailto:'+lTVbyeEJq[2]+lTVbyeEJq[3]+lTVbyeEJq[0]+lTVbyeEJq[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4669</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-33 odd 
+  compressed" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_67.jpg?itok=zihhk3Zf&amp;timestamp=1614609903 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_67.jpg?itok=1MQQtuOx&amp;timestamp=1614609903 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_67.jpg?itok=HeOWA3CW&amp;timestamp=1614609903 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_67.jpg?itok=zuqx1958&amp;timestamp=1614609903 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_67.jpg?itok=L4kIBHWt&amp;timestamp=1614609903 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_67.jpg?itok=2E_7vBsK&amp;timestamp=1614609903 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_67.jpg?itok=6Mzcqu_a&amp;timestamp=1614609903 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_67.jpg?itok=Hrhu8EDJ&amp;timestamp=1614609903 600w" alt="Billede af ansat mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Tapanee Andersen</h3>
+            <span class="job-title-free">
+  Rengøringsassistent</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='NaLZRDlVQ' rel='nofollow'></a><script>var NaLZRDlVQ = 'tapanee.andersen@#kunstakademiet.dk#';
+var NaLZRDlVQ = NaLZRDlVQ.split('#');
+document.getElementById('NaLZRDlVQ').innerHTML = NaLZRDlVQ[0]+NaLZRDlVQ[1]+NaLZRDlVQ[2];
+document.getElementById('NaLZRDlVQ').href = 'mailto:'+NaLZRDlVQ[0]+NaLZRDlVQ[1]+NaLZRDlVQ[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4663</p>                                </div>
+</div>
+    </section>
+</article>
+                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Billedkunstskolerne <br />
+Det Kongelige Danske Kunstakademi</strong><br />
+Kongens Nytorv 1, 1050 København K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">Se på google maps</a><br /><a id='jRMXFOgym' rel='nofollow'></a><script>var jRMXFOgym = 'info@kunstaka##demiet.dk';
+var jRMXFOgym = jRMXFOgym.split('#');
+document.getElementById('jRMXFOgym').innerHTML = jRMXFOgym[0]+jRMXFOgym[2]+jRMXFOgym[1];
+document.getElementById('jRMXFOgym').href = 'mailto:'+jRMXFOgym[0]+jRMXFOgym[2]+jRMXFOgym[1];
+</script>
+ 
+    <a target="_blank" href="https://www.was.digst.dk/kunstakademiet-dk">Tilgængelighedserklæring</a></p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Tilmeld nyhedsbrev" placeholder="Tilmeld nyhedsbrev"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../../sites/default/files/advagg_js/js__Z4-v_NpbsHM90rMoyj-KBqp5sYDtolbNNTDCGcc8uNI__IKgK4uD1nYOeHkb4gh_2OAWuynD0OO_dsM1AcDbrRhs__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.45.delaye"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"da\/","ajaxPageState":{"theme":"bks","theme_token":"dSGN2lpyARb2wGCq-v_9IKKEW7bGkKCAbXRhB6PCz9Q"},"urlIsAjaxTrusted":{"\/da\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.46.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/da.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/da/organisation/administration-og-drift by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:07:21 GMT -->
+</html>

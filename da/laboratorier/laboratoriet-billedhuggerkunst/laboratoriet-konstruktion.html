@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<!-- Mirrored from kunstakademiet.dk/da/laboratorier/laboratoriet-billedhuggerkunst/laboratoriet-konstruktion by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:23:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="laboratoriet-konstruktion.html" />
+<link rel="shortlink" href="../../node/1126.html" />
+	<title>Laboratoriet for Konstruktion | Billedkunstskolerne - Det Kongelige Danske Kunstakademi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=../../search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../../../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../../../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../../../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.14.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1126 node-type-basic-page i18n-da" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Søg</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/da/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-URrLpP71f95gPYVQ80JDY2d0Ot1U9KEdRvU1GOBiGDU" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1656 crumb-count-1">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../../../da.html" title="Forside" rel="home"
+                   id="logo">Billedkunstskolerne - Det Kongelige Danske Kunstakademi</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first active"><a href="laboratoriet-konstruktion.html" class="language-link active" xml:lang="da" title="Laboratoriet for Konstruktion">DK</a></li>
+<li class="en last"><a href="../../../en/laboratories/laboratory-sculpture/laboratory-construction.html" class="language-link" xml:lang="en" title="Laboratory for Construction">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"><h2 class="element-invisible">Du er her</h2><div class="breadcrumb"><a href="../laboratoriet-billedhuggerkunst.html">Laboratoriet for Billedhuggerkunst</a></div></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../../da.html" title="">Forside</a></li>
+<li class="expanded"><a href="../../billedkunstskolerne.html">Billedkunstskolerne</a><ul class="menu"><li class="first collapsed"><a href="../../billedkunstskolerne/billedkunstskolernes-historie.html">Billedkunstskolernes historie</a></li>
+<li class="leaf"><a href="../../organisation/samarbejder.html">Samarbejder</a></li>
+<li class="leaf"><a href="../../billedkunstskolerne/aftagerpanel.html">Aftagerpanel</a></li>
+<li class="last leaf"><a href="../../billedkunstskolerne/rad-og-naevn.html">Råd og nævn</a></li>
+</ul></li>
+<li class="expanded"><a href="../../studier.html">Studier</a><ul class="menu"><li class="first leaf"><a href="../../studier/uddannelsen.html">Uddannelsen</a></li>
+<li class="leaf"><a href="../../studier/forskning-og-kunstnerisk-udvikling.html">Forskning og kunstnerisk udvikling</a></li>
+<li class="collapsed"><a href="../../skoler-og-institutter/laboratorier.html">Laboratorier</a></li>
+<li class="collapsed"><a href="../../studier/optagelse.html">Optagelse</a></li>
+<li class="collapsed"><a href="../../studier/internationalt-og-udveksling.html">Internationalt og udveksling</a></li>
+<li class="last leaf"><a href="../../studier/laboratoriet-kunstens-forskning.html">Laboratoriet for Kunstens Forskning</a></li>
+</ul></li>
+<li class="expanded"><a href="../../aktiviteter-og-nyheder.html">Aktiviteter og nyheder</a><ul class="menu"><li class="first leaf"><a href="../../aktiviteter-og-nyheder/aktuelt.html">Aktuelt</a></li>
+<li class="leaf"><a href="../../aktiviteter-og-nyheder/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../../aktiviteter-og-nyheder/udstillingsstedet-q.html">Udstillingsstedet Q</a></li>
+<li class="leaf"><a href="../../aktiviteter-og-nyheder/afgang.html">Afgang</a></li>
+<li class="leaf"><a href="../../aktiviteter-og-nyheder/rundgang.html">Rundgang</a></li>
+<li class="collapsed"><a href="../../aktiviteter-og-nyheder/forskningsprojekter.html">Forskningsprojekter</a></li>
+<li class="collapsed"><a href="../../aktiviteter-og-nyheder/projekter.html">Projekter</a></li>
+<li class="collapsed"><a href="../../aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">Billedkunstskolernes Forlag</a></li>
+<li class="leaf"><a href="../../aktiviteter-og-nyheder/nyhedsbreve.html">Nyhedsbreve</a></li>
+<li class="last collapsed"><a href="../../aktiviteter-og-nyheder/charlottenborg-art.html">Charlottenborg Art</a></li>
+</ul></li>
+<li class="expanded"><a href="../../organisation-og-kontakt.html">Organisation og kontakt</a><ul class="menu"><li class="first leaf"><a href="../../organisation.html">Organisation</a></li>
+<li class="leaf"><a href="../../organisation-og-kontakt/fakturering.html">Fakturering</a></li>
+<li class="leaf"><a href="../../organisation/rektorat.html">Rektorat</a></li>
+<li class="leaf"><a href="../../organisation/administration-og-drift.html">Administration og drift</a></li>
+<li class="leaf"><a href="../../organisation/fakultet.html">Fakultet</a></li>
+<li class="leaf"><a href="../../organisation/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../../organisation/rapporter.html">Rapporter</a></li>
+<li class="leaf"><a href="../../organisation/sponsorer.html">Sponsorer</a></li>
+<li class="leaf"><a href="../../organisation-og-kontakt/databeskyttelsesradgiver.html">Databeskyttelsesrådgiver</a></li>
+<li class="leaf"><a href="../../organisation-og-kontakt/kulturministeriets-whistleblowerordning.html">Kulturministeriets whistleblowerordning</a></li>
+<li class="collapsed"><a href="../../kontakt/ledige-stillinger.html">Ledige stillinger</a></li>
+<li class="last leaf"><a href="../../organisation-og-kontakt/strategi-2019-22.html">Strategi</a></li>
+</ul></li>
+<li class="leaf"><a href="../../presserum.html">Presserum</a></li>
+<li class="expanded"><a href="../../rundvisning-og-udlejning.html">Rundvisning og udlejning</a><ul class="menu"><li class="first leaf"><a href="../../kontakt/udlejning-af-lokaler.html">Udlejning af lokaler</a></li>
+<li class="last leaf"><a href="../../kontakt/rundvisning.html">Rundvisning</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1656 ">
+                <div class="content-container">
+                                                    	
+	
+	
+		<article id="node-1126"
+         class="node node-basic-page l-article clearfix" about="/da/laboratorier/laboratoriet-billedhuggerkunst/laboratoriet-konstruktion" typeof="sioc:Item foaf:Document">
+    <section>
+                    <div class="page-pager-item prev">
+                <a class="freepager-previous prev-next-pager" href="laboratoriet-keramik.html" rel="previous">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                <span class="pager-title">GÅ TIL</span>
+                    Laboratoriet for Keramik                </span>
+                </a>
+            </div>
+                            <div class="page-pager-item next">
+                <a class="freepager-next prev-next-pager" href="laboratoriet-trae.html" rel="next">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                    <span class="pager-title">GÅ TIL</span>
+                    Laboratoriet for Træ                </span>
+                </a>
+            </div>
+                        <h1 class="followed-by-slider">Laboratoriet for Konstruktion</h1>
+        
+
+  <div class="entity entity-paragraphs-item paragraphs-item-images entity-item-1 mixed row-odd" about="" typeof="">
+    <div class="gallery-slides mixed image-count-8">
+        <div class="gallery-slides-inner">
+            <div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/59.jpg?itok=Ucz4yC7Y&amp;timestamp=1600418993 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/59.jpg?itok=2otQiKj7&amp;timestamp=1600418993 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/59.jpg?itok=pFG3vjak&amp;timestamp=1600418993 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/59.jpg?itok=iiNZpEYN&amp;timestamp=1600418993 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/59.jpg?itok=K71oSvkQ&amp;timestamp=1600418993 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/59.jpg?itok=RM5lA232&amp;timestamp=1600418993 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/59.jpg?itok=jZrLa4es&amp;timestamp=1600418993 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/59.jpg?itok=gbDPjsIL&amp;timestamp=1600418993 580w" alt="Lektor og leder af Laboratoriet for Konstruktion Franco Turchi" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img02_5.jpg?itok=DZlvzAx8&amp;timestamp=1600419091 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img02_5.jpg?itok=oodBu4fF&amp;timestamp=1600419091 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img02_5.jpg?itok=JPZXXJQs&amp;timestamp=1600419091 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img02_5.jpg?itok=ptJTY11n&amp;timestamp=1600419091 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img02_5.jpg?itok=9Veq9iR5&amp;timestamp=1600419091 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img02_5.jpg?itok=Yj6TZHtU&amp;timestamp=1600419091 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img02_5.jpg?itok=bAulSexk&amp;timestamp=1600419091 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img02_5.jpg?itok=hLlLZmyi&amp;timestamp=1600419091 580w" alt="Maskiner og redskaber i Laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img03_8.jpg?itok=uV7sjU-B&amp;timestamp=1600419196 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img03_8.jpg?itok=SOZkEGyD&amp;timestamp=1600419196 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img03_8.jpg?itok=l-rgQNY9&amp;timestamp=1600419196 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img03_8.jpg?itok=jgVVHC6-&amp;timestamp=1600419196 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img03_8.jpg?itok=9oZ0rS5Q&amp;timestamp=1600419196 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img03_8.jpg?itok=5mi3ywmy&amp;timestamp=1600419196 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img03_8.jpg?itok=poiLtRrh&amp;timestamp=1600419196 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img03_8.jpg?itok=QfyQ1OhG&amp;timestamp=1600419196 580w" alt="Arbejdsborde, maskiner og redskaber i Laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img01_4.jpg?itok=GAdpwlr8&amp;timestamp=1600420826 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img01_4.jpg?itok=fT7SPxwx&amp;timestamp=1600420826 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img01_4.jpg?itok=8JpwX11q&amp;timestamp=1600420826 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img01_4.jpg?itok=SaOsh_3i&amp;timestamp=1600420826 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img01_4.jpg?itok=UEFnAIlJ&amp;timestamp=1600420826 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img01_4.jpg?itok=SjVoeUNq&amp;timestamp=1600420826 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img01_4.jpg?itok=KPqaLwe8&amp;timestamp=1600420826 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img01_4.jpg?itok=DG0Edv9d&amp;timestamp=1600420826 580w" alt="Søjleboremaskine og plastikbeholder med olie på Laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img04_6.jpg?itok=Nk6SZXns&amp;timestamp=1600419313 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img04_6.jpg?itok=4ZeHT1gx&amp;timestamp=1600419313 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img04_6.jpg?itok=DX4z6fSt&amp;timestamp=1600419313 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img04_6.jpg?itok=RTSGw65T&amp;timestamp=1600419313 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img04_6.jpg?itok=btoi9vKd&amp;timestamp=1600419313 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img04_6.jpg?itok=SJiGQFL3&amp;timestamp=1600419313 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img04_6.jpg?itok=cqnaxpsS&amp;timestamp=1600419313 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img04_6.jpg?itok=9CHiEaU2&amp;timestamp=1600419313 580w" alt="Maskiner, redskaber og trappe, der fører ovenpå i Laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img06_7.jpg?itok=Dy3iIuNo&amp;timestamp=1600420853 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img06_7.jpg?itok=yrMD4m8R&amp;timestamp=1600420853 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img06_7.jpg?itok=TCdfAShO&amp;timestamp=1600420853 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img06_7.jpg?itok=ZvOd7KNq&amp;timestamp=1600420853 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img06_7.jpg?itok=9gPQI9Vq&amp;timestamp=1600420853 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img06_7.jpg?itok=ZzR7YXs1&amp;timestamp=1600420853 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img06_7.jpg?itok=rvSk6s5k&amp;timestamp=1600420853 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img06_7.jpg?itok=vaGbWxQz&amp;timestamp=1600420853 580w" alt="Ståltilbehør til maskiner i laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img05_5.jpg?itok=-qA-20uZ&amp;timestamp=1600419611 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img05_5.jpg?itok=PXNM4pbW&amp;timestamp=1600419611 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img05_5.jpg?itok=kUEmOW98&amp;timestamp=1600419611 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img05_5.jpg?itok=tvZFY009&amp;timestamp=1600419611 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img05_5.jpg?itok=gBy4dJs9&amp;timestamp=1600419611 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img05_5.jpg?itok=S2YuXZTM&amp;timestamp=1600419611 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img05_5.jpg?itok=SME3BJQq&amp;timestamp=1600419611 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img05_5.jpg?itok=MYbx8smF&amp;timestamp=1600419611 580w" alt="Metalskærer i laboratoriet for Konstruktion" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img07_7.jpg?itok=-fcWPCCR&amp;timestamp=1600419768 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img07_7.jpg?itok=2k-p7CyV&amp;timestamp=1600419768 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img07_7.jpg?itok=jRn7hZuC&amp;timestamp=1600419768 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img07_7.jpg?itok=NtzvcxBx&amp;timestamp=1600419768 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img07_7.jpg?itok=0jbMQFvn&amp;timestamp=1600419768 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img07_7.jpg?itok=q795_I9c&amp;timestamp=1600419768 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img07_7.jpg?itok=VBX6_Re3&amp;timestamp=1600419768 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img07_7.jpg?itok=6zJn1dAe&amp;timestamp=1600419768 580w" alt="Konstruktionsmæssige detaljer på maskine" /></div></div></div>        </div>
+    </div>
+    </div>
+  
+<div class="entity entity-paragraphs-item paragraphs-item-facts-box entity-item-2 facts-2 row-even" about="" typeof="">
+    <div class="fact-box-inner">
+    <div class="fact-box-inner-max">
+        <div class="fact-item"><h4>
+  Laboratoriet for Konstruktion</h4><div class="fact-description">
+  <p>Peder Skrams Gade 2<br />
+Opgang H, Stuen</p>
+</div></div><div class="fact-item"><h4>
+  Kontaktinformation</h4><div class="fact-description">
+  <p>Lektor Franco Turchi<br />
++45 3374 4660<br /><a id='PoTCEJAwd' rel='nofollow'></a><script>var PoTCEJAwd = 'et.dk##franco.turchi@kunstakademi';
+var PoTCEJAwd = PoTCEJAwd.split('#');
+document.getElementById('PoTCEJAwd').innerHTML = PoTCEJAwd[2]+PoTCEJAwd[0]+PoTCEJAwd[1];
+document.getElementById('PoTCEJAwd').href = 'mailto:'+PoTCEJAwd[2]+PoTCEJAwd[0]+PoTCEJAwd[1];
+</script>
+ 
+    </p>
+</div></div>    </div>
+    </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-3" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <p>I laboratoriet for Konstruktion undervises der fortrinsvis inden for en tredimensionel kunstnerisk baseret praksis. Primært med materialer som metaller og stenarter.</p>
+<p>Laboratoriet dækker følgende arbejdsområder: Støbning og bearbejdning af bronze og aluminium. Der er desuden mulighed for anvendelse af 3D printer og 3D fræser, stor-skala konstruktioner i forbindelse med installationer eller armeringer til tunge materialer/elementer.</p>
+<p>Laboratoriet afholder kurser i sikkerhedsmæssig forsvarlig brug af afdelingens maskiner. Den daglige undervisning er integreret i projekter, som den enkelte studerende tilrettelægger efter godkendelse af laboratoriets leder.</p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-4 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/59_0.jpg?itok=Ol9rdKwQ&amp;timestamp=1600419789 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/59_0.jpg?itok=wq6bDRhu&amp;timestamp=1600419789 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/59_0.jpg?itok=jVEQSwTq&amp;timestamp=1600419789 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/59_0.jpg?itok=_BONf78-&amp;timestamp=1600419789 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/59_0.jpg?itok=u5_eSrop&amp;timestamp=1600419789 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/59_0.jpg?itok=yv4P15hH&amp;timestamp=1600419789 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/59_0.jpg?itok=1HA9sAnQ&amp;timestamp=1600419789 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/59_0.jpg?itok=C_6BJhFA&amp;timestamp=1600419789 600w" alt="Lektor og leder af Laboratoriet for Konstruktion Franco Turchi" />  </div>
+        <div class="column-middle">
+            <h3>
+  Franco Turchi </h3>
+            <span class="job-title-free">
+  Lektor</span>
+            
+  <div class="field-description">
+    <p>Leder af laboratoriet for Konstruktion, lektor <a>Franco Turchi (f. 1960), er uddannet billedkunstner fra henholdsvis Scuola di Arti Ornamentali San Giacomo og Accademia di Belle Arti i Rom samt Kunsthåndværkerskolen i Oslo. </a><br />
+Turchi har forsket i og arbejdet med de skulpturelle medier i USA, Italien og Danmark i forbindelse med udstillinger og udsmykningsopgaver, bl.a. ved Fredensborg Slot og Glyptoteket</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='BEaIWbuoA' rel='nofollow'></a><script>var BEaIWbuoA = '#franco.turchi@kunstakademiet.dk';
+var BEaIWbuoA = BEaIWbuoA.split('#');
+document.getElementById('BEaIWbuoA').innerHTML = BEaIWbuoA[1]+BEaIWbuoA[0];
+document.getElementById('BEaIWbuoA').href = 'mailto:'+BEaIWbuoA[1]+BEaIWbuoA[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4660</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-5 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_38_9.jpg?itok=GVF-pitv&amp;timestamp=1600757624 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_38_9.jpg?itok=J0UpvShM&amp;timestamp=1600757624 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_38_9.jpg?itok=LjmLuIRW&amp;timestamp=1600757624 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_38_9.jpg?itok=N7cJ1d_W&amp;timestamp=1600757624 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_38_9.jpg?itok=5My8iXQ9&amp;timestamp=1600757624 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_38_9.jpg?itok=Tnlbd7fh&amp;timestamp=1600757624 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_38_9.jpg?itok=Ay9eKlz0&amp;timestamp=1600757624 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_38_9.jpg?itok=FQuB8SVV&amp;timestamp=1600757624 600w" alt="Billede af Værksteds-og undervisningsassistent på Laboratoriet for Konstruktion Daniel Olivares mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Daniel Olivares</h3>
+            <span class="job-title-free">
+  Værksteds- og undervisningsassistent, Laboratoriet for Konstruktion</span>
+                    </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='exPRvBoQA' rel='nofollow'></a><script>var exPRvBoQA = 'dk##daniel.olivares@kunstakademiet.';
+var exPRvBoQA = exPRvBoQA.split('#');
+document.getElementById('exPRvBoQA').innerHTML = exPRvBoQA[2]+exPRvBoQA[0]+exPRvBoQA[1];
+document.getElementById('exPRvBoQA').href = 'mailto:'+exPRvBoQA[2]+exPRvBoQA[0]+exPRvBoQA[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4679</p>                                </div>
+</div>
+    </section>
+</article>
+                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Billedkunstskolerne <br />
+Det Kongelige Danske Kunstakademi</strong><br />
+Kongens Nytorv 1, 1050 København K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">Se på google maps</a><br /><a id='yTiPqlKvJ' rel='nofollow'></a><script>var yTiPqlKvJ = '#k#info@kunstakademiet.d';
+var yTiPqlKvJ = yTiPqlKvJ.split('#');
+document.getElementById('yTiPqlKvJ').innerHTML = yTiPqlKvJ[2]+yTiPqlKvJ[1]+yTiPqlKvJ[0];
+document.getElementById('yTiPqlKvJ').href = 'mailto:'+yTiPqlKvJ[2]+yTiPqlKvJ[1]+yTiPqlKvJ[0];
+</script>
+ 
+    <a target="_blank" href="https://www.was.digst.dk/kunstakademiet-dk">Tilgængelighedserklæring</a></p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Tilmeld nyhedsbrev" placeholder="Tilmeld nyhedsbrev"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__Z4-v_NpbsHM90rMoyj-KBqp5sYDtolbNNTDCGcc8uNI__IKgK4uD1nYOeHkb4gh_2OAWuynD0OO_dsM1AcDbrRhs__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.45.delaye"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"da\/","ajaxPageState":{"theme":"bks","theme_token":"Jev9KMEqz8GA_H3i8xwnEoXeHqOefkgeD3Fe9qfLWe4"},"urlIsAjaxTrusted":{"\/da\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.46.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../../../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/da.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/da/laboratorier/laboratoriet-billedhuggerkunst/laboratoriet-konstruktion by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:23:40 GMT -->
+</html>

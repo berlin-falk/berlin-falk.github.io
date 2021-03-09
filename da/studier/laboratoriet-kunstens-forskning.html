@@ -1,0 +1,637 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<!-- Mirrored from kunstakademiet.dk/da/studier/laboratoriet-kunstens-forskning by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:06:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="laboratoriet-kunstens-forskning.html" />
+<link rel="shortlink" href="../node/1121.html" />
+	<title>Laboratoriet for Kunstens Forskning | Billedkunstskolerne - Det Kongelige Danske Kunstakademi</title>
+    <link rel="apple-touch-icon" sizes="57x57" href=../search/sites%20all%20themes%20bks%20apple%20touch%20icon%2057x57%20png.html>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../sites/all/themes/bks/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../sites/all/themes/bks/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../sites/all/themes/bks/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../sites/all/themes/bks/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../sites/all/themes/bks/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../sites/all/themes/bks/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../sites/all/themes/bks/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../sites/all/themes/bks/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../sites/all/themes/bks/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../sites/all/themes/bks/manifest.json">
+    <link rel="mask-icon" href="../../sites/all/themes/bks/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="../../sites/all/themes/bks/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="../../sites/all/themes/bks/bks_facebook_share.png" />
+
+
+	<link type="text/css" rel="stylesheet" href="../../sites/default/files/advagg_css/css__0lLw_f2CgIVU0tDN8iNmBmD_j7luHFb5WwwMMDm0zi0__XuwriSQteku0GOA4TRUw6RSFeFipYy71YXJBO3oUFNA__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.14.dela" media="all" />
+	<!--[if lt IE 9]>
+    <script src="/sites/all/themes/bks/build/scripts/vendor/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function checkArrayInArray(needle, haystack){
+    for(var i = 0; i < needle.length; i++){
+    if(haystack.indexOf(needle[i]) === -1)
+    return false;
+    }
+    return true;
+}
+
+function findAncestor (el, sel) {
+    while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+    return el;
+}
+var consents_given_for = []; 
+function checkConsentElements() {
+        var input = document.querySelectorAll('iframe[data-consent-src]');
+    if(input.length > 0 ){ 
+    var type = [];
+    for(var i = 0;i < input.length; i++)
+    {
+		type = input[i].getAttribute('data-consent-categories').split('__'); 
+		var placeholderParent = input[i].parentNode;
+		if (input[i].inited !== true) {
+			input[i].inited = true;
+		    var placeholder = document.createElement('div');
+		    input[i].placeholder = placeholder;
+		    placeholder.innerHTML = '<div class="embed-consent-placeholder" style="cursor:pointer; position: absolute; bottom: 0; right: 0; font-weight: bold; top: 0; left: 0; padding: 20px; text-align: center;" onclick="javascript:CookieConsent.renew();">'+input[i].getAttribute('data-consent-text')+'</div>';
+		    placeholderParent.appendChild(placeholder);
+		}
+		    if(checkArrayInArray(type,consents_given_for)) {
+		    	input[i].src = input[i].getAttribute('data-consent-src'); 
+		    	input[i].placeholder.style.display = "none";
+		    } else {
+		    	if(input[i].src) {
+		    	 	input[i].src = '';
+		    	}
+		    	input[i].placeholder.style.display = "flex";
+		    	} 
+		  	}	
+		
+    }	
+}
+
+window.addEventListener('CookieInformationConsentGiven', function (event) { 
+	consents_given_for = [];
+	if(CookieInformation.getConsentGivenFor('cookie_cat_statistic')) 
+	consents_given_for.push('cookie_cat_statistic'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_marketing')) 
+	consents_given_for.push('cookie_cat_marketing'); 
+	if(CookieInformation.getConsentGivenFor('cookie_cat_functional')) 
+	consents_given_for.push('cookie_cat_functional'); 
+
+	checkConsentElements();
+}, false); 
+</script>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+	</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1121 node-type-basic-page i18n-da" >
+	    	
+    <div class="search-block-container">
+        <div class="search-inner-container">
+            <span class="search-title">Søg</span>
+            S<form class="search-by-page-form" action="https://kunstakademiet.dk/da/search" method="post" id="search-by-page-form" accept-charset="UTF-8"><div><div class="container">
+  <div class="form-item form-type-textfield form-item-keys">
+  
+ <input type="text" id="edit-keys" name="keys" title="Indtast søgeord her" placeholder="Indtast søgeord her" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-MuCJVD3L5UdxqPC0GExFCRFTEDZVGNgdSuvke5ikYSs" />
+<input type="hidden" name="form_id" value="search_by_page_form" />
+</div>
+</div></form>        </div>
+    </div>
+<div id="container" class="l-constrained base-node-1101 crumb-count-1">
+    <header class="page-header l-header">
+        <div class="header-inner">
+            <button aria-label="Open menu" class="menu-toggle">Menu<span class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></span></button>
+                            <a href="../../da.html" title="Forside" rel="home"
+                   id="logo">Billedkunstskolerne - Det Kongelige Danske Kunstakademi</a>
+                                                <div class="search-icon"></div>
+                	
+	
+	
+		<ul class="language-switcher-locale-url"><li class="da first active"><a href="laboratoriet-kunstens-forskning.html" class="language-link active" xml:lang="da" title="Laboratoriet for Kunstens Forskning">DK</a></li>
+<li class="en last"><a href="../../en/schools-and-institutes/laboratory-art-research.html" class="language-link" xml:lang="en" title="The Laboratory for Art Research">EN</a></li>
+</ul>        </div>
+    </header>
+    <div class="breadcrumb-container"><h2 class="element-invisible">Du er her</h2><div class="breadcrumb"><a href="../studier.html">Studier</a></div></div>
+    <nav class="page-nav l-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../da.html" title="">Forside</a></li>
+<li class="expanded"><a href="../billedkunstskolerne.html">Billedkunstskolerne</a><ul class="menu"><li class="first collapsed"><a href="../billedkunstskolerne/billedkunstskolernes-historie.html">Billedkunstskolernes historie</a></li>
+<li class="leaf"><a href="../organisation/samarbejder.html">Samarbejder</a></li>
+<li class="leaf"><a href="../billedkunstskolerne/aftagerpanel.html">Aftagerpanel</a></li>
+<li class="last leaf"><a href="../billedkunstskolerne/rad-og-naevn.html">Råd og nævn</a></li>
+</ul></li>
+<li class="expanded"><a href="../studier.html">Studier</a><ul class="menu"><li class="first leaf"><a href="uddannelsen.html">Uddannelsen</a></li>
+<li class="leaf"><a href="forskning-og-kunstnerisk-udvikling.html">Forskning og kunstnerisk udvikling</a></li>
+<li class="collapsed"><a href="../skoler-og-institutter/laboratorier.html">Laboratorier</a></li>
+<li class="collapsed"><a href="optagelse.html">Optagelse</a></li>
+<li class="collapsed"><a href="internationalt-og-udveksling.html">Internationalt og udveksling</a></li>
+<li class="last leaf"><a href="laboratoriet-kunstens-forskning.html" class="active">Laboratoriet for Kunstens Forskning</a></li>
+</ul></li>
+<li class="expanded"><a href="../aktiviteter-og-nyheder.html">Aktiviteter og nyheder</a><ul class="menu"><li class="first leaf"><a href="../aktiviteter-og-nyheder/aktuelt.html">Aktuelt</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/udstillingsstedet-q.html">Udstillingsstedet Q</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/afgang.html">Afgang</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/rundgang.html">Rundgang</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/forskningsprojekter.html">Forskningsprojekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/projekter.html">Projekter</a></li>
+<li class="collapsed"><a href="../aktiviteter-og-nyheder/billedkunstskolernes-forlag.html">Billedkunstskolernes Forlag</a></li>
+<li class="leaf"><a href="../aktiviteter-og-nyheder/nyhedsbreve.html">Nyhedsbreve</a></li>
+<li class="last collapsed"><a href="../aktiviteter-og-nyheder/charlottenborg-art.html">Charlottenborg Art</a></li>
+</ul></li>
+<li class="expanded"><a href="../organisation-og-kontakt.html">Organisation og kontakt</a><ul class="menu"><li class="first leaf"><a href="../organisation.html">Organisation</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/fakturering.html">Fakturering</a></li>
+<li class="leaf"><a href="../organisation/rektorat.html">Rektorat</a></li>
+<li class="leaf"><a href="../organisation/administration-og-drift.html">Administration og drift</a></li>
+<li class="leaf"><a href="../organisation/fakultet.html">Fakultet</a></li>
+<li class="leaf"><a href="../organisation/kunsthal-charlottenborg.html">Kunsthal Charlottenborg</a></li>
+<li class="leaf"><a href="../organisation/rapporter.html">Rapporter</a></li>
+<li class="leaf"><a href="../organisation/sponsorer.html">Sponsorer</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/databeskyttelsesradgiver.html">Databeskyttelsesrådgiver</a></li>
+<li class="leaf"><a href="../organisation-og-kontakt/kulturministeriets-whistleblowerordning.html">Kulturministeriets whistleblowerordning</a></li>
+<li class="collapsed"><a href="../kontakt/ledige-stillinger.html">Ledige stillinger</a></li>
+<li class="last leaf"><a href="../organisation-og-kontakt/strategi-2019-22.html">Strategi</a></li>
+</ul></li>
+<li class="leaf"><a href="../presserum.html">Presserum</a></li>
+<li class="expanded"><a href="../rundvisning-og-udlejning.html">Rundvisning og udlejning</a><ul class="menu"><li class="first leaf"><a href="../kontakt/udlejning-af-lokaler.html">Udlejning af lokaler</a></li>
+<li class="last leaf"><a href="../kontakt/rundvisning.html">Rundvisning</a></li>
+</ul></li>
+<li class="leaf"><a href="http://info.kunstakademiet.dk/" title="">Info</a></li>
+<li class="last leaf"><a href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" title="">Facebook</a></li>
+</ul>    </nav>
+    <section id="main" class="l-main base-node-1101 ">
+                <div class="content-container">
+                                                    	
+	
+	
+		<article id="node-1121"
+         class="node node-basic-page l-article clearfix" about="/da/studier/laboratoriet-kunstens-forskning" typeof="sioc:Item foaf:Document">
+    <section>
+                    <div class="page-pager-item prev">
+                <a class="freepager-previous prev-next-pager" href="internationalt-og-udveksling.html" rel="previous">
+                    <span class="arrow"></span>
+                <span class="text-display">
+                <span class="pager-title">GÅ TIL</span>
+                    Internationalt og udveksling                </span>
+                </a>
+            </div>
+                                <h1 class="followed-by-slider">Laboratoriet for Kunstens Forskning</h1>
+        
+
+  <div class="entity entity-paragraphs-item paragraphs-item-images entity-item-1 mixed row-odd" about="" typeof="">
+    <div class="gallery-slides mixed image-count-2">
+        <div class="gallery-slides-inner">
+            <div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img05_institut.jpg?itok=K87tmucg&amp;timestamp=1600514404 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img05_institut.jpg?itok=OP6WfKp7&amp;timestamp=1600514404 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img05_institut.jpg?itok=w7nhM1BF&amp;timestamp=1600514404 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img05_institut.jpg?itok=oisKKBqj&amp;timestamp=1600514404 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img05_institut.jpg?itok=dQrprQvG&amp;timestamp=1600514404 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img05_institut.jpg?itok=E5bFwQ9e&amp;timestamp=1600514404 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img05_institut.jpg?itok=HzBX6-Vg&amp;timestamp=1600514404 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img05_institut.jpg?itok=Fgte8sgJ&amp;timestamp=1600514404 580w" alt="Træstole foran bogreol på Institut for Kunst, skrift og forskning" /></div></div></div><div class="field-images landscape-mixed"><div class="field-image-inner"><div class="field-image-aspect-ratio"><img  sizes="(max-width: 767px) calc(81.25vw - 45px), (max-width: 1560px) 55.12820513vw, 860px" srcset="https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_1x/public/slideshow/img02_institut.jpg?itok=_Fb7-vwb&amp;timestamp=1600516125 860w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xxlarge_2x/public/slideshow/img02_institut.jpg?itok=-LlQSrAT&amp;timestamp=1600516125 1720w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_1x/public/slideshow/img02_institut.jpg?itok=hO35C8ol&amp;timestamp=1600516125 569w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_xlarge_2x/public/slideshow/img02_institut.jpg?itok=vLztZkJM&amp;timestamp=1600516125 1138w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_1x/public/slideshow/img02_institut.jpg?itok=IKgbxW2o&amp;timestamp=1600516125 412w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_large_2x/public/slideshow/img02_institut.jpg?itok=XVwRwxX5&amp;timestamp=1600516125 824w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_1x/public/slideshow/img02_institut.jpg?itok=EmfUr8hM&amp;timestamp=1600516125 290w, https://kunstakademiet.dk/sites/default/files/styles/landscape_mixed_breakpoints_theme_bks_mobile_2x/public/slideshow/img02_institut.jpg?itok=yfR-PlS-&amp;timestamp=1600516125 580w" alt="Reol med kvadratiske rum med bøger, der dækker hel væg " /></div></div></div>        </div>
+    </div>
+    </div>
+  <div class="entity entity-paragraphs-item paragraphs-item-manchet entity-item-2" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-manchet">
+    <p>Laboratoriet for Kunstens Forskning er en afdeling på Det Kongelige Danske Kunstakademis Billedkunstskoler. Nedenfor kan du læse mere om laboratoriets aktiviteter inden for forskning og undervisning, samt orientere dig i instituttets aktuelle forskere og forskningsprojekter.</p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-body-text entity-item-3" about="" typeof="">
+  <div class="content">
+    
+  <div class="field-body-text">
+    <p>Laboratoriet for Kunstens Forskning blev oprettet i 2015 og ligger i en baggård i hjertet af København blandt Kunstakademiets andre laboratorier, atelierer og auditorier. Netop denne beliggenhed iblandt de centrale udfoldelsesrum for kunstnerisk praksis afspejler en afgørende side ved instituttet: Her er den kunstneriske praksis udgangspunktet for al vores forskning og vores teoretiske, historiske og forskningsbaserede undervisning. Laboratoriet bygger nemlig på erkendelsen af, at kunstnerisk praksis og teori er hinandens gensidige forudsætninger og vores opgave er at yderligere styrke de teoretiske elementer i den kunstneriske praksis.<br />
+ <br />
+I vores egenskab af teoretisk laboratorie fokuserer vi på to områder: Undervisning og forskning. Vores undervisning i teori og kunsthistorie danner en rød tråd gennem hele Kunstakademiets BFA- og MFA-uddannelse. På BFA-uddannelsens første år følger de studerende et kursus i kunsthistorie. På andet år følger de et omfattende teoretisk kursus med en bred vifte af indbudte gæsteforelæsere. De to kurser danner grundlaget for vores studerendes videre kunsthistoriske og teoretiske udvikling. Studerende på sidste år af deres BFA og samtlige MFA-studerende kan deltage i vores forskningsbaserede Open Practice-kurser og skrivekurser (nærmere beskrivelse følger), som sigter efter at styrke de undersøgende og metodiske aspekter af den forskende kunstneriske praksis.<br />
+ <br /><strong>Minor i Skrift og Forskning</strong><br />
+Laboratoriet for Kunstens Forskning tilbyder en Minor i Skrift og Forskning. Denne Minor i Skrift og Forskning er et valgfrit, specialiserende undervisningsforløb, der giver de studerende mulighed for at styrke deres billedkunstneriske uddannelse ved at fokusere på en teoretisk, reflekterende kunstforståelse og forskningsrettet skriftlighed. En Minor i Skrift og Forskning består af tre Open Practice-kurser efterfulgt af et MFA-essay på den studerendes sidste år på MFA-uddannelsen. Undervisningsforløbet er åbent for studerende på BFA-uddannelsens 3. år samt MFA-uddannelsens 1. - 3. år.</p>
+<p>Open Practice-kurset er baseret på metoder fra teoriens og den kunstneriske forsknings verden og er tænkt som en måde at åbne den undersøgende praksis op på. Hvert Open Practice-kursus varer ét semester, og undervisningen forestås af én af laboratoriets forskere inden for deres forskningsområde. Undervisningen består af en blanding af forelæsninger afholdt af fageksperter, læsegrupper, et skrivekursus, en felttur samt en refleksionsdag ved start og slut, hvor de studerende aktivt opfordres til at reflektere over deres egen praksis og de spørgsmål, den rejser angående begrebsramme, undersøgelsesfelt, metode og analyse. Open Practice-kurset tilbyder en prisme, som den enkelte studerende kan bruge til at begrebsliggøre sin egen kunstneriske undersøgelse. Samtidig får de studerende en række redskaber ved at følge en videregående forsker og dennes forskningsproces, hvor de dermed klædes på til at kunne skrive MFA-essay.</p>
+<p>En Minor i Skrift og Forskning afsluttes med et MFA-essay. Dette essay er tiltænk studerende, der ønsker at fordybe sig i et emne efter eget valg. Individuel vejledning og regelmæssige afleveringer understøtter skriveprocessen. Essayets form kan ligge inden for et spektrum, der strækker sig fra det traditionelle akademiske form til performativt skrevne essays. Gennem dette forløb opbygger den studerende sin teoretiske og kunsthistoriske viden i forhold til sit valgte emne og opnår dyb indsigt i hovedtekster inden for området og analyse heraf. Den studerende vil også opgradere sin skrevne praksis og lære, hvordan man opfylder de krav, der stilles til skriftlige akademiske praksisser.</p>
+<p>For at kunne skrive et MFA-essay skal den studerende først have gennemført tre Open Practice-kurser. Essayet skrives på MFA-uddannelsens sidste år.<br />
+ <br /><strong>Forskning</strong><br />
+Forskning er en central del af Laboratoriet for Kunstens Forskning, og institutlederen er forskningsleder for hele Kunstakademiet. En afgørende pointe, når man arbejder med forskning i kunstneriske sammenhænge, er at erkende og arbejde med det faktum, at materialer har deres egne ideer. At lytte til materialets ideer er et fundamentalt udgangspunkt for at lade det komme til orde. Forskningsstaben, der består af ph.d.-studerende, postdocs, forskningsmedarbejdere, lektorer og professorer, repræsenterer samlet set en bred vifte af kunstnerisk og kunsthistorisk forsknings- og udviklingsvirksomhed. Den grundige og vedholdende forskning dykker ned i en stor variation i emner: bæredygtig plastic til støbning, ruiner, arkiver, nationalstaters dannelse, det ydre rum, økologi, beton, skala, display, performance lectures, global kunsthistorie, monotyper, uddannelse og meget mere. Alle disse kunstneriske forsknings- og udviklingsprojekter har to ting til fælles: teoretisk og praksis-relateret udvikling er gensidigt afhængige størrelser, og den kunstneriske praksis er nødvendig for at gennemføre det aktuelle undersøgelsesarbejde. Gennem sit fokus på den materielle udmøntning af teoretiske, videnskabelige og samfundsmæssige undersøgelser udfordrer og fremhæver vores forskning kort sagt spørgsmålet om, <em>hvordan </em>vi ved.<br />
+ <br />
+I de kommende år er de to primære fokusområder for forskerstaben <em>forholdet mellem kunstnerisk praksis og teori</em> og <em>materiel viden</em>. Dette fokus udfolder sig i studiegrupper, forelæsninger, undervisningen og i vores løbende diskussioner blandt staben. En af de afgørende pointer i forhold til at udfolde de forskningsmæssige praksisser og vores forståelse af, hvad kunstnerisk forskning og udviklingsvirksomhed er, er netop at lade disse praksisser tale for sig selv med deres eget sprog. Dermed kommer vores diskussion inden for feltet til at bygge på konkrete projekter snarere end på begrebsmæssige diskussioner om begreberne <em>kunstnerisk forskning og udviklingsvirksomhed</em>. Med dette formål i tankerne har vi skabt to fora, hvor forskningen og dens resultater deles mellem stab, studerende og den brede offentlighed: <em>Rundgang Research</em> og <em>Skabet for Kunstnerisk Forskning og Relaterede Aktiviteter</em>.</p>
+<p>Rundgang Research har siden 2016 været afholdt som et offentligt symposium i forbindelse med Rundgang-arrangementet ved skoleårets afslutning. Her indbydes de ansatte og studerende til at fremlægge deres forskning. Programmet tilrettelægges ud fra de indkomne bidrag, der kan antage vidt forskellig form: mundtlige præsentationer, performance lectures, interventioner, udstilling, performances, filmforevisninger, samtaler m.m. Rundgang Research arrangeres af og finder sted på Laboratoriet for Kunstens Forskning. Grundet den stigende interesse internt og fra offentligheden i de senere år har vi besluttet at afholde den næste Rundgang Research uafhængigt af Rundgang og det bliver den 22.-23. november 2019.</p>
+<p>Skabet for Kunstnerisk Forskning og Relaterede Aktiviteter består af fire vitriner, der hænger i indgangen til Peder Skrams Gade 2 tilgængelige for offentligheden. Her udstiller forskningsstaben hver især deres aktuelle forskning over en periode på tre uger i løbet af skoleåret. Formålet er at formidle forskningen uden for vores atelierer, kontorer og laboratorer og at dele og diskutere den på enkel, ligefrem vis.<br />
+ <br /><strong>Ph.d.-studerende, postdocs og forskningsmedarbejdere</strong><br />
+Alle de eksternt finansierede akademiske forskere, som kunstakademiet er vært for, er tilknyttet Laboratoriet for Kunstens Forskning. I løbet af de seneste år har laboratoriet vokset sig til at omfatte et levende forskningsmiljø, der spænder over mange forskellige perioder, emner og fagområder, herunder både kunst, kunsthistorie og kunstteori. To til fire gange om året afholder vi master classes, der udvælges og arrangeres af vores forskere, der for det meste også forestår et Open Practice-kursus baseret på deres aktuelle forskning. De ph.d.-studerende har adgang til et delt kontorfællesskab, der understøtter vores aktive forskningsmiljø, hvor mange forskellige interessefelter mødes på tværs af de enkelte forskningsprojekter. Vi lægger stor vægt på forskningsmiljøets fortsatte udvikling og på vores forskeres engagement og aktive deltagelse i fælles arrangementer. Med tanke for, at Laboratoriet for Kunstens Forskning udgør den primære institutionelle ramme for kunstnerisk forskning og udviklingsvirksomhed inden for billedkunst i Denmark, er vi overbeviste om, at vores forskningsmiljø kun kan bestå og udvikle sig gennem engagement, fællesskab og åbenhed. Derfor, og fordi instituttet stadig er relativt nyt, værdsætter vi vores samarbejder, både internationalt via de individuelle forskningsprojekter og netværk såsom KUNO-samarbejder og <a href="http://www.societyforartisticresearch.org/society-for-artistic-research/">SAR</a> (Society of Artistic Research) <em>og</em> nationalt gennem samarbejder med <a href="https://phd.hum.ku.dk/phd_skole/">Københavns Universitet</a>, <a href="http://talent.au.dk/phd/arts/">Aarhus Universitet</a> og <a href="http://www.xn--kuvnetvrket-g9a.dk/">KUV-netværket</a>.</p>
+<p>Billedkunstskolerne ved Det Kongelige Danske Kunstakademi udsteder ikke ph.d.-grader og yder ikke finansiering til ph.d.-projekter eller andre former for forskning. Yderligere information herom kan fås via dette <a href="../../en/schools-visual-arts/academic-and-artistic-research.html">link</a>.</p>
+<p>Eksempler på Open Practice-kurser<br />
+Efterår 2017. Rikke Luther: <em>The Eco-Commons … In the Time of Messed Up Democracy</em><br />
+Forår 2018. Katrine Dirckinck-Holmfeld: <em>Archives that Matter</em><br />
+Efterår 2018. James Day: <em>In Media Res</em><br />
+Forår 2019. David Hilmer Rex: <em>Artistic Practice and Systems Change</em><br />
+Efterår 2019. Honey Biba Beckerlee: <em>Digital Matters</em><br />
+Forår 2020. Christian Danielewitz: <em>Hidden Flow: The Production of Invisible Territories in the Age of Digital Visibility</em></p>
+<p><a href="https://semester.kunstakademiet.dk/" target="_blank">Læs den aktuelle semesterplan her</a></p>
+  </div>
+  </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-4 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/ks_landskab02.jpg?itok=6gNtt38I&amp;timestamp=1600616776 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/ks_landskab02.jpg?itok=GWh9lDBI&amp;timestamp=1600616776 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/ks_landskab02.jpg?itok=XAIcg-Wh&amp;timestamp=1600616776 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/ks_landskab02.jpg?itok=LrKiHRg3&amp;timestamp=1600616776 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/ks_landskab02.jpg?itok=x2g6-_pG&amp;timestamp=1600616776 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/ks_landskab02.jpg?itok=fm-hEF-t&amp;timestamp=1600616776 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/ks_landskab02.jpg?itok=q8xYmFNt&amp;timestamp=1600616776 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/ks_landskab02.jpg?itok=ct0l6mNB&amp;timestamp=1600616776 600w" alt="Undervisningsassistent i kunsthistorie Katarine Stenbeck " />  </div>
+        <div class="column-middle">
+            <h3>
+  Katarina Stenbeck</h3>
+            <span class="job-title-free">
+  Lektor, Kunsthistorie</span>
+            
+  <div class="field-description">
+    <p>Katarina Stenbeck er uddannet i Kunsthistorie fra Københavns Universitet og Goldsmiths College og har arbejdet som kurator og underviser i både institutionelle og selvorganiserede sammenhænge.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='nRtlpksBL' rel='nofollow'></a><script>var nRtlpksBL = 'katarina.stenbeck@kunstakadem##iet.dk';
+var nRtlpksBL = nRtlpksBL.split('#');
+document.getElementById('nRtlpksBL').innerHTML = nRtlpksBL[0]+nRtlpksBL[2]+nRtlpksBL[1];
+document.getElementById('nRtlpksBL').href = 'mailto:'+nRtlpksBL[0]+nRtlpksBL[2]+nRtlpksBL[1];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 3374 4638</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-5 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/maibritt_borgen_portraet_0.jpg?itok=ES2OOmHh&amp;timestamp=1602256377 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/maibritt_borgen_portraet_0.jpg?itok=CfVaKfiT&amp;timestamp=1602256377 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/maibritt_borgen_portraet_0.jpg?itok=D7luqp2H&amp;timestamp=1602256377 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/maibritt_borgen_portraet_0.jpg?itok=R0eEAUid&amp;timestamp=1602256377 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/maibritt_borgen_portraet_0.jpg?itok=MxWEAt01&amp;timestamp=1602256377 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/maibritt_borgen_portraet_0.jpg?itok=H0c_mlqK&amp;timestamp=1602256377 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/maibritt_borgen_portraet_0.jpg?itok=xDIJUV1u&amp;timestamp=1602256377 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/maibritt_borgen_portraet_0.jpg?itok=uf_sbDos&amp;timestamp=1602256377 600w" alt="Lektor i kunstteori og forskningskoordinator Maibritt Borgen" />  </div>
+        <div class="column-middle">
+            <h3>
+  Maibritt Borgen</h3>
+            <span class="job-title-free">
+  Lektor, Kunstteori, Fungerende institutleder</span>
+            
+  <div class="field-description">
+    <p>Maibritt borgen er uddannet i Kunsthistorie fra Københavns Universitet og Yale University, hvorfra hun også har en ph.d. Borgen er tidligere Helena Rubinstein Critical Studies Fellow fra Whitney Independent Study Program og har arbejdet på Whitney Museum of American Art og Yale Art Gallery.</p>
+<p>Borgens forskning og undervisning centrerer sig om de æstetiske, sociale, teknologiske og politiske systemer, billedkunsten er en del af, og hun har blandt andet publiceret artikler om multimedieperformance og kommunikationsteknologi i 1960erne.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='TxXlNBYQV' rel='nofollow'></a><script>var TxXlNBYQV = '#kademiet.dk#maibritt.bo#rgen@kunsta';
+var TxXlNBYQV = TxXlNBYQV.split('#');
+document.getElementById('TxXlNBYQV').innerHTML = TxXlNBYQV[2]+TxXlNBYQV[3]+TxXlNBYQV[1]+TxXlNBYQV[0];
+document.getElementById('TxXlNBYQV').href = 'mailto:'+TxXlNBYQV[2]+TxXlNBYQV[3]+TxXlNBYQV[1]+TxXlNBYQV[0];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  +45 2425 2376</p>                                </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-6 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol.jpg?itok=20GFZR3r&amp;timestamp=1600682922 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol.jpg?itok=bnXF_XPf&amp;timestamp=1600682922 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol.jpg?itok=LipJEF8s&amp;timestamp=1600682922 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol.jpg?itok=_tQ6656o&amp;timestamp=1600682922 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol.jpg?itok=dFPCR1pR&amp;timestamp=1600682922 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol.jpg?itok=hGLy4puE&amp;timestamp=1600682922 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol.jpg?itok=1S-K4JpU&amp;timestamp=1600682922 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol.jpg?itok=ozta2Hqe&amp;timestamp=1600682922 600w" alt="Billede af Ph.d.-studerende Rikke Luther mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  Rikke Luther</h3>
+            <span class="job-title-free">
+  Ph.d. studerende</span>
+            
+  <div class="field-description">
+    <p>Titlen på mit PhD-projekt er Concrete Aesthetics: From Universal Rights to Financial Post Democracy. Som titlen antyder, løber projektet i to spor.</p>
+<p>Forskningsprojektets ene spor går ud på at undersøge de politiske og specifikt demokratiske ”arkitekturer”, som gav betonen dens særlige betydning i de skandinaviske lande i perioden fra 1945 til 1980. Perioden er præget af udviklingen af efterkrigstidens velfærdsstat i det meste af Europa. Mere generelt falder den sammen med universalitetens æra symboliseret ved Den Universelle Menneskerettighedserklæring (UDHR). Således gav det universelle materiale beton tilsyneladende disse idealer form.</p>
+<p>Forskningsprojektets andet spor udforsker betonens nuværende betydning i vore dages meget anderledes kontekst. Denne kontekst er – ud over at beton er negativt forbundet med klimaforandringerne – defineret i relation til det, Colin Crouch har defineret som ”den post-demokratiske æra”, eftersom den primære dynamik, der styrer det sociale rum, ikke længere er demokratiet, men snarere er baseret på, eller afledt af, de frie markedskræfter.</p>
+<p>De praktiske resultater af denne forskning vil gennem kunstnerisk arbejde føre til skabelsen af nye, materielt formede, forståelser af denne udvikling.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='ozfbqCMHV' rel='nofollow'></a><script>var ozfbqCMHV = 'rikke.luther@kunstaka##demiet.dk';
+var ozfbqCMHV = ozfbqCMHV.split('#');
+document.getElementById('ozfbqCMHV').innerHTML = ozfbqCMHV[0]+ozfbqCMHV[2]+ozfbqCMHV[1];
+document.getElementById('ozfbqCMHV').href = 'mailto:'+ozfbqCMHV[0]+ozfbqCMHV[2]+ozfbqCMHV[1];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-7 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/honey_0.jpg?itok=yX-rpDQZ&amp;timestamp=1600683104 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/honey_0.jpg?itok=tDqNbeKn&amp;timestamp=1600683104 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/honey_0.jpg?itok=RD3KccGH&amp;timestamp=1600683104 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/honey_0.jpg?itok=19jJ82iy&amp;timestamp=1600683104 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/honey_0.jpg?itok=5eaijJvX&amp;timestamp=1600683104 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/honey_0.jpg?itok=n_DxB7Gh&amp;timestamp=1600683104 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/honey_0.jpg?itok=Rb84HJbt&amp;timestamp=1600683104 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/honey_0.jpg?itok=e-Q-EaIH&amp;timestamp=1600683104 600w" alt="Ph.d.-studerende Honey Biba Beckerlee" />  </div>
+        <div class="column-middle">
+            <h3>
+  Honey Biba Beckerlee </h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p>Honey Biba Beckerlees praksisbaserede PhD Digital Matters placerer sig i paradokset mellem på den ene side introduktionen af cyberspace som kropsløs og internettet som immateriel, samt på den anden side overforbruget af et flertal af grundstoffer i digitale teknologier, der ender som store mængder giftigt elektronisk affald og i sidste ende udryddelsen af råmaterialer.</p>
+<p>Inspireret af feministiske versioner af kvantemekanik og (ny) materialisme, der sætter spørgsmålstegn ved klassiske skelnen mellem krop / sind, fysisk / immateriel og ultimativt hvad der kan betragtes som levende og ikke levende, vil dette praksisbaserede forskningsprojekt fremstille kunstværker, der tager kroppen og de plastiske materialer tilbage i centrum for forståelse af teknologien. Derudover sigter projektet mod at udvikle en ny sensibilitet overfor digitale medier, gennem en intra-aktiv undersøgelsesmetode inspireret af Karen Barad, der anerkender uadskilleligheden mellem liv og det ikke-organiske såvel som det atomære slægtskab mellem computere og mennesker.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='QEWPelcUr' rel='nofollow'></a><script>var QEWPelcUr = 'rlee@kunsta#kademiet.dk##honey.becke';
+var QEWPelcUr = QEWPelcUr.split('#');
+document.getElementById('QEWPelcUr').innerHTML = QEWPelcUr[3]+QEWPelcUr[0]+QEWPelcUr[1]+QEWPelcUr[2];
+document.getElementById('QEWPelcUr').href = 'mailto:'+QEWPelcUr[3]+QEWPelcUr[0]+QEWPelcUr[1]+QEWPelcUr[2];
+</script>
+ 
+                                                             </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-8 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/tomstol2_52.jpg?itok=BSIKA079&amp;timestamp=1600682955 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/tomstol2_52.jpg?itok=nfaemNgq&amp;timestamp=1600682955 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/tomstol2_52.jpg?itok=ccuRtDbZ&amp;timestamp=1600682955 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/tomstol2_52.jpg?itok=R3aKtmiK&amp;timestamp=1600682955 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/tomstol2_52.jpg?itok=TCAhoJxB&amp;timestamp=1600682955 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/tomstol2_52.jpg?itok=LzUGTbuW&amp;timestamp=1600682955 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/tomstol2_52.jpg?itok=C7hSCHTm&amp;timestamp=1600682955 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/tomstol2_52.jpg?itok=8-9UfAYc&amp;timestamp=1600682955 600w" alt="Billede af Ph.d.-studerende David Hilmer Rex mangler" />  </div>
+        <div class="column-middle">
+            <h3>
+  David Hilmer Rex</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p>Mit ph.d.-projekts engelske titel er ‘Artistic Practice and Systems Change’. Projektets hovedfokus er udviklingen af Primer, en platform for kunstnerisk og organisatorisk udvikling, huset i konteksten af Aquaporin, et globalt vandteknologi-firma, med hovedsæde i Kgs. Lyngby, Danmark. Primer er et kollektivt projekt, der udspringer fra det transdisciplinære studio Diakron, som jeg er medgrundlægger af.</p>
+<p>Hovedformålet er at udforske og konsolidere hvilke formål, funktioner og aktiviteter, et kunstnerisk baseret research- og udviklingslaboratorium kan påtage sig som integreret i og autonom fra Aquaporin. </p>
+<p>Hovedspørgsmålene i projektet er:<br />
+1) Hvilke roller, funktioner og aktiviteter kan et kunstnerisk funderet research og udviklingslaboratorium påtage sig i konteksten af en research-drevet teknologivirksomhed?<br />
+2) Hvad kan der opstå, hvis vi fornyer relationerne mellem kunstneriske, videnskabelige, teknologiske og forretningsbaserede praksisser?<br />
+3) Hvordan ser impact ud for kunstneriske interventioner i teknologiudvikling? Spørgsmålet er her ikke hvordan vi opnår allerede kendte typer impact, men hvordan nye fremvoksende former for impact kan se ud?</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='ChxufyQlo' rel='nofollow'></a><script>var ChxufyQlo = 'ilmer.r#david.h#takadem#ex@kuns#iet.dk#';
+var ChxufyQlo = ChxufyQlo.split('#');
+document.getElementById('ChxufyQlo').innerHTML = ChxufyQlo[1]+ChxufyQlo[0]+ChxufyQlo[3]+ChxufyQlo[2]+ChxufyQlo[4]+ChxufyQlo[5];
+document.getElementById('ChxufyQlo').href = 'mailto:'+ChxufyQlo[1]+ChxufyQlo[0]+ChxufyQlo[3]+ChxufyQlo[2]+ChxufyQlo[4]+ChxufyQlo[5];
+</script>
+ 
+                                                             </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-9 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/christian_photo_0.jpg?itok=y13XQU0D&amp;timestamp=1600682993 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/christian_photo_0.jpg?itok=THMwXVcv&amp;timestamp=1600682993 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/christian_photo_0.jpg?itok=tqvW1Qcf&amp;timestamp=1600682993 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/christian_photo_0.jpg?itok=Y1vd3Z0A&amp;timestamp=1600682993 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/christian_photo_0.jpg?itok=N-PdGo6o&amp;timestamp=1600682993 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/christian_photo_0.jpg?itok=kBrnFTAt&amp;timestamp=1600682993 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/christian_photo_0.jpg?itok=ybZPlaJO&amp;timestamp=1600682993 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/christian_photo_0.jpg?itok=2fxEcyZX&amp;timestamp=1600682993 600w" alt="Ph.d.-studerende Christian Danielewitz" />  </div>
+        <div class="column-middle">
+            <h3>
+  Christian Danielewitz</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p>Mit forskningsprojekt "Hidden Flow: The Production of Invisible Territories in the Age of Digital Visibility" fokuserer på sammenhængen mellem destruktionen af økosystemer og den materielle produktion af vores mineralbaserede billedteknologier. Udgangspunktet er en specifik konsekvens af mineraludvinding, der drejer sig om radioaktive mineralaffaldsdepoter, også kaldet <em>hidden flow.</em><br />
+ <br />
+Den teoretiske ramme for forskningsprojektet er informeret af en redefinering af relationen mellem kortet (genereret af billedteknologierne), og territoriet (de ødelagte zoner af ophobet mineralaffald). Formålet er, at visualisere denne relation som en materiel kausalitet, hvor territoriet i konkret, fysisk forstand produceres af kortet, eller rettere af kortets billedteknologiske fundament (mineralerne).<br />
+ <br />
+Relationen mellem kortet og territoriet, set igennem denne optik, eksponerer som sådan et paradoks, som forskningsprojektet undersøger: Mineraludvindingens <em>hidden flow </em>(de radioaktive affaldsdepoter) usynliggøres i territoriet, men synliggøres i kortet (f.eks. med Google Earth). Den mineralbaserede produktion af kortets fysiske kamerateknologi accelererer med andre ord dannelsen af materielle (men usynlige) depoter af mineralaffald, der "forsvinder" i territoriet, men kommer til syne (som et immaterielt, digitalt billede) i kortet - der genereres af samme kamerateknologi</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='iFDaJYKVh' rel='nofollow'></a><script>var iFDaJYKVh = '@kunsta##an.dani#t.dk#kademie#elewitz#christi';
+var iFDaJYKVh = iFDaJYKVh.split('#');
+document.getElementById('iFDaJYKVh').innerHTML = iFDaJYKVh[6]+iFDaJYKVh[2]+iFDaJYKVh[5]+iFDaJYKVh[0]+iFDaJYKVh[4]+iFDaJYKVh[3]+iFDaJYKVh[1];
+document.getElementById('iFDaJYKVh').href = 'mailto:'+iFDaJYKVh[6]+iFDaJYKVh[2]+iFDaJYKVh[5]+iFDaJYKVh[0]+iFDaJYKVh[4]+iFDaJYKVh[3]+iFDaJYKVh[1];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-10 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/charlotte_sprogoe.jpg?itok=AOO3ITms&amp;timestamp=1600682975 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/charlotte_sprogoe.jpg?itok=ycpo4_GX&amp;timestamp=1600682975 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/charlotte_sprogoe.jpg?itok=Ri_kkZ3x&amp;timestamp=1600682975 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/charlotte_sprogoe.jpg?itok=EnsN0tIA&amp;timestamp=1600682975 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/charlotte_sprogoe.jpg?itok=dDcysz_X&amp;timestamp=1600682975 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/charlotte_sprogoe.jpg?itok=b_GdKhpW&amp;timestamp=1600682975 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/charlotte_sprogoe.jpg?itok=APpGDeop&amp;timestamp=1600682975 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/charlotte_sprogoe.jpg?itok=o8p4EDjS&amp;timestamp=1600682975 600w" alt="Ph.d.-studerende Charlotte Sprogøe" />  </div>
+        <div class="column-middle">
+            <h3>
+  Charlotte Sprogøe</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p>Charlotte Sprogøes ph.d.-projekt <em>Exhibition as Psycho-Aesthetic Form and Backdrop as Character </em>undersøger udstillingen som æstetiske formmæssigheder. Igennem kuratorisk research vil den afsøge hvorledes, særlige tidsbaserede, organiske, omverdens-inddragende, konceptuelt komplekse udstillinger formår at erfares som selvstændige formmæssigheder i æstetisk filosofisk forstand.   </p>
+<p>Ph.d.’en vil udforske den kuratoriske sensibilitet som med-producent af værkoplevelsen og stille spørgsmålene:<br />
+- Hvordan kan man kuratorisk skabe spændingsforhold, der vitaliserer udstillingen som en helhed i den besøgendes bevidsthed?<br />
+- Hvilke æstetiske erfaringer af livsverdenen omkring os folder sig ind i disse kuraterings-praksisser?<br />
+- Giver det mening at tale om et værk som isoleret fra den installatoriske totaloplevelse det indgår i?</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='dBtCOmazf' rel='nofollow'></a><script>var dBtCOmazf = '#sprogoe@ku#nstakademi#et.dk#charlotte.';
+var dBtCOmazf = dBtCOmazf.split('#');
+document.getElementById('dBtCOmazf').innerHTML = dBtCOmazf[4]+dBtCOmazf[1]+dBtCOmazf[2]+dBtCOmazf[3]+dBtCOmazf[0];
+document.getElementById('dBtCOmazf').href = 'mailto:'+dBtCOmazf[4]+dBtCOmazf[1]+dBtCOmazf[2]+dBtCOmazf[3]+dBtCOmazf[0];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-11 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/nd_buhl_foto.jpg?itok=IxM4POoo&amp;timestamp=1600683011 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/nd_buhl_foto.jpg?itok=tWwZWBUx&amp;timestamp=1600683011 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/nd_buhl_foto.jpg?itok=3dnGKhXU&amp;timestamp=1600683011 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/nd_buhl_foto.jpg?itok=LVENyNYn&amp;timestamp=1600683011 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/nd_buhl_foto.jpg?itok=wOHG3c9Q&amp;timestamp=1600683011 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/nd_buhl_foto.jpg?itok=iwbO1Md0&amp;timestamp=1600683011 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/nd_buhl_foto.jpg?itok=RiX1csN7&amp;timestamp=1600683011 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/nd_buhl_foto.jpg?itok=Oy_t3oNA&amp;timestamp=1600683011 600w" alt="Ph.d.-studerende Nanna Debois Buhl" />  </div>
+        <div class="column-middle">
+            <h3>
+  Nanna Debois Buhl</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p>Mit PhD-projekt <em>Sky Studies: Cosmic Code, Images, and Imaginaries</em> fokuserer på undersøgelser af rummet på tværs af astronomiske, computer-mæssige, æstetiske og spekulative sfærer med det mål at gentænke velkendte historier om rum-videnskab og skærpe opmærksomheden for mere komplekse historiske teksturer.</p>
+<p>Projektets formål er at undersøge følgende research-spørgsmål:<br />
+- Kan vi ved at studere arbejde af kvinder og andre grupper, som ofte er udeladt i traditionelle historier om astronomi og rumvidenskab nå mere lydhøre forståelser af hvordan historie <em>sker,</em> og hvordan fremtiden <em>skabes</em>? Kan vi gennem studier af deres arbejde udvikle nye forståelser af forhold mellem kunst, håndarbejde og videnskab; mellem analoge og digitale teknologier?<br />
+- Kan vi konceptualisere rumhistorier, der ikke kun er tilføjelser til tidligere historier, men som gør os lydhøre for ikke blot <em>hvem</em>, men også <em>hvordan</em> mennesker (og ting) inkluderes og præsenteres?<br />
+- Og kan vi gennem en sådan bredere forståelse forestille os alternative fremtider?</p>
+<p>Jeg vil undersøge disse spørgsmål gennem research og en serie kunstneriske eksperimenter, der sammenfletter historiske referencer og nye videnskabelige studier. <em>Sky Studies </em>vil materialisere sig som fotografi, film, vævning, installationer, skrift og kunstnerbøger.</p>
+<p>Projektet vil blive udviklet på Det Kgl. Danske Kunstakademi og Københavns Universitet med et planlagt ophold hos Comparative Media Studies/Writing på Massachusetts Institute of Technology.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='TuykoFKbj' rel='nofollow'></a><script>var TuykoFKbj = '#miet.dk#nanna.debois.buhl@kunstakade';
+var TuykoFKbj = TuykoFKbj.split('#');
+document.getElementById('TuykoFKbj').innerHTML = TuykoFKbj[2]+TuykoFKbj[1]+TuykoFKbj[0];
+document.getElementById('TuykoFKbj').href = 'mailto:'+TuykoFKbj[2]+TuykoFKbj[1]+TuykoFKbj[0];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-12 even 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/jenny.jpg?itok=1QTFee48&amp;timestamp=1600683024 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/jenny.jpg?itok=QxSmTFtW&amp;timestamp=1600683024 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/jenny.jpg?itok=E4axCJu1&amp;timestamp=1600683024 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/jenny.jpg?itok=fD9wdqTS&amp;timestamp=1600683024 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/jenny.jpg?itok=Ni-e1TD9&amp;timestamp=1600683024 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/jenny.jpg?itok=N-zcM7ia&amp;timestamp=1600683024 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/jenny.jpg?itok=1d8Fvs0t&amp;timestamp=1600683024 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/jenny.jpg?itok=Q1mUAbY2&amp;timestamp=1600683024 600w" alt="Ph.d.-studerende og leder af Laboratoriet for Lyd, Jenny Gräf Sheppard" />  </div>
+        <div class="column-middle">
+            <h3>
+  Jenny Gräf Sheppard</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende, Leder af Kunstakademiets Laboratorie for lyd</span>
+            
+  <div class="field-description">
+    <p>My PhD project 'Communicating Vessels: Re-defining Agency through Sounding' is a project that contains theoretical and practice-based research in which I explore agency from different perspectives using a concept I am calling <em>Sounding</em>. Sounding proposes a porosity in distinctions between listening and producing sound, re-framing sonic relationships and revealing potential and existing interacting agencies.</p>
+<p>The research will occur through an annual series of Radical Listening workshops I will organise in Copenhagen and in field research abroad where I exchange ideas on sound perspectives and practices with sound artists and scholars from different parts of the world. Drawing from a range of fields in which sound, perception and subjectivity is addressed, such as anthropology, neuroscience, feminist theory, indigenous perspectives, and Pauline Oliveros' Deep Listening practice, I propose to re-define agency in relation to Sound practices.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='hdBZgaDvr' rel='nofollow'></a><script>var hdBZgaDvr = '#ademiet.dk#jenny.graf@kunstak';
+var hdBZgaDvr = hdBZgaDvr.split('#');
+document.getElementById('hdBZgaDvr').innerHTML = hdBZgaDvr[2]+hdBZgaDvr[1]+hdBZgaDvr[0];
+document.getElementById('hdBZgaDvr').href = 'mailto:'+hdBZgaDvr[2]+hdBZgaDvr[1]+hdBZgaDvr[0];
+</script>
+ 
+                                                            </div>
+</div>
+  <div class="entity entity-paragraphs-item paragraphs-item-contact-profile entity-item-13 odd 
+  normal" about="" typeof="">
+    
+  <div class="field-single-image">
+    <img  sizes="(max-width: 767px) 22vw, (max-width: 1560px) 16.15vw, 253px" srcset="https://kunstakademiet.dk/sites/default/files/styles/square/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=BiyuZRbG&amp;timestamp=1600683035 1600w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_large_1x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=-HefOIiX&amp;timestamp=1600683035 150w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_1x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=mPhdK1xx&amp;timestamp=1600683035 300w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_1x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=P8Yhx_9b&amp;timestamp=1600683035 175w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_mobile_2x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=br6fwCbl&amp;timestamp=1600683035 350w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_1x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=-x2aURyC&amp;timestamp=1600683035 220w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xlarge_2x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=-788hg6R&amp;timestamp=1600683035 440w, https://kunstakademiet.dk/sites/default/files/styles/square_breakpoints_theme_bks_xxlarge_2x/public/current/kristoffer_raasted_foto_lou_mouw.jpg?itok=hMTYA3A0&amp;timestamp=1600683035 600w" alt="Ph.d.-studerende Kristoffer Raasted" />  </div>
+        <div class="column-middle">
+            <h3>
+  Kristoffer Raasted</h3>
+            <span class="job-title-free">
+  Ph.d.-studerende</span>
+            
+  <div class="field-description">
+    <p><strong>New Connections: Queering the Radio Voice</strong></p>
+<p>I min kunstneriske praksis er sigtet med min forskning at generere ny viden, indsigt og kunstværker i emnefeltet mellem stemme, queer studies, performance og teknologi. Jeg engagerer mig både kunstnerisk og akademisk i podcasts, DJ-sets, lydkunst og kunstradio som kulturelle praksisformer der danner udgangspunkt for denne forskning.</p>
+<p>Som en del af PhD-projektet vil jeg etablere en online radiostation på Det Kongelige Danske Kunstakademi, som vil tjene det dobbelte formål at dokumentere og kommunikere den kunstneriske forskning til en bredere offentlighed, samt at fungere som en anvendelig kilde til vidensproduktion i den praksisbaserede, kunstneriske forskning.</p>
+<p>PhD-projektet er i direkte forlængelse af min tidligere forskning, som primært har omhandlet lyd og performancekunst. I en samtidskunst-kontekst kan lyd betragtes som et ind-imellem materiale, som aktiverer og interagerer med mange andre emneområder, og i min kunstneriske praksis har radio været et tilbagevendende tema. Webcasting har både fungeret som en måde at dokumentere processuelle transformationer i de fortløbende vendinger i min tilgang til lyd, og som et selvstændigt værkformat, med arbejder udarbejdet specifikt til virtuel transmission. Denne funktion har traditionelt været varetaget af den statsorganiserede radio. I dag sker dokumentationen og udsendelsen af eksperimenterende lydværker i høj grad på de uafhængige kanaler. Jeg vil gerne undersøge denne dynamik ved at analysere nogle af de internetbaserede radiostationer som varetager den samfundsfunktion i dag.</p>
+<p>--</p>
+<p>Kunstner Kristoffer Raasted er uddannet fra Det Kongelige Danske Kunstakademi i 2018 med en supplerende MFA i kunstteori fra Institut for Kunstens Forskning og udvekslingssemestre ved École Nationale Supérieure des Beaux-Arts, Faculdade de Belas-Artes Ulisboa samt praktikophold på Issue Project Room i New York. Raasted udfører kunstnerisk forskning i det tværdisciplinære felt mellem lyd, performance og installation og begynder sit praksisbaserede ph.d.-projekt ved Det Kongelige Danske Kunstakademi i september 2020. Ph.d.-stipendiet tildeles af Novo Nordisk Fonden og organiseres i et samarbejde mellem Københavns Universitet og Kunstakademiet.</p>
+  </div>
+        </div>
+        <div class="column-right">
+            <h4>E-mail</h4>            
+  <a id='WjPulgYnK' rel='nofollow'></a><script>var WjPulgYnK = 'kristoffer.raasted@kunstakademie#t.dk#';
+var WjPulgYnK = WjPulgYnK.split('#');
+document.getElementById('WjPulgYnK').innerHTML = WjPulgYnK[0]+WjPulgYnK[1]+WjPulgYnK[2];
+document.getElementById('WjPulgYnK').href = 'mailto:'+WjPulgYnK[0]+WjPulgYnK[1]+WjPulgYnK[2];
+</script>
+ 
+                <h4>Telefon</h4>            <p>
+  25473200</p>                                </div>
+</div>
+    </section>
+</article>
+                                </div>
+                <footer class="page-footer l-footer">
+            <div class="l-footer-third footer-links">
+                <a class="facebook"
+                   href="https://www.facebook.com/pages/Kunstakademiets-Billedkunstskoler/1539709572907956" target="_blank">Facebook</a>
+            </div>
+            <address class="l-footer-third">
+                    	
+	
+	
+		<p><strong>Billedkunstskolerne <br />
+Det Kongelige Danske Kunstakademi</strong><br />
+Kongens Nytorv 1, 1050 København K <br /><a href="https://www.google.dk/maps/place/Royal+Danish+Academy+of+Fine+Arts/@55.680234,12.587023,17z/data=!4m7!1m4!3m3!1s0x46525317f8244e99:0x975ea2d4df2509a1!2sRoyal+Danish+Academy+of+Fine+Arts!3b1!3m1!1s0x46525317f8244e99:0x975ea2d4df2509a1!6m1!1e1" target="_blank">Se på google maps</a><br /><a id='LjaGiCSyr' rel='nofollow'></a><script>var LjaGiCSyr = 'info@kunsta##kademiet.dk';
+var LjaGiCSyr = LjaGiCSyr.split('#');
+document.getElementById('LjaGiCSyr').innerHTML = LjaGiCSyr[0]+LjaGiCSyr[2]+LjaGiCSyr[1];
+document.getElementById('LjaGiCSyr').href = 'mailto:'+LjaGiCSyr[0]+LjaGiCSyr[2]+LjaGiCSyr[1];
+</script>
+ 
+    <a target="_blank" href="https://www.was.digst.dk/kunstakademiet-dk">Tilgængelighedserklæring</a></p>
+            </address>
+            <div id="mc_embed_signup" class="l-footer-third">
+                <form
+                    action="http://kunstakademiet.us9.list-manage.com/subscribe/post?u=0cacf4c464f7c6d05d682661b&amp;id=b01af63b03"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" title="Tilmeld nyhedsbrev" placeholder="Tilmeld nyhedsbrev"
+                                   name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_0cacf4c464f7c6d05d682661b_b01af63b03"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="btn-arrow-submit btn-newsletter-submit"><input type="submit" value="Subscribe"
+                                                                                   name="subscribe"
+                                                                                   id="mc-embedded-subscribe"
+                                                                                   class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+            </section>
+        <!-- /#main -->
+
+</div> <!-- /#container -->
+
+	<script type="text/javascript" src="../../sites/default/files/advagg_js/js__Z4-v_NpbsHM90rMoyj-KBqp5sYDtolbNNTDCGcc8uNI__IKgK4uD1nYOeHkb4gh_2OAWuynD0OO_dsM1AcDbrRhs__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.45.delaye"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.absolute_messages, {"dismiss":{"status":1,"warning":1,"error":0},"dismiss_time":{"status":"5","warning":"5","error":""},"dismiss_all_count":"2"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"da\/","ajaxPageState":{"theme":"bks","theme_token":"uzBfAdkmjnmxd4I1xSBxNgo6L400KTQ9Q31xSscQo5w"},"urlIsAjaxTrusted":{"\/da\/search":true}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../sites/default/files/advagg_js/js__ZA0R4rMSEJmHcv_7D4lx22gP5CVw2PKoABymRecpSFI__1LRJa5pbt8XpEPvsvvKZsTHao4m7uFARfp7dQTnhrRY__tA_JkvWBUHjhmrVXby0RAQXSHNyaKUbRYRYpb_nLYdQ.46.delaye"></script>
+	<div id="outdated"></div>
+	<script async src="../../sites/all/themes/bks/build/scripts/vendor/picturefill.min.js"></script>
+    <script>
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'IE10',
+            languagePath: '/sites/all/themes/bks/build/scripts/vendor/outdatedbrowser/lang/da.html'
+        })
+    });
+</script>
+<!-- Matomo -->
+<script>
+var _paq;
+window.addEventListener('CookieInformationConsentGiven', function (event) {
+    if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+        _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="https://kunstakademiet.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='http://cdn.matomo.cloud/kunstakademiet.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+}, false);
+</script>
+<!-- End Matomo Code -->
+</body>
+
+<!-- Mirrored from kunstakademiet.dk/da/studier/laboratoriet-kunstens-forskning by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 22:06:20 GMT -->
+</html>
