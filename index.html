@@ -27,9 +27,27 @@
     }
 
     body {
-      line-height: 1.4;
-      padding-top: 220px; /* makes room for fixed header */
-    }
+  padding-top: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.32s ease;
+  will-change: transform;
+}
+
+.header.is-hidden {
+  transform: translateY(-100%);
+}
+
+.wrapper {
+  scroll-margin-top: 180px;
+}
+
 
     .wrapper {
       width: 100%;
@@ -42,22 +60,6 @@
       scroll-margin-top: 260px;
     }
 
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 5vh 8vw 3vh 8vw;
-      background: rgba(255, 255, 255, 0.96);
-      z-index: 1000;
-      transition: transform 0.35s ease, opacity 0.35s ease;
-      will-change: transform;
-    }
-
-    .header.is-hidden {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
 
     .header p {
       margin: 0 0 14px 0;
@@ -324,58 +326,87 @@
     </div>
   </div>
 
-  <script>
-    const lightbox = GLightbox({
-      selector: '.glightbox',
-      touchNavigation: true,
-      loop: true,
-      zoomable: true,
-      draggable: true,
-      openEffect: 'fade',
-      closeEffect: 'fade'
-    });
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    draggable: true,
+    openEffect: 'fade',
+    closeEffect: 'fade'
+  });
 
-    function scrollToHashTarget() {
-      if (!window.location.hash) return;
-      const id = decodeURIComponent(window.location.hash.slice(1));
-      const target = document.getElementById(id);
-      if (!target) return;
-      target.scrollIntoView({ behavior: 'auto', block: 'start' });
+  const header = document.getElementById('siteHeader');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  let headerHeight = 0;
+
+  function setLayoutOffsets() {
+    headerHeight = header.offsetHeight;
+    document.body.style.paddingTop = headerHeight + 'px';
+
+    document.querySelectorAll('.wrapper').forEach(wrapper => {
+      wrapper.style.scrollMarginTop = (headerHeight + 40) + 'px';
+    });
+  }
+
+  function scrollToHashTarget() {
+    if (!window.location.hash) return;
+
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 40;
+    window.scrollTo({
+      top: y,
+      behavior: 'auto'
+    });
+  }
+
+  function updateHeader() {
+    const currentScrollY = window.scrollY;
+    const diff = currentScrollY - lastScrollY;
+    const nearTop = currentScrollY < 40;
+
+    if (nearTop) {
+      header.classList.remove('is-hidden');
+    } else if (diff > 8) {
+      header.classList.add('is-hidden');
+      lastScrollY = currentScrollY;
+    } else if (diff < -8) {
+      header.classList.remove('is-hidden');
+      lastScrollY = currentScrollY;
     }
 
-    window.addEventListener('load', () => {
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(updateHeader);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('load', () => {
+    setLayoutOffsets();
+
+    requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        requestAnimationFrame(scrollToHashTarget);
+        scrollToHashTarget();
       });
     });
+  });
 
-    const header = document.getElementById('siteHeader');
-    let lastScrollY = window.scrollY;
-    let ticking = false;
+  window.addEventListener('resize', () => {
+    setLayoutOffsets();
+  });
 
-    function updateHeader() {
-      const currentScrollY = window.scrollY;
-      const nearTop = currentScrollY < 80;
-      const scrollingDown = currentScrollY > lastScrollY;
-      const scrollingUp = currentScrollY < lastScrollY;
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
 
-      if (nearTop || scrollingUp) {
-        header.classList.remove('is-hidden');
-      } else if (scrollingDown) {
-        header.classList.add('is-hidden');
-      }
-
-      lastScrollY = currentScrollY;
-      ticking = false;
-    }
-
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateHeader);
-        ticking = true;
-      }
-    });
-  </script>
 
 </body>
 </html>
