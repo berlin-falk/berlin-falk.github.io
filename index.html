@@ -30,6 +30,10 @@
   padding-top: 0;
 }
 
+#copenhagenContemporary {
+  padding-top: 15vh;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -39,6 +43,9 @@
   transition: transform 0.32s ease;
   will-change: transform;
 }
+
+
+      
 
 .header.is-hidden {
   transform: translateY(-100%);
@@ -50,6 +57,7 @@
 
     .wrapper:first-child {
       margin-top: 200px!important; 
+      padding-top: 10vh;
     }
     .wrapper {
       width: 100%;
@@ -147,19 +155,11 @@
         width: 78vw;
         max-width: none;
       }
-
-      .header {
-        padding: 4vh 7vw 3vh 7vw;
-      }
     }
 
     @media (max-width: 768px) {
       body {
         padding-top: 160px;
-      }
-
-      .header p {
-        font-size: 22px;
       }
 
       .wrapper {
