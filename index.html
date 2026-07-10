@@ -1,414 +1,144 @@
 <!doctype html>
-<html class="no-js" lang="da">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WWW.THISISSOMETHINGIHAVEFOUND.COM</title>
-
-  <!-- GLightbox -->
-  <!--
-  <link rel="stylesheet" href="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css)">
-  <script src="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js)"></script>
-  -->
-
+  <title>THISISSOMETHINGIHAVEFOUND</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-    }
-
     * {
       box-sizing: border-box;
     }
 
+    html,
     body {
-  padding-top: 0;
-}
-
-#copenhagenContemporary {
-  padding-top: 15vh;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: transform 0.32s ease;
-  will-change: transform;
-}
-
-
-      
-
-.header.is-hidden {
-  transform: translateY(-100%);
-}
-
-.wrapper {
-  scroll-margin-top: 180px;
-}
-
-    .wrapper:first-child {
-      margin-top: 200px!important; 
-      padding-top: 10vh;
-    }
-    .wrapper {
+      margin: 0;
       width: 100%;
-      min-height: 150vh;
-      padding: 6vh 0;
+      min-height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .countdown {
+      width: 100%;
+      max-width: 700px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .unit {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      margin-bottom: 560px;
-      scroll-margin-top: 260px;
+      gap: 8px;
+      min-width: 0;
     }
 
-
-    .header p {
-      margin: 0;
-      max-width: 900px;
+    .label {
+      font-size: 12px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
     }
 
-    .image-item {
-      width: 100%;
-      display: flex;
-      padding-left: 4vw;
-      padding-right: 4vw;
+    .value {
+      font-size: clamp(22px, 4vw, 28px);
+      line-height: 1;
+      font-weight: 400;
+      font-variant-numeric: tabular-nums;
     }
 
-    .image-item + .image-item {
-      margin-top: 100px;
-    }
-
-    .align-left {
-      justify-content: flex-start;
-    }
-
-    .align-center {
-      justify-content: center;
-    }
-
-    .align-right {
-      justify-content: flex-end;
-    }
-
-    .image-item a {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .image-item img {
-      display: block;
-      width: 100%;
-      height: auto;
-      cursor: zoom-in;
-    }
-
-    .w-62 {
-      width: 62vw;
-      max-width: 1100px;
-    }
-
-    .w-66 {
-      width: 66vw;
-      max-width: 1180px;
-    }
-
-    .w-70 {
-      width: 70vw;
-      max-width: 1260px;
-    }
-
-    .caption {
-      margin-top: 12px;
-      font-size: 14px;
-      line-height: 1.35;
-      color: #444;
-    }
-
-    @media (max-width: 1024px) {
-      body {
-        padding-top: 190px;
+    @media (max-width: 560px) {
+      .countdown {
+        gap: 12px;
       }
 
-      .wrapper {
-        min-height: 140vh;
-        margin-bottom: 500px;
-        scroll-margin-top: 220px;
+      .label {
+        font-size: 10px;
       }
 
-      .image-item + .image-item {
-        margin-top: 90px;
+      .value {
+        font-size: clamp(18px, 6vw, 24px);
       }
-
-      .w-62,
-      .w-66,
-      .w-70 {
-        width: 78vw;
-        max-width: none;
-      }
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding-top: 160px;
-      }
-
-      .wrapper {
-        min-height: auto;
-        margin-bottom: 320px;
-        padding: 3vh 0;
-        scroll-margin-top: 180px;
-      }
-
-      .image-item {
-        padding-left: 5vw;
-        padding-right: 5vw;
-      }
-
-      .image-item + .image-item {
-        margin-top: 70px;
-      }
-
-      .w-62,
-      .w-66,
-      .w-70 {
-        width: 90vw;
-      }
-
-      .caption {
-        font-size: 13px;
-      }
-    }
-
-    /* Lightbox styling */
-    .glightbox-clean .goverlay {
-      background: rgba(0, 0, 0, 0.88);
-    }
-
-    .glightbox-clean .gslide-description {
-      background: transparent;
-    }
-
-    .glightbox-clean .gdesc-inner {
-      background: transparent;
-      color: #fff;
-      font-size: 14px;
-      padding: 20px 0 10px 0;
-      text-align: center;
-      box-shadow: none;
     }
   </style>
 </head>
-
 <body>
-
-  <div class="header" id="siteHeader">
-    <p>The domain is the painting</p>
-    <p>The painting is the domain</p>
-    <p>If the painting ceases to exist the domain ceases to exist</p>
-    <p>If the domain ceases to exist the painting ceases to exist</p>
-    <p>= domain paintings</p>
-  </div>
-
-  <div class="wrapper" id="copenhagenContemporary">
-    <div class="image-item align-left">
-      <a href="./CC0.jpg" class="glightbox" data-gallery="copenhagenContemporary" data-title="Copenhagen Contemporary">
-        <img src="./CC0.jpg" alt="Copenhagen Contemporary 1" class="w-66" width="1400" height="2100">
-        <div class="caption">Installation view</div>
-      </a>
+  <div class="countdown" aria-label="Countdown to 18 August 2026 at 23:59 Copenhagen time">
+    <div class="unit">
+      <div class="label">Days</div>
+      <div class="value" id="days">00</div>
     </div>
 
-    <div class="image-item align-center">
-      <a href="./CC1.jpg" class="glightbox" data-gallery="copenhagenContemporary" data-title="Copenhagen Contemporary">
-        <img src="./CC1.jpg" alt="Copenhagen Contemporary 2" class="w-70" width="1400" height="933">
-        <div class="caption">WWW.COPENHAGEN-CONTEMPORARY.ORG, oil on canvas, 110 x 6 cm, 2026</div>
-      </a>
+    <div class="unit">
+      <div class="label">Hours</div>
+      <div class="value" id="hours">00</div>
     </div>
 
-    <div class="image-item align-right">
-      <a href="./CC2.jpg" class="glightbox" data-gallery="copenhagenContemporary" data-title="Copenhagen Contemporary">
-        <img src="./CC2.jpg" alt="Copenhagen Contemporary 3" class="w-62" width="1179" height="1768">
-        <div class="caption">WWW.COPENHAGEN-CONTEMPORARY.ORG, oil on canvas, 110 x 6 cm, 2026</div>
-      </a>
+    <div class="unit">
+      <div class="label">Minutes</div>
+      <div class="value" id="minutes">00</div>
+    </div>
+
+    <div class="unit">
+      <div class="label">Seconds</div>
+      <div class="value" id="seconds">00</div>
     </div>
   </div>
 
-  <div class="wrapper" id="kunsthalCharlottenborg">
-    <div class="image-item align-center">
-      <a href="./KC0.jpg" class="glightbox" data-gallery="kunsthalCharlottenborg" data-title="Kunsthal Charlottenborg">
-        <img src="./KC0.jpg" alt="Kunsthal Charlottenborg 1" class="w-66" width="1400" height="933">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
+  <script>
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
 
-    <div class="image-item align-right">
-      <a href="./KC1.jpg" class="glightbox" data-gallery="kunsthalCharlottenborg" data-title="Kunsthal Charlottenborg">
-        <img src="./KC1.jpg" alt="Kunsthal Charlottenborg 2" class="w-70" width="1400" height="933">
-        <div class="caption">WWW.KUNSTHAL-CHARLOTTENBORG.DK, oil on canvas, 37 x 120 cm, 2026</div>
-      </a>
-    </div>
-  </div>
-
-  <div class="wrapper" id="gammelStrand">
-    <div class="image-item align-left">
-      <a href="./GS0.jpg" class="glightbox" data-gallery="gammelStrand" data-title="Gammel Strand">
-        <img src="./GS0.jpg" alt="Gammel Strand 1" class="w-62" width="1079" height="1619">
-
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-right">
-      <a href="./GS1.jpg" class="glightbox" data-gallery="gammelStrand" data-title="Gammel Strand">
-        <img src="./GS1.jpg" alt="Gammel Strand 2" class="w-70" width="1103" height="1654">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-center">
-      <a href="./GS2.jpg" class="glightbox" data-gallery="gammelStrand" data-title="Gammel Strand">
-        <img src="./GS2.jpg" alt="Gammel Strand 3" class="w-66" width="1400" height="2100">
-        <div class="caption">WWW.GAMMEL-STRAND.DK, oil on canvas, 6 x 80 cm, 2026</div>
-      </a>
-    </div>
-  </div>
-
-  <div class="wrapper" id="arthubCopenhagen">
-    <div class="image-item align-right">
-      <a href="./AH0.jpg" class="glightbox" data-gallery="arthubCopenhagen" data-title="Art Hub Copenhagen">
-        <img src="./AH0.jpg" alt="Art Hub Copenhagen 1" class="w-70" width="1400" height="1055">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-left">
-      <a href="./AH1.jpg" class="glightbox" data-gallery="arthubCopenhagen" data-title="Art Hub Copenhagen">
-        <img src="./AH1.jpg" alt="Art Hub Copenhagen 2" class="w-62" width="1400" height="933">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-center">
-      <a href="./AH2.jpg" class="glightbox" data-gallery="arthubCopenhagen" data-title="Art Hub Copenhagen">
-        <img src="./AH2.jpg" alt="Art Hub Copenhagen 3" class="w-66" width="1400" height="933">
-        <div class="caption">WWW.ARTHUB-COPENHAGEN.NET, oil on canvas, 70 x 40 cm, 2026</div>
-      </a>
-    </div>
-  </div>
-
-  <div class="wrapper" id="denFrie">
-    <div class="image-item align-right">
-      <a href="./DF0.jpg" class="glightbox" data-gallery="DenFrie" data-title="Den Frie">
-        <img src="./DF0.jpg" alt="Den Frie 1" class="w-66" width="1400" height="933">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-center">
-      <a href="./DF1.jpg" class="glightbox" data-gallery="DenFrie" data-title="Den Frie">
-        <img src="./DF1.jpg" alt="Den Frie 2" class="w-62" width="1400" height="933">
-        <div class="caption">Installation view</div>
-      </a>
-    </div>
-
-    <div class="image-item align-left">
-      <a href="./DF2.jpg" class="glightbox" data-gallery="DenFrie" data-title="Den Frie">
-        <img src="./DF2.jpg" alt="Den Frie 3" class="w-70" width="1400" height="933">
-        <div class="caption">WWW.DEN-FRIE.DK, oil on canvas, 11 x 5,5 cm, 2026</div>
-      </a>
-    </div>
-  </div>
-
-<script>
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-    touchNavigation: true,
-    loop: true,
-    zoomable: true,
-    draggable: true,
-    openEffect: 'fade',
-    closeEffect: 'fade'
-  });
-
-  const header = document.getElementById('siteHeader');
-  let lastScrollY = window.scrollY;
-  let ticking = false;
-  let headerHeight = 0;
-
-  function setLayoutOffsets() {
-    headerHeight = header.offsetHeight;
-    document.body.style.paddingTop = headerHeight + 'px';
-
-    document.querySelectorAll('.wrapper').forEach(wrapper => {
-      wrapper.style.scrollMarginTop = (headerHeight + 40) + 'px';
-    });
-  }
-
-  function scrollToHashTarget() {
-    if (!window.location.hash) return;
-
-    const id = decodeURIComponent(window.location.hash.slice(1));
-    const target = document.getElementById(id);
-    if (!target) return;
-
-    const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 40;
-    window.scrollTo({
-      top: y,
-      behavior: 'auto'
-    });
-  }
-
-  function updateHeader() {
-    const currentScrollY = window.scrollY;
-    const diff = currentScrollY - lastScrollY;
-    const nearTop = currentScrollY < 40;
-
-    if (nearTop) {
-      header.classList.remove('is-hidden');
-    } else if (diff > 8) {
-      header.classList.add('is-hidden');
-      lastScrollY = currentScrollY;
-    } else if (diff < -8) {
-      header.classList.remove('is-hidden');
-      lastScrollY = currentScrollY;
+    function pad(value) {
+      return String(value).padStart(2, '0');
     }
 
-    ticking = false;
-  }
-
-  function onScroll() {
-    if (!ticking) {
-      requestAnimationFrame(updateHeader);
-      ticking = true;
+    function getCopenhagenTargetUtcMs() {
+      // 18 Aug 2026 23:59:00 in Europe/Copenhagen
+      // In August, Copenhagen is on CEST (UTC+2)
+      return Date.UTC(2026, 7, 18, 21, 59, 0);
     }
-  }
 
-  window.addEventListener('load', () => {
-    setLayoutOffsets();
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = getCopenhagenTargetUtcMs() - now;
 
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        scrollToHashTarget();
-      });
-    });
-  });
+      if (diff <= 0) {
+        daysEl.textContent = '00';
+        hoursEl.textContent = '00';
+        minutesEl.textContent = '00';
+        secondsEl.textContent = '00';
+        return;
+      }
 
-  window.addEventListener('resize', () => {
-    setLayoutOffsets();
-  });
+      const totalSeconds = Math.floor(diff / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-</script>
+      daysEl.textContent = pad(days);
+      hoursEl.textContent = pad(hours);
+      minutesEl.textContent = pad(minutes);
+      secondsEl.textContent = pad(seconds);
+    }
 
-
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
