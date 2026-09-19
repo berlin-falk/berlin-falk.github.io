@@ -75,7 +75,7 @@
   </style>
 </head>
 <body>
-  <div class="countdown" aria-label="Countdown to 18 August 2026 at 23:59 Copenhagen time">
+  <div class="countdown" aria-label="Countdown to tonight at 23:59 local time">
     <div class="unit">
       <div class="label">Days</div>
       <div class="value" id="days">00</div>
@@ -107,15 +107,17 @@
       return String(value).padStart(2, '0');
     }
 
-    function getCopenhagenTargetUtcMs() {
-      // 18 Aug 2026 23:59:00 in Europe/Copenhagen
-      // In August, Copenhagen is on CEST (UTC+2)
-      return Date.UTC(2026, 8, 18, 21, 59, 0);
+    function getTonightTarget() {
+      const now = new Date();
+      const target = new Date(now);
+      target.setHours(23, 59, 0, 0);
+      return target;
     }
 
     function updateCountdown() {
-      const now = Date.now();
-      const diff = getCopenhagenTargetUtcMs() - now;
+      const now = new Date();
+      const target = getTonightTarget();
+      const diff = target - now;
 
       if (diff <= 0) {
         daysEl.textContent = '00';
