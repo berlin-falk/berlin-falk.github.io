@@ -75,7 +75,7 @@
   </style>
 </head>
 <body>
-  <div class="countdown" aria-label="Countdown to tomorrow at 23:59 local time">
+  <div class="countdown" aria-label="Countdown to Monday, September 21 at 22:00 local time">
     <div class="unit">
       <div class="label">Days</div>
       <div class="value" id="days">00</div>
@@ -107,17 +107,13 @@
       return String(value).padStart(2, '0');
     }
 
-    function getTomorrowTarget() {
-      const now = new Date();
-      const target = new Date(now);
-      target.setDate(target.getDate() + 1);
-      target.setHours(23, 59, 0, 0);
-      return target;
+    function getTargetDate() {
+      return new Date(2026, 8, 21, 22, 0, 0, 0);
     }
 
     function updateCountdown() {
       const now = new Date();
-      const target = getTomorrowTarget();
+      const target = getTargetDate();
       const diff = target - now;
 
       if (diff <= 0) {
